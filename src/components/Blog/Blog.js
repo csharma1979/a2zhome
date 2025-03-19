@@ -37,22 +37,21 @@ const Blog = ({ searchQuery, selectedCategory }) => {
 
   return (
     <Box className="home-page">
-     <Box className="hero-section kitchen-hero">
-             <div className="container">
-               <div className="">
-                 <div className="service-banner">
-                   <Typography variant="h3">
-                     Get the Best Kitchen Cabinets Refinishing
-                   </Typography>
-                   <Typography variant="h6" className="pt-2">
-                     Get more out of your kitchen updates with quick, affordable
-                     cabinet refacing with stunning results.
-                   </Typography>
-                 </div>
-               </div>
-             </div>
-            
-           </Box>
+      <Box className="hero-section kitchen-hero">
+        <div className="container">
+          <div className="">
+            <div className="service-banner">
+              <Typography variant="h3">
+                Get the Best Kitchen Cabinets Refinishing
+              </Typography>
+              <Typography variant="h6" className="pt-2">
+                Get more out of your kitchen updates with quick, affordable
+                cabinet refacing with stunning results.
+              </Typography>
+            </div>
+          </div>
+        </div>
+      </Box>
       <div className="container">
         {/* <div className="row justify-content-center">
           <div className="col-lg-8">
@@ -63,7 +62,6 @@ const Blog = ({ searchQuery, selectedCategory }) => {
             </div>
           </div>
         </div> */}
-        
 
         <div className="row py-4 ">
           {blogs.length > 0 ? (
