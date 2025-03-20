@@ -8,7 +8,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../../styles/Home.css";
-
+import "../../../styles/CommonStyles.css";
 import { features } from "../../Data/Navbar";
 import ServiceFaq from "../Service/ServiceFaq";
 import Testimonials from "./Testimonials";
@@ -113,12 +113,12 @@ const Home = () => {
                 <Typography variant="h2" gutterBottom>
                   {slide.title}
                 </Typography>
-                <Typography variant="h5" gutterBottom color="text.secondary">
+                <Typography variant="h5" gutterBottom >
                   {slide.subtitle}
                 </Typography>
-                <Button  className="custom-button" size="large" sx={{ mt: 4 }}>
+                <button  className="custom-button mt-4" >
                   Get Started
-                </Button>
+                </button>
               </Container>
             </Box>
           ))}

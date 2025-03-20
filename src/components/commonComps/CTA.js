@@ -13,13 +13,13 @@ const CTA = () => {
           <Typography variant="subtitle1" color="text.secondary" paragraph>
             Contact us today for a free consultation
           </Typography>
-          <Button
-            className="custom-button" 
+          <button
+            className="custom-button rounded" 
             size="large"
             
           >
             Get Free Estimate
-          </Button>
+          </button>
         </Box>
       </Container>
     </div>

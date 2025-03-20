@@ -44,7 +44,7 @@ const ServiceBanner = () => {
         </Box>
       </Box>
 
-      <div className="comp-color comp-space">
+      <div className="comp-coloer comp-space">
         <div className="container text-center">
           <Typography variant="h5">Our Process</Typography>
           <h3 className="py-2">

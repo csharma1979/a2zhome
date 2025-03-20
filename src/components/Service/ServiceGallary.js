@@ -3,14 +3,15 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import "../../../styles/CommonStyles.css";
 import { Box, Button, Typography } from "@mui/material";
 import { kitchenGalleryImages } from "../../Data/ServiceData/KitchenData";
 const ServiceGallary = () => {
   return (
-    <div className="comp-space">
+    <div className="comp-color comp-space">
       <div className="container d-flex flex-column justify-content-center align-items-center mx-auto ">
         <Typography variant="h5">GALLARY</Typography>
-        <h3 className="py-2">Elegant Kitchen Cabinet Refacing Services</h3>
+        <h3 className="py-2 text-center">Elegant Kitchen Cabinet Refacing Services</h3>
 
         {/* Two Rows of Images with Five Images Each */}
         <div className="d-flex justify-content-center align-items-center row mt-2 g-3">
@@ -50,9 +51,9 @@ const ServiceGallary = () => {
           ))}
         </div>
         <Link href="/gallery" passHref> 
-        <Button  className="custom-button"  size="large" sx={{ mt: 4 }}>
+        <button  className="custom-button mt-4"  size="large">
           View All Gallaries
-        </Button>
+        </button>
         </Link>
       </div>
     </div>
