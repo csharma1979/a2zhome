@@ -25,27 +25,27 @@ export const kitchenWhyChooseUs = [
   },
 ];
 
-
 export const kitchenProcessSteps = [
   {
     id: 1,
-    title: "Consultation & Design Selection",
+    title: "Consultation & Design",
     description:
-      "We begin with a free consultation to understand your vision, style preferences, and budget. Choose from a variety of finishes, materials, and hardware to create the perfect look—whether modern, classic, or something unique.",
+      "We start with a free consultation to discuss your style, budget, and needs. Choose from a variety of finishes, materials, and hardware to match your kitchen’s aesthetic.",
   },
   {
     id: 2,
-    title: "Surface Preparation & Refinishing",
+    title: "Preparation & Refinishing",
     description:
-      "We carefully remove cabinet doors and drawer fronts while keeping the cabinet structure intact. The surfaces are then cleaned, sanded, and refinished with a high-quality veneer for a seamless, polished look.",
+      "We carefully remove cabinet doors and drawer fronts while keeping the structure intact. Surfaces are cleaned, sanded, and refinished for a flawless, brand-new look.",
   },
   {
     id: 3,
     title: "Installation & Final Touches",
     description:
-      "Newly refinished doors, drawer fronts, and hinges are installed, along with optional upgrades like stylish hardware or built-in storage solutions. We leave your kitchen spotless and ready to enjoy! Experience a fresh, stylish kitchen—without the hassle of a full remodel!",
+      "Newly refinished doors, upgraded hardware, and optional storage features are installed. We leave your kitchen spotless and ready to enjoy!",
   },
 ];
+
 
 export const kitchenfaqData = [
   {
@@ -85,6 +85,9 @@ export const kitchenGalleryImages = [
   "/assets/kitchen/A2z-home-kitchen-service-8.jpg",
   "/assets/kitchen/A2z-home-kitchen-service-9.jpg",
   "/assets/kitchen/A2z-home-kitchen-service-10.jpg",
+  "/assets/kitchen/A2z-home-kitchen-service-11.jpg",
+  "/assets/kitchen/A2z-home-kitchen-service-12.jpg",
+ 
  
 ];
 

@@ -1,7 +1,21 @@
 .header {
     background-color:white!important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
-    padding:0.75rem 0;
+    padding:0.25rem 0;
+  }
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Center align navigation buttons */
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    /* gap: 16px; */
   }
   
   .logo-link {
@@ -11,16 +25,41 @@
   }
   
   .logo-image {
-    height: 75px;
+    height: 90px;
     width: auto;
   }
-  
   .nav-button {
     margin: 0 8px !important;
     text-transform: none !important;
     font-weight: 500 !important;
     color: #1f2937 !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 8px 16px !important;
+    border-radius: 4px !important;
   }
+  
+  .nav-button:hover {
+    background-color:  #0d6aa3 !important;
+    color: white !important;
+  }
+  
+  .nav-button.active {
+    background-color:  #0d6aa3 !important;
+    color: white !important;
+  }
+  .right-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+
+  /* .nav-button {
+    margin: 0 8px !important;
+    text-transform: none !important;
+    font-weight: 500 !important;
+    color: #1f2937 !important;
+  } */
   
   .features-menu {
     margin-top: 8px !important;
@@ -51,6 +90,10 @@
     .logo-image {
       height: 32px;
     }
+    .nav-container {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   
   /* Drawer styles */
@@ -67,3 +110,5 @@
   .MuiListItem-root:hover {
     background-color: #f3f4f6;
   }
+
+ 

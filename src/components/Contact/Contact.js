@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import axios from "axios";
@@ -55,7 +55,9 @@ const Contact = () => {
         formType: "contact",
       });
     } catch (error) {
-      setResponseMessage(error.response?.data?.error || "Something went wrong!");
+      setResponseMessage(
+        error.response?.data?.error || "Something went wrong!"
+      );
     } finally {
       setLoading(false);
     }
@@ -172,21 +174,15 @@ const Contact = () => {
                 <Typography variant="h5" gutterBottom>
                   Our Location
                 </Typography>
-                <Typography>
-                  12346 Spring Cypress Rd
-                  <br />
-                  Tomball, TX 77377
+                <Typography className="py-1">
+                  7106 Marble Springs Dr Katy, Tx 77494
                 </Typography>
-                <Typography>
-                  (281) 320-8886
-                  <br />
-                  (281) 320-9757
-                </Typography>
-                <Typography>Email: remodel@andersonremodeling.com</Typography>
+                <Typography  className="py-1">+1- 832-312-5501</Typography>
+                <Typography  className="py-1">Email: remodel@andersonremodeling.com</Typography>
                 <Typography variant="h6" className="mt-3">
                   Office Hours
                 </Typography>
-                <Typography>
+                <Typography className="py-1" >
                   Mon – Thur: 9am – 5pm
                   <br />
                   Fri: 9am – 3pm

@@ -1,47 +1,59 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-import { Box, Button } from "@mui/material";
+import Link from "next/link";
+import { Box, Button, Typography } from "@mui/material";
 import { kitchenGalleryImages } from "../../Data/ServiceData/KitchenData";
 const ServiceGallary = () => {
   return (
     <div className="comp-space">
       <div className="container d-flex flex-column justify-content-center align-items-center mx-auto ">
-        <h5 className="text-center">GALLERY</h5>
+        <Typography variant="h5">GALLARY</Typography>
         <h3 className="py-2">Elegant Kitchen Cabinet Refacing Services</h3>
-        <p className="text-center">
-          Investing in our services is a sure way to transform your kitchen’s
-          visual appeal. Check out our gallery to see some examples of prior
-          projects that we’ve completed.
-        </p>
 
-        {/* Gallery Images in One Row */}
-        <Box className="d-flex flex-wrap flex-row justify-content-center align-items-center mx-auto gap-3 my-2 ">
+        {/* Two Rows of Images with Five Images Each */}
+        <div className="d-flex justify-content-center align-items-center row mt-2 g-3">
           {kitchenGalleryImages.slice(0, 5).map((img, index) => (
-            <Image
+            <div
               key={`row1-${index}`}
-              src={img}
-              alt={`Kitchen ${index + 1}`}
-              width={200}
-              height={150}
-              className="rounded"
-            />
+              className="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"
+            >
+              <Link href="/gallery" passHref>
+                <Image
+                  src={img}
+                  alt={`Kitchen ${index + 1}`}
+                  width={200}
+                  height={150}
+                  className="rounded img-fluid"
+                />
+              </Link>
+            </div>
           ))}
-        </Box>
-        <Box className="d-flex flex-row justify-content-center align-items-center mx-auto gap-3 my-2">
+        </div>
+        <div className="d-flex justify-content-center align-items-center row mt-2 g-3">
           {kitchenGalleryImages.slice(5, 10).map((img, index) => (
-            <Image
+            <div
               key={`row2-${index}`}
-              src={img}
-              alt={`Kitchen ${index + 6}`}
-              width={200}
-              height={150}
-              className="rounded"
-            />
+              className="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"
+            >
+              <Link href="/gallery" passHref> 
+              <Image
+                src={img}
+                alt={`Kitchen ${index + 6}`}
+                width={200}
+                height={150}
+                className="rounded img-fluid"
+              />
+              </Link>
+            </div>
           ))}
-        </Box>
-        <Button variant="contained" size="large" sx={{ mt: 4 }}>
+        </div>
+        <Link href="/gallery" passHref> 
+        <Button  className="custom-button"  size="large" sx={{ mt: 4 }}>
           View All Gallaries
         </Button>
+        </Link>
       </div>
     </div>
   );

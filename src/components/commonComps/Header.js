@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 import {
   AppBar,
   Box,
@@ -21,6 +22,7 @@ import "../../../styles/Header.css"
 
 const Header = () => {
   const [featuresAnchor, setFeaturesAnchor] = useState(null);
+  const pathname = usePathname();
 
   const handleFeaturesClick = (event) => {
     setFeaturesAnchor(event.currentTarget);
@@ -42,14 +44,14 @@ const Header = () => {
             />
           </Link>
 
-          <Box
-            sx={{ flexGrow: 1, display: "flex", alignItems: "center", ml: 4 }}
+          <Box className="nav-container"
+           // sx={{ flexGrow: 1, display: "flex", alignItems: "center", ml: 4 }}
           >
             <Button
               component={Link}
               href="/"
               color="inherit"
-              className="nav-button"
+              className={`nav-button ${pathname === "/" ? "active" : ""}`}
             >
               Home
             </Button>
@@ -92,24 +94,24 @@ const Header = () => {
               component={Link}
               href="/portfolio"
               color="inherit"
-              className="nav-button"
+              className={`nav-button ${pathname === "/portfolio" ? "active" : ""}`}
             >
               Portfolio
             </Button>
             <Button
               component={Link}
-              href="/gallary"
+              href="/gallery"
               color="inherit"
-              className="nav-button"
+              className={`nav-button ${pathname === "/gallery" ? "active" : ""}`}
             >
-              Gallary
+              Gallery
             </Button>
            
             <Button
               component={Link}
               href="/blog"
               color="inherit"
-              className="nav-button"
+              className={`nav-button ${pathname === "/blog" ? "active" : ""}`}
             >
               Blog
             </Button>
@@ -117,7 +119,7 @@ const Header = () => {
               component={Link}
               href="/contact"
               color="inherit"
-              className="nav-button"
+              className={`nav-button ${pathname === "/contact" ? "active" : ""}`}
             >
               Contact
             </Button>

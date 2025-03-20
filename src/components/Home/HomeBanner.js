@@ -2,24 +2,29 @@
 
 import React from "react";
 import { Box, Container, Grid, Typography, Paper, Button } from "@mui/material";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../../styles/Home.css";
-import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
+
 import { features } from "../../Data/Navbar";
+import ServiceFaq from "../Service/ServiceFaq";
+import Testimonials from "./Testimonials";
+import CTA from "../commonComps/CTA";
 
 const Home = () => {
   const heroSlides = [
     {
       title: "Full Service Home Remodeling Experts",
       subtitle: "One Call Does It All!",
-      image: "/assets/kitchen/A2z-home-kitchen-service-1.jpg",
+      image: "/assets/homebanner1.png",
     },
     {
       title: "Transform Your Space with Our Experts",
       subtitle: "Quality & Craftsmanship You Can Trust!",
-      image: "/assets/kitchen/A2z-home-kitchen-service-2.jpg",
+      image: "/assets/homebanner2.jpeg",
     },
     {
       title: "Your Dream Home Starts Here",
@@ -37,70 +42,45 @@ const Home = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "linear",
+    arrows: false, 
+    customPaging: (i) => (
+      <div className="custom-dot">
+        <span></span>
+      </div>
+    ),
+    dotsClass: "slick-dots custom-dots",
   };
-
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      role: "Customer Service Manager",
-      company: "Tech Solutions Inc.",
-      image: "/images/testimonial1.jpg",
-      quote:
-        "Chatwoots has transformed how we handle customer support. The omnichannel capabilities are game-changing.",
-    },
-    {
-      name: "Michael Chen",
-      role: "CEO",
-      company: "Growth Startup",
-      image: "/images/testimonial2.jpg",
-      quote:
-        "The automation features have helped us scale our support without increasing headcount. Excellent platform!",
-    },
-    {
-      name: "Emma Davis",
-      role: "Support Lead",
-      company: "E-commerce Pro",
-      image: "/images/testimonial3.jpg",
-      quote:
-        "Integration was seamless, and our team productivity has increased significantly. Highly recommended!",
-    },
-  ];
 
   const analytics = [
     {
       number: "10K+",
-      label: "Active Users",
+      label: "Project Completed",
     },
     {
       number: "99.9%",
-      label: "Uptime",
+      label: "Happy Clients",
     },
     {
       number: "5M+",
-      label: "Messages Handled",
+      label: "Average Rating",
     },
     {
-      number: "50+",
-      label: "Integrations",
+      number: "10+",
+      label: "Years of Experience",
     },
+  ];
+
+  const benefits = [
+    "Licensed and Insured",
+    "Free Estimates",
+    "Local Katy Business",
+    "Years of Experience",
+    "Quality Workmanship",
+    "Competitive Pricing",
   ];
 
   return (
     <Box className="home-page">
-      {/* Hero Section */}
-      {/* <Box className="hero-section">
-        <Container maxWidth="lg">
-          <Typography variant="h2" gutterBottom>
-            Full Service Home Remodeling Experts
-          </Typography>
-          <Typography variant="h5" gutterBottom color="text.secondary">
-            One Call Does It All!
-          </Typography>
-          <Button variant="contained" size="large" sx={{ mt: 4 }}>
-            Get Started
-          </Button>
-        </Container>
-      </Box> */}
       <Box className="hero-section">
         <Slider {...heroSettings}>
           {heroSlides.map((slide, index) => (
@@ -111,13 +91,14 @@ const Home = () => {
                 backgroundImage: `url(${slide.image})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                minHeight: "500px",
+                minHeight: "600px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 color: "white",
                 textAlign: "center",
                 position: "relative",
+               
               }}
             >
               <Container
@@ -135,7 +116,7 @@ const Home = () => {
                 <Typography variant="h5" gutterBottom color="text.secondary">
                   {slide.subtitle}
                 </Typography>
-                <Button variant="contained" size="large" sx={{ mt: 4 }}>
+                <Button  className="custom-button" size="large" sx={{ mt: 4 }}>
                   Get Started
                 </Button>
               </Container>
@@ -145,7 +126,49 @@ const Home = () => {
       </Box>
       {/* Features Section */}
       <Container maxWidth="lg" sx={{ py: 8 }}>
-        <Typography variant="h3" align="center" gutterBottom>
+        <Box textAlign="center" mb={6}>
+          <Typography variant="h4" align="center" gutterBottom>
+            Your Trusted Home Service Provider in Katy, Texas
+          </Typography>
+          <Typography variant="h6" color="text.secondary" paragraph>
+            Professional home improvement and renovation services for your dream
+            home
+          </Typography>
+          <Box
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            gap={1}
+          >
+            <span className="color-blue">
+              <LocationOnIcon />{" "}
+            </span>
+            <Typography variant="subtitle1">
+              Serving Katy and Surrounding Areas
+            </Typography>
+          </Box>
+        </Box>
+
+        {/* Benefits Section */}
+        <Grid container spacing={2} mb={8}>
+          {benefits.map((benefit, index) => (
+            <Grid item xs={12} sm={6} md={4} key={index}>
+              <Box
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                gap={1}
+              >
+                <span className="color-blue">
+                  {" "}
+                  <CheckCircleIcon />
+                </span>
+                <Typography align="center">{benefit}</Typography>
+              </Box>
+            </Grid>
+          ))}
+        </Grid>
+        <Typography variant="h4" align="center" gutterBottom>
           Our Services
         </Typography>
         <Typography variant="h6" align="center" color="text.secondary">
@@ -156,15 +179,15 @@ const Home = () => {
           {features.map((feature, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
               <Paper className="feature-card">
-                <Box className="feature-icon">{feature.icon}</Box>
+                <Box className="feature-icon color-blue">{feature.icon}</Box>
                 <Typography variant="h5" gutterBottom>
                   {feature.title}
                 </Typography>
                 <Typography color="text.secondary">
                   {feature.description}
                 </Typography>
-                <Button color="primary" sx={{ mt: 2 }}>
-                  Learn More →
+                <Button className="color-blue" sx={{ mt: 2 }}>
+                  Read more →
                 </Button>
               </Paper>
             </Grid>
@@ -173,16 +196,19 @@ const Home = () => {
       </Container>
 
       {/* Analytics Section */}
-      <Box className="analytics-section">
+      <div className="analytics-sectionee comp-color comp-space">
         <Container maxWidth="lg">
-          <Typography variant="h3" align="center" gutterBottom>
-            Trusted by Growing Businesses
+          {/* <Typography variant="h4" align="center" gutterBottom>
+            Our Services
           </Typography>
-          <Grid container spacing={4} sx={{ mt: 4 }}>
+          <Typography variant="h6" align="center" color="text.secondary">
+            Trusted By Growing Business
+          </Typography> */}
+          <Grid container spacing={4} >
             {analytics.map((item, index) => (
               <Grid item xs={6} md={3} key={index}>
                 <Paper className="analytics-card" elevation={0}>
-                  <Typography className="analytics-number">
+                  <Typography className="analytics-number color-blue">
                     {item.number}
                   </Typography>
                   <Typography variant="h6" color="text.secondary">
@@ -193,46 +219,14 @@ const Home = () => {
             ))}
           </Grid>
         </Container>
-      </Box>
+      </div>
 
+      <ServiceFaq />
       {/* Testimonials Section */}
-      <Box className="testimonials-section">
-        <Container maxWidth="lg">
-          <Typography variant="h3" align="center" gutterBottom>
-            What Our Customers Say
-          </Typography>
-          <Grid container spacing={4} sx={{ mt: 4 }}>
-            {testimonials.map((testimonial, index) => (
-              <Grid item xs={12} md={4} key={index}>
-                <Paper className="testimonial-card" elevation={0}>
-                  <FormatQuoteIcon
-                    sx={{ fontSize: 40, color: "#3b82f6", mb: 2 }}
-                  />
-                  <Typography paragraph>"{testimonial.quote}"</Typography>
-                  <Box sx={{ display: "flex", alignItems: "center", mt: 3 }}>
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="testimonial-avatar"
-                    />
-                    <Box sx={{ ml: 2 }}>
-                      <Typography variant="subtitle1" fontWeight="bold">
-                        {testimonial.name}
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        {testimonial.role}
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        {testimonial.company}
-                      </Typography>
-                    </Box>
-                  </Box>
-                </Paper>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </Box>
+      <Testimonials />
+
+      {/* CTS section */}
+      <CTA />
     </Box>
   );
 };

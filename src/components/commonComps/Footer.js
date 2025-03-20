@@ -14,46 +14,46 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { features } from "../../Data/Navbar";
-import "../../../styles/Footer.css"
+import "../../../styles/Footer.css";
 
 const Footer = () => {
   return (
     <Box
       component="footer"
       sx={{
-        bgcolor: "#f8f9fa",
         py: 6,
         mt: "auto",
       }}
+      className="footer"
     >
       <Container maxWidth="lg">
-        <Grid container spacing={4}>
+        <Grid container spacing={4} className="footer-font-color">
           <Grid item xs={12} md={4}>
-            <Typography variant="h6" color="text.primary" gutterBottom>
+            <Typography variant="h6" gutterBottom>
               A2Zhome-Solutions
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" className="footer-font-color">
               Empowering businesses with intelligent customer support solutions.
               Transform your customer experience with AI-powered automation.
             </Typography>
             <Box sx={{ mt: 2 }}>
-              <IconButton color="primary" aria-label="Twitter">
-                <TwitterIcon />
+              <IconButton aria-label="Twitter" className="footer-icon">
+                <TwitterIcon sx={{ color: "white" }} />
               </IconButton>
-              <IconButton color="primary" aria-label="LinkedIn">
-                <LinkedInIcon />
+              <IconButton aria-label="LinkedIn" className="footer-icon">
+                <LinkedInIcon sx={{ color: "white" }} />
               </IconButton>
-              <IconButton color="primary" aria-label="Facebook">
-                <FacebookIcon />
+              <IconButton aria-label="Facebook" className="footer-icon">
+                <FacebookIcon sx={{ color: "white" }} />
               </IconButton>
-              <IconButton color="primary" aria-label="Instagram">
-                <InstagramIcon />
+              <IconButton aria-label="Instagram" className="footer-icon">
+                <InstagramIcon sx={{ color: "white" }} />
               </IconButton>
             </Box>
           </Grid>
 
           <Grid item xs={12} sm={6} md={2}>
-            <Typography variant="h6" color="text.primary" gutterBottom>
+            <Typography variant="h6" gutterBottom>
               Solutions
             </Typography>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -61,8 +61,7 @@ const Footer = () => {
                 <Link
                   href={feature.link}
                   key={index}
-                 
-                  color="text.secondary"
+                  className="footer-font-color"
                   sx={{ mb: 1 }}
                 >
                   {feature.title}
@@ -72,33 +71,44 @@ const Footer = () => {
           </Grid>
 
           <Grid item xs={12} sm={6} md={2}>
-            <Typography variant="h6" color="text.primary" gutterBottom>
+            <Typography variant="h6" gutterBottom>
               Resources
             </Typography>
-            <Box sx={{ display: "flex", flexDirection: "column" }}>
-              <Link href="/blog" color="text.secondary" sx={{ mb: 1 }}>
+            <Box
+              sx={{ display: "flex", flexDirection: "column" }}
+              className="footer-font-color"
+            >
+              <Link href="/blog" sx={{ mb: 1 }} className="footer-font-color">
                 Blog
               </Link>
-              <Link href="/help-center" color="text.secondary" sx={{ mb: 1 }}>
+              <Link
+                href="/help-center"
+                sx={{ mb: 1 }}
+                className="footer-font-color"
+              >
                 Help Center
               </Link>
 
-              <Link href="/guides" color="text.secondary" sx={{ mb: 1 }}>
+              <Link href="/guides" sx={{ mb: 1 }} className="footer-font-color">
                 Guides
               </Link>
             </Box>
           </Grid>
 
           <Grid item xs={12} sm={6} md={2}>
-            <Typography variant="h6" color="text.primary" gutterBottom>
+            <Typography variant="h6" gutterBottom>
               Company
             </Typography>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
-              <Link href="/about" color="text.secondary" sx={{ mb: 1 }}>
+              <Link href="/about" sx={{ mb: 1 }} className="footer-font-color">
                 About
               </Link>
 
-              <Link href="/contact" color="text.secondary" sx={{ mb: 1 }}>
+              <Link
+                href="/contact"
+                sx={{ mb: 1 }}
+                className="footer-font-color"
+              >
                 Contact
               </Link>
             </Box>
@@ -106,7 +116,7 @@ const Footer = () => {
         </Grid>
 
         <Box sx={{ mt: 5, pt: 2, borderTop: "1px solid #eee" }}>
-          <Typography variant="body2" color="text.secondary" align="center">
+          <Typography variant="body2" align="center">
             © {new Date().getFullYear()} Trae AI. All rights reserved.
           </Typography>
         </Box>

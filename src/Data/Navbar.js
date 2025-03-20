@@ -38,13 +38,7 @@ export const features = [
     description:
       "Protect your home with high-quality gutter installation, repair, and maintenance services.",
   },
-  {
-    title: "Custom Cabinets",
-    link: "/custom-cabinets",
-    icon: <FaTools fontSize="large" />,
-    description:
-      "Get custom-built cabinets designed to fit your space, style, and storage needs.",
-  },
+
   {
     title: "Storage",
     link: "/storage",
@@ -58,12 +52,5 @@ export const features = [
     icon: <FaThLarge fontSize="large" />,
     description:
       "Enhance your home with high-quality flooring options, from hardwood to tiles and more.",
-  },
-  {
-    title: "Upgrade Solutions",
-    link: "/upgrade-solutions",
-    icon: <FaWrench fontSize="large" />,
-    description:
-      "Innovative home upgrade solutions for enhanced aesthetics, functionality, and efficiency.",
   },
 ];
