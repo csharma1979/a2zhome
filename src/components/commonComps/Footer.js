@@ -117,7 +117,7 @@ const Footer = () => {
 
         <Box sx={{ mt: 5, pt: 2, borderTop: "1px solid #eee" }}>
           <Typography variant="body2" align="center">
-            © {new Date().getFullYear()} Trae AI. All rights reserved.
+            © {new Date().getFullYear()} A2Z Home Solutions. All rights reserved |Technology Partner - <Link href="https://fritado.com/" style={{color:'white'}}> Fritado AI </Link>
           </Typography>
         </Box>
       </Container>

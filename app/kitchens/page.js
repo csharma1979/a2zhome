@@ -1,11 +1,11 @@
-import ServiceBanner from "../../src/components/Service/ServiceBanner";
+import KitchenService from "../../src/components/Service/Kitchen-Service/KitchenService";
 
 const page = () => {
   return (
     <div>
-      <ServiceBanner />
+      <KitchenService />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

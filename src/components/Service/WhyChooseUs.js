@@ -2,16 +2,16 @@ import React from 'react'
 import { Box, Typography } from "@mui/material";
 import { kitchenWhyChooseUs } from "../../Data/ServiceData/KitchenData";
 
-const WhyChooseUs = () => {
+const WhyChooseUs = ({ title, subtitle, data }) => {
   return (
     <div className="comp-color comp-space">
     <div className="container text-center">
-      <Typography variant="h5">Why Choose Us</Typography>
-      <h3 className="py-2">Quality Kitchen Cabinet Refacing in Texas</h3>
+      <Typography variant="h5">{title}</Typography>
+      <h3 className="py-2">{subtitle}</h3>
 
       {/* Responsive Bootstrap Grid */}
       <div className=" d-flex  align-items-center row mt-2 row g-3 justify-content-center">
-        {kitchenWhyChooseUs.map((step) => (
+        {data.map((step) => (
           <div key={step.id} className="col-12 col-sm-6 col-md-4">
             <Box className="d-flex flex-column justify-content-center align-items-center border rounded p-3">
               <Typography

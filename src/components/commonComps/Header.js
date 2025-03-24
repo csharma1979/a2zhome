@@ -24,7 +24,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Link from "next/link";
 import { useTheme, useMediaQuery } from "@mui/material";
-import { features } from "../../Data/Navbar";
+import { features ,navbarFeatures } from "../../Data/Navbar";
 import "../../../styles/Header.css";
 
 const Header = () => {
@@ -89,11 +89,16 @@ const Header = () => {
                 <Paper sx={{ p: 2 }}>
                   <Typography variant="h5">Interior</Typography>
                   <Grid container spacing={2} sx={{ width: 500 }}>
-                    {features.map((feature, index) => (
+                    {navbarFeatures.map((feature, index) => (
                       <Grid item xs={4} key={index}>
                         <Link href={feature.link} passHref>
                           <MenuItem onClick={handleFeaturesClose}>
-                            <Typography variant="body1" stle={{textDecoration:"none"}}>{feature.title}</Typography>
+                            <Typography
+                              variant="body1"
+                              stle={{ textDecoration: "none" }}
+                            >
+                              {feature.title}
+                            </Typography>
                           </MenuItem>
                         </Link>
                       </Grid>
@@ -104,18 +109,11 @@ const Header = () => {
 
               <Button
                 component={Link}
-                href="/portfolio"
-                color="inherit"
-                className={`nav-button ${pathname === "/portfolio" ? "active" : ""}`}
-              >
-                Portfolio
-              </Button>
-
-              <Button
-                component={Link}
                 href="/gallery"
                 color="inherit"
-                className={`nav-button ${pathname === "/gallery" ? "active" : ""}`}
+                className={`nav-button ${
+                  pathname === "/gallery" ? "active" : ""
+                }`}
               >
                 Gallery
               </Button>
@@ -133,7 +131,9 @@ const Header = () => {
                 component={Link}
                 href="/contact"
                 color="inherit"
-                className={`nav-button ${pathname === "/contact" ? "active" : ""}`}
+                className={`nav-button ${
+                  pathname === "/contact" ? "active" : ""
+                }`}
               >
                 Contact
               </Button>
@@ -149,7 +149,11 @@ const Header = () => {
 
           {/* Mobile Menu Button (Hamburger Icon with #0d6aa3 Color) */}
           {isMobile && (
-            <IconButton edge="end" onClick={toggleDrawer} className="mobile-menu-icon">
+            <IconButton
+              edge="end"
+              onClick={toggleDrawer}
+              className="mobile-menu-icon"
+            >
               <MenuIcon sx={{ color: "#0d6aa3", fontSize: 32 }} />
             </IconButton>
           )}
@@ -173,24 +177,37 @@ const Header = () => {
               <ListItemText primary="Services" />
             </ListItem>
 
-            <ListItem button component={Link} href="/portfolio" onClick={toggleDrawer}>
-              <ListItemText primary="Portfolio" />
-            </ListItem>
-
-            <ListItem button component={Link} href="/gallery" onClick={toggleDrawer}>
+            <ListItem
+              button
+              component={Link}
+              href="/gallery"
+              onClick={toggleDrawer}
+            >
               <ListItemText primary="Gallery" />
             </ListItem>
 
-            <ListItem button component={Link} href="/blog" onClick={toggleDrawer}>
+            <ListItem
+              button
+              component={Link}
+              href="/blog"
+              onClick={toggleDrawer}
+            >
               <ListItemText primary="Blog" />
             </ListItem>
 
-            <ListItem button component={Link} href="/contact" onClick={toggleDrawer}>
+            <ListItem
+              button
+              component={Link}
+              href="/contact"
+              onClick={toggleDrawer}
+            >
               <ListItemText primary="Contact" />
             </ListItem>
 
             <ListItem>
-              <Button variant="outlined" fullWidth>Book a Free Consultation</Button>
+              <Button variant="outlined" fullWidth>
+                Book a Free Consultation
+              </Button>
             </ListItem>
           </List>
         </Box>

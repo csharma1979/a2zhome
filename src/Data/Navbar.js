@@ -11,8 +11,8 @@ import {
 
 export const features = [
   {
-    title: "Bathrooms",
-    link: "/bathrooms",
+    title: "Plumbering",
+    link: "/plumbering",
     icon: <FaBath fontSize="large" />,
     description:
       "Transform your bathroom with modern designs, efficient fixtures, and luxury finishes.",
@@ -53,4 +53,26 @@ export const features = [
     description:
       "Enhance your home with high-quality flooring options, from hardwood to tiles and more.",
   },
+];
+
+
+export const navbarFeatures = [
+  { title: "Plumbing", link: "/plumbing" },
+  { title: "Flooring", link: "/flooring" },
+  { title: "Structure", link: "/structure" },
+  { title: "Fence", link: "/fence" },
+  { title: "Water Heater", link: "/water-heater" },
+  { title: "HVAC", link: "/hvac" },
+  { title: "Driveway/Walkway", link: "/driveway-walkway" },
+  { title: "Shower", link: "/shower" },
+  { title: "Cabinets", link: "/cabinets" },
+  { title: "Painting", link: "/painting" },
+  { title: "Electricals", link: "/electricals" },
+  { title: "Digital Home", link: "/digital-home" },
+  { title: "Doors", link: "/doors" },
+  { title: "Windows", link: "/windows" },
+  { title: "Glass", link: "/glass" },
+  { title: "Irrigation", link: "/irrigation" },
+  { title: "Roof", link: "/roof" },
+  { title: "Countertop/Kitchen/Bath", link: "/countertop-kitchen-bath" },
 ];

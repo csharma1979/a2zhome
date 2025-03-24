@@ -1,27 +1,35 @@
-
-import { FaTools, FaPalette, FaMoneyBillWave } from "react-icons/fa";
+import { FaUserTie, FaPalette, FaDollarSign, FaHourglassHalf, FaHandshake } from "react-icons/fa";
 
 export const kitchenWhyChooseUs = [
   {
     id: 1,
-    title: "Flawless, Efficient Workmanship",
-    description:
-      "We always prioritize our customers and will work hard to provide you with a timely remodel so that your family can enjoy it as soon as possible.",
-    icon: <FaTools />,
+    title: "Experienced Professionals",
+    description: "Skilled experts delivering top-quality workmanship.",
+    icon: <FaUserTie />,
   },
   {
     id: 2,
-    title: "Various Style Options",
-    description:
-      "We understand that a kitchen’s cabinets can be a very personal design decision. That’s why we offer a wide variety of cabinet style options for you to choose from.",
+    title: "Customized Solutions",
+    description: "Tailored services to match your style and needs.",
     icon: <FaPalette />,
   },
   {
     id: 3,
-    title: "Payment Plans",
-    description:
-      "You’ll never struggle to obtain the Texas kitchen remodel that you need, as our company proudly provides a variety of financing options to accommodate all budgets.",
-    icon: <FaMoneyBillWave />,
+    title: "Affordable Pricing",
+    description: "Transparent pricing with no hidden costs.",
+    icon: <FaDollarSign />,
+  },
+  {
+    id: 4,
+    title: "Timely Delivery",
+    description: "Fast and efficient project completion.",
+    icon: <FaHourglassHalf />,
+  },
+  {
+    id: 5,
+    title: "Customer Satisfaction",
+    description: "Dedicated to exceeding your expectations.",
+    icon: <FaHandshake />,
   },
 ];
 
@@ -46,31 +54,31 @@ export const kitchenProcessSteps = [
   },
 ];
 
-
 export const kitchenfaqData = [
   {
-    question: "What is cabinet refacing?",
-    answer: "Cabinet refacing is a process where...",
+    question: "What kitchen services do you offer?",
+    answer:
+      "We provide comprehensive kitchen solutions, including remodeling, cabinet installation, countertop fitting, plumbing, electrical work, and appliance installation.",
   },
   {
-    question: "How long does it take?",
-    answer: "Typically, cabinet refacing takes...",
+    question: "How long does a kitchen renovation take?",
+    answer:
+      "Project timelines vary based on the scope of work, but a typical kitchen renovation takes between 2-6 weeks.",
   },
   {
-    question: "What is cabinet refacing?",
-    answer: "Cabinet refacing is a process where...",
+    question: "Do you offer custom kitchen designs?",
+    answer:
+      "Yes, we provide fully customized kitchen designs tailored to your needs and preferences.",
   },
   {
-    question: "How long does it take?",
-    answer: "Typically, cabinet refacing takes...",
+    question: "Are your services available in my area?",
+    answer:
+      "We serve [City/Region] and nearby areas. Contact us to confirm availability.",
   },
   {
-    question: "What is cabinet refacing?",
-    answer: "Cabinet refacing is a process where...",
-  },
-  {
-    question: "How long does it take?",
-    answer: "Typically, cabinet refacing takes...",
+    question: "How do I get a quote for kitchen services?",
+    answer:
+      "You can request a free quote by clicking [Request a Free Quote] or contacting us directly.",
   },
 ];
 
@@ -87,8 +95,6 @@ export const kitchenGalleryImages = [
   "/assets/kitchen/A2z-home-kitchen-service-10.jpg",
   "/assets/kitchen/A2z-home-kitchen-service-11.jpg",
   "/assets/kitchen/A2z-home-kitchen-service-12.jpg",
- 
- 
 ];
 
 export const kitchenLimitedOffer = [
@@ -107,8 +113,40 @@ export const kitchenLimitedOffer = [
   {
     id: 3,
     title: "Do You Have The Ugliest Kitchen in Texas",
+    description: "Enter to Win a $20,000 Makeover",
+  },
+];
+
+export const kitchenService = [
+  {
+    title: "Kitchen Remodeling & Renovation",
     description:
-      "Enter to Win a $20,000 Makeover",
+      "Revamp your kitchen with our comprehensive remodeling services. We offer custom designs, modern fixtures, and expert craftsmanship to bring your dream kitchen to life.",
+    icon: "🏡",
+  },
+  {
+    title: "Cabinet Installation & Repair",
+    description:
+      "Upgrade your kitchen storage with our custom cabinet installation and repair services. We provide a variety of styles and finishes to suit your preferences.",
+    icon: "🛠️",
+  },
+  {
+    title: "Countertop Installation",
+    description:
+      "Enhance your kitchen's aesthetics with our durable and stylish countertop installations. We work with materials like granite, quartz, and marble.",
+    icon: "🔲",
+  },
+  {
+    title: "Plumbing & Electrical Services",
+    description:
+      "Ensure your kitchen operates smoothly with our professional plumbing and electrical work. From sink installations to lighting upgrades, we cover it all.",
+    icon: "💡",
+  },
+  {
+    title: "Appliance Installation",
+    description:
+      "We offer hassle-free appliance installation services, ensuring your new kitchen equipment works efficiently and safely.",
+    icon: "🔌",
   },
 ];
 
