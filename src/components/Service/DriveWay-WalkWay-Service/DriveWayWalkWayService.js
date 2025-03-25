@@ -30,13 +30,15 @@ const DriveWayWalkWayService = () => {
     <ServiceProcess />
     <ServiceGallary />
 
-    <ServiceFaq data={plumbingFaqData} />
+
 
     <WhyChooseUs
       title="Why Choose Us"
       subtitle="Quality Kitchen Cabinet Refacing in Texas"
       data={plumbingWhyChooseUs}
     />
+
+<ServiceFaq data={plumbingFaqData} />
 
     <ServiceArea />
 

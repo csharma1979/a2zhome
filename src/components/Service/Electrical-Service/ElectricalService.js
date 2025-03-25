@@ -29,13 +29,15 @@ const ElectricalService = () => {
       <ServiceProcess />
       <ServiceGallary />
 
-      <ServiceFaq data={electricalFaqData} />
+     
 
       <WhyChooseUs
         title="Why Choose Our Electrical Service"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
         data={electricalWhyChooseUs}
       />
+
+<ServiceFaq data={electricalFaqData} />
 
       <ServiceArea />
 

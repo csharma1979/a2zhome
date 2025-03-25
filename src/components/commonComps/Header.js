@@ -24,8 +24,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Link from "next/link";
 import { useTheme, useMediaQuery } from "@mui/material";
-import { features, navbarFeatures } from "../../Data/Navbar";
-import "../../../styles/Header.css";
+import { navbarFeatures } from "../../Data/Navbar";
+import { MdAddIcCall } from "react-icons/md";
 
 const Header = () => {
   const [featuresAnchor, setFeaturesAnchor] = useState(null);
@@ -146,8 +146,10 @@ const Header = () => {
           {/* Desktop "Book a Consultation" Button */}
           {!isMobile && (
             <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+              
               <Typography
                 sx={{
+                  
                   color: "#fff",
                   fontWeight: "bold",
                   fontSize: "1.1rem",
@@ -156,11 +158,11 @@ const Header = () => {
                   borderRadius: "8px",
                   transition: "all 0.3s ease",
                   "&:hover": {
-                    backgroundColor: "#095484",
+                    backgroundColor:  "#115580",
                   },
                 }}
               >
-                +1- 832-312-5501
+              Call now: +1- 832-312-5501
               </Typography>
             </Box>
           )}

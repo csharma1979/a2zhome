@@ -29,14 +29,14 @@ const FenceService = () => {
       <ServiceProcess />
       <ServiceGallary />
 
-      <ServiceFaq data={fenceFaqData} />
+
 
       <WhyChooseUs
         title=" Why Choose Our Fence Services"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
         data={fenceWhyChooseUs}
       />
-
+      <ServiceFaq data={fenceFaqData} />
       <ServiceArea />
 
       <CTA />

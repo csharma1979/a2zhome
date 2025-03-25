@@ -2,8 +2,9 @@ import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import {
   waterHeaterServices,
-  waterHeaterFaqData ,
-  waterHeaterWhyChooseUs
+  waterHeaterFaqData,
+  waterHeaterGalleryImages,
+  waterHeaterWhyChooseUs,
 } from "../../../Data/ServiceData/WaterHeaterData";
 import ServiceBanner from "../ServiceBanner";
 import ServiceProcess from "../ServiceProcess";
@@ -27,16 +28,16 @@ const WaterHeaterService = () => {
         data={waterHeaterServices}
       />
       <ServiceProcess />
-      <ServiceGallary />
+      <ServiceGallary data={waterHeaterGalleryImages} />
 
-      <ServiceFaq data={waterHeaterFaqData } />
+      
 
       <WhyChooseUs
         title="Why Choose Our Water Heater Service"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
         data={waterHeaterWhyChooseUs}
       />
-
+<ServiceFaq data={waterHeaterFaqData} />
       <ServiceArea />
 
       <CTA />

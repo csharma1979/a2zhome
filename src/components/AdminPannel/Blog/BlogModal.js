@@ -8,7 +8,6 @@ import {
   saveBlog,
   updateBlog,
 } from "../../../lib/services/BlogService/BlogsService";
-import "../../../../styles/CMSStyles/CmsBlog.css";
 import { Button } from "@mui/material";
 
 const BlogModal = ({ onCloseModal, onBlogSave, editBlog }) => {

@@ -3,6 +3,7 @@
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "../styles/style.scss"
 import Header from "../src/components/commonComps/Header";
 import Footer from "../src/components/commonComps/Footer"
 import 'bootstrap/dist/css/bootstrap.min.css';

@@ -4,6 +4,7 @@ import {
   plumbingFaqData,
   plumbingService,
   plumbingWhyChooseUs,
+  plumberingGalleryImages,
 } from "../../../Data/ServiceData/PlumbingData";
 import {kitchenService} from "../../../Data/ServiceData/KitchenData"
 import ServiceBanner from "../ServiceBanner";
@@ -28,16 +29,16 @@ const PlumberingService = () => {
         data={kitchenService}
       />
       <ServiceProcess />
-      <ServiceGallary />
+      <ServiceGallary data={plumberingGalleryImages}/>
 
-      <ServiceFaq data={plumbingFaqData} />
+      
 
       <WhyChooseUs
         title="Why Choose Our Plumbing Services"
         subtitle="Expert Plumbing Solutions in Texas"
         data={plumbingWhyChooseUs}
       />
-
+<ServiceFaq data={plumbingFaqData} />
       <ServiceArea />
 
       <CTA />

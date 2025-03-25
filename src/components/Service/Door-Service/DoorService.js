@@ -30,13 +30,15 @@ const DoorService = () => {
       <ServiceProcess />
       <ServiceGallary />
 
-      <ServiceFaq data={doorFaqData } />
+     
 
       <WhyChooseUs
         title="Why Choose Our Door Service"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
         data={doorWhyChooseUs}
       />
+
+<ServiceFaq data={doorFaqData } />
 
       <ServiceArea />
 

@@ -31,14 +31,14 @@ const DigitalHomeService = () => {
     <ServiceProcess />
     <ServiceGallary />
 
-    <ServiceFaq data={digitalHomeFaqData} />
+    
 
     <WhyChooseUs
       title="Why Choose Our Digital Home Service"
       subtitle="Quality Kitchen Cabinet Refacing in Texas"
       data={digitalHomeWhyChooseUs}
     />
-
+<ServiceFaq data={digitalHomeFaqData} />
     <ServiceArea />
 
     <CTA />

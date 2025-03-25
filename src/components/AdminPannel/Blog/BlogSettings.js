@@ -10,7 +10,7 @@ import {
   deleteBlog,
 } from "../../../lib/services/BlogService/BlogsService";
 import { Button } from "@mui/material";
-import "../../../../styles/CMSStyles/CmsBlog.css";
+
 
 const BlogSettings = () => {
   const [showModal, setShowModal] = useState(false);

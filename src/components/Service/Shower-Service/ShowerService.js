@@ -30,14 +30,14 @@ const ShowerService = () => {
       <ServiceProcess />
       <ServiceGallary />
 
-      <ServiceFaq data={showerFaqData} />
+     
 
       <WhyChooseUs
         title="Why Choose Our Shower Services"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
         data={showerWhyChooseUs}
       />
-
+ <ServiceFaq data={showerFaqData} />
       <ServiceArea />
 
       <CTA />

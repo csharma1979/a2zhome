@@ -2,7 +2,7 @@
 
 import React , {useState} from "react";
 import { Box, Container, Typography, Button } from "@mui/material";
-import "../../../styles/CommonStyles.css";
+//import "../../../styles/CommonStyles.css";
 import EnquiryModal  from "./EnquiryModal"
 
 const CTA = () => {

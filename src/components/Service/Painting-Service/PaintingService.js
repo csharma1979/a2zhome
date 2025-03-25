@@ -30,14 +30,14 @@ const PaintingService = () => {
       <ServiceProcess />
       <ServiceGallary />
 
-      <ServiceFaq data={paintingFaqData } />
+      
 
       <WhyChooseUs
         title="Why Choose Our Painting Service"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
         data={paintingWhyChooseUs}
       />
-
+<ServiceFaq data={paintingFaqData } />
       <ServiceArea />
 
       <CTA />

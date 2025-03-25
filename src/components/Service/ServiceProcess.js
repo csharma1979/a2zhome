@@ -1,10 +1,10 @@
 import React from "react";
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography,Container } from "@mui/material";
 import { kitchenProcessSteps } from "../../Data/ServiceData/KitchenData";
 const ServiceProcess = () => {
   return (
     <div className="comp-color comp-space">
-      <div className="container text-center">
+      <Container maxWidth="lg"  className="text-center">
         <Typography variant="h5">Our Process</Typography>
         <h3 className="py-2">
           {" "}
@@ -32,7 +32,7 @@ const ServiceProcess = () => {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </div>
   );
 };

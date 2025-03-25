@@ -29,14 +29,14 @@ const RoofService = () => {
       <ServiceProcess />
       <ServiceGallary />
 
-      <ServiceFaq data={roofingFaqData} />
+     
 
       <WhyChooseUs
         title="Why Choose Our Roof Service"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
         data={roofingWhyChooseUs}
       />
-
+ <ServiceFaq data={roofingFaqData} />
       <ServiceArea />
 
       <CTA />

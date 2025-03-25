@@ -1,5 +1,17 @@
-import { FaUserCheck, FaClock, FaDollarSign, FaToolbox, FaSmile } from "react-icons/fa";
-import { FaTools, FaSyncAlt, FaWater, FaWrench, FaHotjar } from "react-icons/fa";
+import {
+  FaUserCheck,
+  FaClock,
+  FaDollarSign,
+  FaToolbox,
+  FaSmile,
+} from "react-icons/fa";
+import {
+  FaTools,
+  FaSyncAlt,
+  FaWater,
+  FaWrench,
+  FaHotjar,
+} from "react-icons/fa";
 
 export const plumbingService = [
   {
@@ -38,7 +50,8 @@ export const plumbingWhyChooseUs = [
   {
     id: 1,
     title: "Certified Plumbers",
-    description: "Experienced and licensed professionals delivering superior service.",
+    description:
+      "Experienced and licensed professionals delivering superior service.",
     icon: <FaUserCheck />,
   },
   {
@@ -62,13 +75,15 @@ export const plumbingWhyChooseUs = [
   {
     id: 5,
     title: "Customer Satisfaction",
-    description: "We prioritize your satisfaction and ensure quality workmanship.",
+    description:
+      "We prioritize your satisfaction and ensure quality workmanship.",
     icon: <FaSmile />,
   },
   {
     id: 6,
     title: "Payment Plans",
-    description: "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
+    description:
+      "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
     icon: <FaDollarSign />,
   },
 ];
@@ -99,4 +114,21 @@ export const plumbingFaqData = [
     answer:
       "You can book a service by clicking [Schedule Plumbing Service] or reaching out to us directly.",
   },
+];
+
+export const plumberingGalleryImages = [
+  "/assets/Plumbing-services/Plumbing-services-1.jpg",
+  "/assets/Plumbing-services/Plumbing-services-2.jpg",
+  "/assets/Plumbing-services/Plumbing-services-3.jpg",
+  "/assets/Plumbing-services/Plumbing-services-4.jpg",
+  "/assets/Plumbing-services/Plumbing-services-5.jpg",
+  "/assets/Plumbing-services/Plumbing-services-6.jpg",
+  "/assets/Plumbing-services/Plumbing-services-7.jpg",
+  "/assets/Plumbing-services/Plumbing-services-8.jpg",
+  "/assets/Plumbing-services/Plumbing-services-9.jpg",
+  "/assets/Plumbing-services/Plumbing-services-10.jpg",
+  "/assets/Plumbing-services/Plumbing-services-11.jpg", 
+  "/assets/Plumbing-services/Plumbing-services-12.jpg",
+  "/assets/Plumbing-services/Plumbing-services-13.jpg",
+
 ];

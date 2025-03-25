@@ -29,14 +29,14 @@ const IrrigationService = () => {
       <ServiceProcess />
       <ServiceGallary />
 
-      <ServiceFaq data={irrigationFaqData} />
+     
 
       <WhyChooseUs
         title="Why Choose Our Irrigation Service"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
         data={irrigationWhyChooseUs}
       />
-
+ <ServiceFaq data={irrigationFaqData} />
       <ServiceArea />
 
       <CTA />

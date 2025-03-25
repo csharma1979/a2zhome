@@ -1,12 +1,12 @@
 import React from 'react'
-import { Box, Typography, Button } from "@mui/material";
+import { Container ,Button } from "@mui/material";
 import ServiceAreImage from "../../../public/assets/service-area.png";
 import Image from "next/image";
 
 const ServiceArea = () => {
   return (
-    <div className="comp-space">
-    <div className="container">
+    <div className="comp-space comp-color">
+    <Container maxWidth="lg"  className="">
       <div className="row g-4 align-items-center">
         {/* Left Content */}
         <div className="col-12 col-md-6">
@@ -46,7 +46,7 @@ const ServiceArea = () => {
           />
         </div>
       </div>
-    </div>
+    </Container>
   </div>
   )
 }

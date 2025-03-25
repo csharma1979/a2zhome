@@ -5,7 +5,7 @@ import {
   FaSyncAlt,
   FaExclamationTriangle,
   FaWind,
-  FaDollarSign
+  FaDollarSign,
 } from "react-icons/fa";
 
 export const hvacServices = [
@@ -81,11 +81,12 @@ export const hvacWhyChooseUs = [
     icon: <FaSmile />,
   },
   {
-        id: 6,
-        title: "Payment Plans",
-        description: "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
-        icon: <FaDollarSign />,
-      },
+    id: 6,
+    title: "Payment Plans",
+    description:
+      "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
+    icon: <FaDollarSign />,
+  },
 ];
 
 export const hvacFaqData = [
@@ -114,4 +115,21 @@ export const hvacFaqData = [
     answer:
       "Click [Request a Free Quote] or contact us directly to schedule an appointment.",
   },
+];
+
+export const hvacGalleryImages = [
+  "/assets/HVAC-Services/HVAC-Services-1.jpg",
+  "/assets/HVAC-Services/HVAC-Services-2.jpg",
+  "/assets/HVAC-Services/HVAC-Services-3.jpg",
+  "/assets/HVAC-Services/HVAC-Services-4.jpg",
+  "/assets/HVAC-Services/HVAC-Services-5.jpg",
+  "/assets/HVAC-Services/HVAC-Services-6.jpg",
+  "/assets/HVAC-Services/HVAC-Services-7.jpg",
+  "/assets/HVAC-Services/HVAC-Services-8.jpg",
+  "/assets/HVAC-Services/HVAC-Services-9.jpg",
+  "/assets/HVAC-Services/HVAC-Services-10.jpg",
+  "/assets/HVAC-Services/HVAC-Services-11.jpg",
+  "/assets/HVAC-Services/HVAC-Services-12.jpg",
+  "/assets/HVAC-Services/HVAC-Services-13.jpg",
+  
 ];

@@ -112,3 +112,19 @@ export const flooringFaqData = [
       "You can request a free quote by clicking [Request a Free Quote] or contacting us directly.",
   },
 ];
+
+export const flooringGalleryImages = [
+  "/assets/Flooring-Services/Flooring-Services-1.jpg",
+  "/assets/Flooring-Services/Flooring-Services-2.jpg",
+  "/assets/Flooring-Services/Flooring-Services-3.jpg",
+  "/assets/Flooring-Services/Flooring-Services-4.jpg",
+  "/assets/Flooring-Services/Flooring-Services-5.jpg",
+  "/assets/Flooring-Services/Flooring-Services-6.jpg",
+  "/assets/Flooring-Services/Flooring-Services-7.jpg",
+  "/assets/Flooring-Services/Flooring-Services-8.jpg",
+  "/assets/Flooring-Services/Flooring-Services-9.jpg",
+  "/assets/Flooring-Services/Flooring-Services-10.jpg",
+  "/assets/Flooring-Services/Flooring-Services-11.jpg",
+  "/assets/Flooring-Services/Flooring-Services-12.jpg",
+  "/assets/Flooring-Services/Flooring-Services-13.jpg",
+];

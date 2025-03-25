@@ -36,7 +36,6 @@ export const kitchenService = [
   },
 ];
 
-
 export const kitchenWhyChooseUs = [
   {
     id: 1,

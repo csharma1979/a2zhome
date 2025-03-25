@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import {
-  windowWhyChooseUs ,
-  windowServices ,
-  windowFaqData
+  windowWhyChooseUs,
+  windowServices,
+  windowFaqData,
 } from "../../../Data/ServiceData/WindowData";
 import { kitchenService } from "../../../Data/ServiceData/KitchenData";
 import ServiceBanner from "../ServiceBanner";
@@ -30,14 +30,12 @@ const WindowService = () => {
       <ServiceProcess />
       <ServiceGallary />
 
-      <ServiceFaq data={windowFaqData} />
-
       <WhyChooseUs
         title="Why Choose Our Window Service"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
-        data={windowWhyChooseUs }
+        data={windowWhyChooseUs}
       />
-
+      <ServiceFaq data={windowFaqData} />
       <ServiceArea />
 
       <CTA />

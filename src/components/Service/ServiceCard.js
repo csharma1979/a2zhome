@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Grid, Typography, Paper } from "@mui/material";
 
-const ServiceCard = ({title , subtitle  ,data}) => {
+const ServiceCard = ({ title, subtitle, data }) => {
   return (
     <Container maxWidth="lg" sx={{ py: 8 }}>
       {/* Benefits Section */}

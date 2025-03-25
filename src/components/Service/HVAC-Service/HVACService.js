@@ -4,8 +4,8 @@ import {
   hvacServices,
   hvacWhyChooseUs,
   hvacFaqData,
+  hvacGalleryImages ,
 } from "../../../Data/ServiceData/HvacData";
-import {kitchenService} from "../../../Data/ServiceData/KitchenData"
 import ServiceBanner from "../ServiceBanner";
 import ServiceProcess from "../ServiceProcess";
 import ServiceGallary from "../ServiceGallary";
@@ -29,16 +29,16 @@ const HVACService = () => {
       data={hvacServices}
     />
     <ServiceProcess />
-    <ServiceGallary />
+    <ServiceGallary data={hvacGalleryImages}/>
 
-    <ServiceFaq data={hvacFaqData} />
+    
 
     <WhyChooseUs
       title="Why Choose Our HVAC Services"
       subtitle="Quality Kitchen Cabinet Refacing in Texas"
       data={hvacWhyChooseUs}
     />
-
+<ServiceFaq data={hvacFaqData} />
     <ServiceArea />
 
     <CTA />

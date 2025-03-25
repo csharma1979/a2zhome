@@ -7,8 +7,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../../../styles/Home.css";
-import "../../../styles/CommonStyles.css";
+
 import { features } from "../../Data/Navbar";
 import ServiceFaq from "../Service/ServiceFaq";
 import Testimonials from "./Testimonials";
@@ -25,12 +24,12 @@ const Home = () => {
   const [showModal, setShowModal] = useState(false);
   const heroSettings = {
     dots: true,
-    infinite: true,
-    speed: 1000,
+    //infinite: true,
+    //speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    //autoplaySpeed: 3000,
     cssEase: "linear",
     arrows: false,
     customPaging: (i) => (
@@ -67,11 +66,11 @@ const Home = () => {
                 sx={{
                   textAlign: "center",
                   py: 8,
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                  backgroundColor: "#0b72aa99",
                   borderRadius: 2,
                 }}
               >
-                <Typography variant="h2" gutterBottom>
+                <Typography variant="h4" gutterBottom>
                   {slide.title}
                 </Typography>
                 <Typography variant="h5" gutterBottom>

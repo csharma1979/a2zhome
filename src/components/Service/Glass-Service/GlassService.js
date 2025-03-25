@@ -30,13 +30,15 @@ const GlassService = () => {
       <ServiceProcess />
       <ServiceGallary />
 
-      <ServiceFaq data={glassFaqData } />
+      
 
       <WhyChooseUs
         title="Why Choose Our Glass Service"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
         data={glassWhyChooseUs}
       />
+
+<ServiceFaq data={glassFaqData } />
 
       <ServiceArea />
 

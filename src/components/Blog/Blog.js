@@ -8,11 +8,9 @@ import {
   fetchBlogs,
   formatDate,
 } from "../../lib/services/BlogService/BlogsService";
-import "../../../styles/Blog.css";
-
 const BASE_IMAGE_URL = process.env.NEXT_PUBLIC_API_URL;
 
-const Blog = ({ searchQuery, selectedCategory }) => {
+const Blog = () => {
   const [blogs, setBlogs] = useState([]);
 
   const getExcerpt = (text, wordCount) => {

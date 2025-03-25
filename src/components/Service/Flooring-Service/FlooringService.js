@@ -4,6 +4,7 @@ import {
   flooringServices,
   flooringWhyChooseUs,
   flooringFaqData,
+  flooringGalleryImages
 } from "../../../Data/ServiceData/FlooringData";
 import ServiceBanner from "../ServiceBanner";
 import ServiceProcess from "../ServiceProcess";
@@ -27,15 +28,17 @@ const FlooringService = () => {
         data={flooringServices}
       />
       <ServiceProcess />
-      <ServiceGallary />
+      <ServiceGallary data={flooringGalleryImages}/>
 
-      <ServiceFaq data={flooringFaqData} />
+    
 
       <WhyChooseUs
         title=" Why Choose Our Flooring Services?"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
         data={flooringWhyChooseUs}
       />
+
+<ServiceFaq data={flooringFaqData} />
 
       <ServiceArea />
 
