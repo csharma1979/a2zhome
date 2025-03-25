@@ -1,10 +1,10 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import {
-  plumbingFaqData,
-  plumbingService,
-  plumbingWhyChooseUs,
-} from "../../../Data/ServiceData/PlumbingData";
+  hvacServices,
+  hvacWhyChooseUs,
+  hvacFaqData,
+} from "../../../Data/ServiceData/HvacData";
 import {kitchenService} from "../../../Data/ServiceData/KitchenData"
 import ServiceBanner from "../ServiceBanner";
 import ServiceProcess from "../ServiceProcess";
@@ -20,23 +20,23 @@ const HVACService = () => {
   return (
     <Box className="home-page">
     <ServiceBanner
-      title="Professional Plumbing Services You Can Trust"
+      title=" Expert HVAC Installation, Repair & Maintenance Services"
       subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
     />
     <ServiceCard
-      title="Our Plumbering Services"
+      title="Our HVAC Services"
       subtitle="Expert solutions for your kitchen upgrades"
-      data={kitchenService}
+      data={hvacServices}
     />
     <ServiceProcess />
     <ServiceGallary />
 
-    <ServiceFaq data={plumbingFaqData} />
+    <ServiceFaq data={hvacFaqData} />
 
     <WhyChooseUs
-      title="Why Choose Us"
+      title="Why Choose Our HVAC Services"
       subtitle="Quality Kitchen Cabinet Refacing in Texas"
-      data={plumbingWhyChooseUs}
+      data={hvacWhyChooseUs}
     />
 
     <ServiceArea />

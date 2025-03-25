@@ -1,57 +1,61 @@
-import {
-  FaBath,
-  FaUtensils,
-  FaPaintRoller,
-  FaWater,
-  FaTools,
-  FaBoxes,
-  FaThLarge,
-  FaWrench,
-} from "react-icons/fa";
+
+
+import { FaBath, FaHammer, FaSnowflake, FaBolt, FaWarehouse, FaThLarge, FaUtensils, FaWifi, FaSeedling } from "react-icons/fa";
 
 export const features = [
   {
-    title: "Plumbering",
+    title: "Plumbing Service",
     link: "/plumbering",
     icon: <FaBath fontSize="large" />,
-    description:
-      "Transform your bathroom with modern designs, efficient fixtures, and luxury finishes.",
+    description: "Leak repairs, pipe installations, and plumbing maintenance",
   },
   {
-    title: "Kitchens",
-    link: "/kitchens",
-    icon: <FaUtensils fontSize="large" />,
-    description:
-      "Upgrade your kitchen with stylish cabinets, countertops, and top-quality appliances.",
+    title: "Roofing Services",
+    link: "/roof",
+    icon: <FaHammer fontSize="large" />,
+    description: "Reliable roof installation, repairs, and maintenance.",
   },
   {
-    title: "Painting",
-    link: "/painting",
-    icon: <FaPaintRoller fontSize="large" />,
-    description:
-      "Give your home a fresh look with professional interior and exterior painting services.",
+    title: "HVAC Services",
+    link: "/hvac",
+    icon: <FaSnowflake fontSize="large" />,
+    description: "Heating, cooling, and ventilation solutions for year-round comfort.",
   },
   {
-    title: "Gutters",
-    link: "/gutters",
-    icon: <FaWater fontSize="large" />,
-    description:
-      "Protect your home with high-quality gutter installation, repair, and maintenance services.",
+    title: "Electrical Services",
+    link: "/electricals",
+    icon: <FaBolt fontSize="large" />,
+    description: "Safe and efficient electrical installations and upgrades.",
   },
-
   {
     title: "Storage",
     link: "/storage",
-    icon: <FaBoxes fontSize="large" />,
-    description:
-      "Maximize your space with smart and efficient storage solutions tailored to your home.",
+    icon: <FaWarehouse fontSize="large" />,
+    description: "Maximize your space with smart and efficient storage solutions tailored to your home.",
   },
   {
-    title: "Flooring",
+    title: "Flooring Solutions",
     link: "/flooring",
     icon: <FaThLarge fontSize="large" />,
-    description:
-      "Enhance your home with high-quality flooring options, from hardwood to tiles and more.",
+    description: "Professional installation and refinishing for all types of flooring.",
+  },
+  {
+    title: "Kitchen & Bathroom Remodeling",
+    link: "/kitchens",
+    icon: <FaUtensils fontSize="large" />,
+    description: "Modern upgrades to transform your living spaces.",
+  },
+  {
+    title: "Digital Home Services",
+    link: "/digital-home",
+    icon: <FaWifi fontSize="large" />,
+    description: "Smart home automation for modern living.",
+  },
+  {
+    title: "Irrigation Systems",
+    link: "/irrigation",
+    icon: <FaSeedling fontSize="large" />,
+    description: "Customized irrigation solutions for a lush landscape.",
   },
 ];
 

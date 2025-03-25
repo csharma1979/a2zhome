@@ -1,10 +1,10 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import {
-  plumbingFaqData,
-  plumbingService,
-  plumbingWhyChooseUs,
-} from "../../../Data/ServiceData/PlumbingData";
+  digitalHomeServices ,
+  digitalHomeWhyChooseUs,
+  digitalHomeFaqData
+} from "../../../Data/ServiceData/DigitalHomeData";
 import { kitchenService } from "../../../Data/ServiceData/KitchenData";
 import ServiceBanner from "../ServiceBanner";
 import ServiceProcess from "../ServiceProcess";
@@ -20,23 +20,23 @@ const DigitalHomeService = () => {
   return (
     <Box className="home-page">
     <ServiceBanner
-      title="Professional Plumbing Services You Can Trust"
+      title="Transform Your Space with Smart Digital Home Solutions"
       subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
     />
     <ServiceCard
-      title="Our Plumbering Services"
+      title="Our Digital Home Services"
       subtitle="Expert solutions for your kitchen upgrades"
-      data={kitchenService}
+      data={digitalHomeServices }
     />
     <ServiceProcess />
     <ServiceGallary />
 
-    <ServiceFaq data={plumbingFaqData} />
+    <ServiceFaq data={digitalHomeFaqData} />
 
     <WhyChooseUs
-      title="Why Choose Us"
+      title="Why Choose Our Digital Home Service"
       subtitle="Quality Kitchen Cabinet Refacing in Texas"
-      data={plumbingWhyChooseUs}
+      data={digitalHomeWhyChooseUs}
     />
 
     <ServiceArea />

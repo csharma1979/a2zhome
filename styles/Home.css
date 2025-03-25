@@ -3,7 +3,7 @@
   }
   
   .hero-section {
-    background: linear-gradient(135deg, #f5f7ff 0%, #ffffff 100%);
+    /*background: linear-gradient(135deg, #f5f7ff 0%, #ffffff 100%);*/
     /*padding: 120px 0; */
     text-align: center;
     position: relative;
@@ -222,12 +222,10 @@
    
    }
    .kitchen-hero{
-    background-image: url("/assets/kitchen/KitchenBanner.jpg") ;
+    background-color:#5399be2e;
     padding :5rem 0;
    }
    .service-banner{
       padding:1.5rem 2.5rem; 
-      border-radius:15px;  
-      background:rgba(255, 255, 255, .7);
-      text-align: left;
+      text-align: center;
    }

@@ -1,11 +1,10 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import {
-  plumbingFaqData,
-  plumbingService,
-  plumbingWhyChooseUs,
-} from "../../../Data/ServiceData/PlumbingData";
-import { kitchenService } from "../../../Data/ServiceData/KitchenData";
+  waterHeaterServices,
+  waterHeaterFaqData ,
+  waterHeaterWhyChooseUs
+} from "../../../Data/ServiceData/WaterHeaterData";
 import ServiceBanner from "../ServiceBanner";
 import ServiceProcess from "../ServiceProcess";
 import ServiceGallary from "../ServiceGallary";
@@ -19,23 +18,23 @@ const WaterHeaterService = () => {
   return (
     <Box className="home-page">
       <ServiceBanner
-        title="Professional Plumbing Services You Can Trust"
+        title="Reliable Water Heater Installation & Repair Services"
         subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
       />
       <ServiceCard
-        title="Our Plumbering Services"
+        title="Our Water Heater Services"
         subtitle="Expert solutions for your kitchen upgrades"
-        data={kitchenService}
+        data={waterHeaterServices}
       />
       <ServiceProcess />
       <ServiceGallary />
 
-      <ServiceFaq data={plumbingFaqData} />
+      <ServiceFaq data={waterHeaterFaqData } />
 
       <WhyChooseUs
-        title="Why Choose Us"
+        title="Why Choose Our Water Heater Service"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
-        data={plumbingWhyChooseUs}
+        data={waterHeaterWhyChooseUs}
       />
 
       <ServiceArea />

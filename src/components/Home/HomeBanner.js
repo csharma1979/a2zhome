@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Box, Container, Grid, Typography, Paper, Button } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
@@ -13,26 +13,16 @@ import { features } from "../../Data/Navbar";
 import ServiceFaq from "../Service/ServiceFaq";
 import Testimonials from "./Testimonials";
 import CTA from "../commonComps/CTA";
+import {
+  analytics,
+  benefits,
+  heroSlides,
+  homeFaqData,
+} from "../../Data/HomePageData";
+import EnquiryModal from "../commonComps/EnquiryModal";
 
 const Home = () => {
-  const heroSlides = [
-    {
-      title: "Full Service Home Remodeling Experts",
-      subtitle: "One Call Does It All!",
-      image: "/assets/homebanner1.png",
-    },
-    {
-      title: "Transform Your Space with Our Experts",
-      subtitle: "Quality & Craftsmanship You Can Trust!",
-      image: "/assets/homebanner2.jpeg",
-    },
-    {
-      title: "Your Dream Home Starts Here",
-      subtitle: "Let's Make It Happen Together!",
-      image: "/assets/kitchen/A2z-home-kitchen-service-3.jpg",
-    },
-  ];
-
+  const [showModal, setShowModal] = useState(false);
   const heroSettings = {
     dots: true,
     infinite: true,
@@ -42,7 +32,7 @@ const Home = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "linear",
-    arrows: false, 
+    arrows: false,
     customPaging: (i) => (
       <div className="custom-dot">
         <span></span>
@@ -50,34 +40,6 @@ const Home = () => {
     ),
     dotsClass: "slick-dots custom-dots",
   };
-
-  const analytics = [
-    {
-      number: "10K+",
-      label: "Project Completed",
-    },
-    {
-      number: "99.9%",
-      label: "Happy Clients",
-    },
-    {
-      number: "5M+",
-      label: "Average Rating",
-    },
-    {
-      number: "10+",
-      label: "Years of Experience",
-    },
-  ];
-
-  const benefits = [
-    "Licensed and Insured",
-    "Free Estimates",
-    "Local Katy Business",
-    "Years of Experience",
-    "Quality Workmanship",
-    "Competitive Pricing",
-  ];
 
   return (
     <Box className="home-page">
@@ -98,7 +60,6 @@ const Home = () => {
                 color: "white",
                 textAlign: "center",
                 position: "relative",
-               
               }}
             >
               <Container
@@ -113,11 +74,15 @@ const Home = () => {
                 <Typography variant="h2" gutterBottom>
                   {slide.title}
                 </Typography>
-                <Typography variant="h5" gutterBottom >
+                <Typography variant="h5" gutterBottom>
                   {slide.subtitle}
                 </Typography>
-                <button  className="custom-button mt-4" >
-                  Get Started
+                <button
+                  className="custom-button mt-4"
+                  onClick={() => setShowModal(true)}
+                >
+                  {" "}
+                  Request a Free Quote
                 </button>
               </Container>
             </Box>
@@ -172,7 +137,8 @@ const Home = () => {
           Our Services
         </Typography>
         <Typography variant="h6" align="center" color="text.secondary">
-          Everything you need to deliver exceptional customer service
+          We offer a wide array of home improvement services to keep your home
+          in pristine condition
         </Typography>
 
         <Grid container spacing={4} sx={{ mt: 4 }}>
@@ -198,13 +164,7 @@ const Home = () => {
       {/* Analytics Section */}
       <div className="analytics-sectionee comp-color comp-space">
         <Container maxWidth="lg">
-          {/* <Typography variant="h4" align="center" gutterBottom>
-            Our Services
-          </Typography>
-          <Typography variant="h6" align="center" color="text.secondary">
-            Trusted By Growing Business
-          </Typography> */}
-          <Grid container spacing={4} >
+          <Grid container spacing={4}>
             {analytics.map((item, index) => (
               <Grid item xs={6} md={3} key={index}>
                 <Paper className="analytics-card" elevation={0}>
@@ -221,12 +181,12 @@ const Home = () => {
         </Container>
       </div>
 
-      <ServiceFaq />
-      {/* Testimonials Section */}
+      <ServiceFaq data={homeFaqData} />
+
       <Testimonials />
 
-      {/* CTS section */}
       <CTA />
+      <EnquiryModal show={showModal} handleClose={() => setShowModal(false)} />
     </Box>
   );
 };

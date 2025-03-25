@@ -1,10 +1,10 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import {
-  plumbingFaqData,
-  plumbingService,
-  plumbingWhyChooseUs,
-} from "../../../Data/ServiceData/PlumbingData";
+  paintingServices,
+  paintingFaqData ,
+  paintingWhyChooseUs,
+} from "../../../Data/ServiceData/PaintingData";
 import { kitchenService } from "../../../Data/ServiceData/KitchenData";
 import ServiceBanner from "../ServiceBanner";
 import ServiceProcess from "../ServiceProcess";
@@ -19,23 +19,23 @@ const PaintingService = () => {
   return (
     <Box className="home-page">
       <ServiceBanner
-        title="Professional Plumbing Services You Can Trust"
+        title="High-Quality Painting Services for Homes & Businesses"
         subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
       />
       <ServiceCard
-        title="Our Plumbering Services"
+        title="Our Painting Services"
         subtitle="Expert solutions for your kitchen upgrades"
-        data={kitchenService}
+        data={paintingServices}
       />
       <ServiceProcess />
       <ServiceGallary />
 
-      <ServiceFaq data={plumbingFaqData} />
+      <ServiceFaq data={paintingFaqData } />
 
       <WhyChooseUs
-        title="Why Choose Us"
+        title="Why Choose Our Painting Service"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
-        data={plumbingWhyChooseUs}
+        data={paintingWhyChooseUs}
       />
 
       <ServiceArea />

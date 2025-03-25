@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Typography, Button } from "@mui/material";
-import ServiceAreImage from "../../../public/assets/map.jpg";
+import ServiceAreImage from "../../../public/assets/service-area.png";
 import Image from "next/image";
 
 const ServiceArea = () => {

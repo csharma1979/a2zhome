@@ -12,7 +12,7 @@ export const POST = async (req) => {
 
     const { firstname, lastname, email, phoneno, countryCode, message, formType } = body;
 
-    console.log("Received Data:", { firstname, lastname, email, phoneno, countryCode, message, formType });
+    // console.log("Received Data:", { firstname, lastname, email, phoneno, countryCode, message, formType });
 
     // Save to MongoDB
     const formData = new ContactForm({
@@ -43,7 +43,7 @@ export const POST = async (req) => {
     const mailOptions = {
       from: `${email}`,
       to: "support@fritado.com",
-      subject: formType === "contact" ? "New Contact Request" : "New Sales Enquiry",
+      subject: formType === "Enquiry" ? "New Contact Request" : "New Sales Enquiry",
       text: `A new ${formType} request has been submitted: 
              Name: ${firstname} ${lastname}
              Email: ${email}

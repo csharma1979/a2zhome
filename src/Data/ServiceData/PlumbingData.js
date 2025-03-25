@@ -65,6 +65,12 @@ export const plumbingWhyChooseUs = [
     description: "We prioritize your satisfaction and ensure quality workmanship.",
     icon: <FaSmile />,
   },
+  {
+    id: 6,
+    title: "Payment Plans",
+    description: "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
+    icon: <FaDollarSign />,
+  },
 ];
 
 export const plumbingFaqData = [

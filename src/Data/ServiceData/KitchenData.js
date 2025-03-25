@@ -1,5 +1,42 @@
 import { FaUserTie, FaPalette, FaDollarSign, FaHourglassHalf, FaHandshake } from "react-icons/fa";
 
+
+import { FaHome, FaTools, FaThLarge, FaLightbulb, FaPlug } from "react-icons/fa";
+
+export const kitchenService = [
+  {
+    title: "Kitchen Remodeling & Renovation",
+    description:
+      "Revamp your kitchen with our comprehensive remodeling services. We offer custom designs, modern fixtures, and expert craftsmanship to bring your dream kitchen to life.",
+    icon: <FaHome />,
+  },
+  {
+    title: "Cabinet Installation & Repair",
+    description:
+      "Upgrade your kitchen storage with our custom cabinet installation and repair services. We provide a variety of styles and finishes to suit your preferences.",
+    icon: <FaTools />,
+  },
+  {
+    title: "Countertop Installation",
+    description:
+      "Enhance your kitchen's aesthetics with our durable and stylish countertop installations. We work with materials like granite, quartz, and marble.",
+    icon: <FaThLarge />,
+  },
+  {
+    title: "Plumbing & Electrical Services",
+    description:
+      "Ensure your kitchen operates smoothly with our professional plumbing and electrical work. From sink installations to lighting upgrades, we cover it all.",
+    icon: <FaLightbulb />,
+  },
+  {
+    title: "Appliance Installation",
+    description:
+      "We offer hassle-free appliance installation services, ensuring your new kitchen equipment works efficiently and safely.",
+    icon: <FaPlug />,
+  },
+];
+
+
 export const kitchenWhyChooseUs = [
   {
     id: 1,
@@ -30,6 +67,12 @@ export const kitchenWhyChooseUs = [
     title: "Customer Satisfaction",
     description: "Dedicated to exceeding your expectations.",
     icon: <FaHandshake />,
+  },
+  {
+    id: 6,
+    title: "Payment Plans",
+    description: "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
+    icon: <FaDollarSign />,
   },
 ];
 
@@ -114,39 +157,6 @@ export const kitchenLimitedOffer = [
     id: 3,
     title: "Do You Have The Ugliest Kitchen in Texas",
     description: "Enter to Win a $20,000 Makeover",
-  },
-];
-
-export const kitchenService = [
-  {
-    title: "Kitchen Remodeling & Renovation",
-    description:
-      "Revamp your kitchen with our comprehensive remodeling services. We offer custom designs, modern fixtures, and expert craftsmanship to bring your dream kitchen to life.",
-    icon: "🏡",
-  },
-  {
-    title: "Cabinet Installation & Repair",
-    description:
-      "Upgrade your kitchen storage with our custom cabinet installation and repair services. We provide a variety of styles and finishes to suit your preferences.",
-    icon: "🛠️",
-  },
-  {
-    title: "Countertop Installation",
-    description:
-      "Enhance your kitchen's aesthetics with our durable and stylish countertop installations. We work with materials like granite, quartz, and marble.",
-    icon: "🔲",
-  },
-  {
-    title: "Plumbing & Electrical Services",
-    description:
-      "Ensure your kitchen operates smoothly with our professional plumbing and electrical work. From sink installations to lighting upgrades, we cover it all.",
-    icon: "💡",
-  },
-  {
-    title: "Appliance Installation",
-    description:
-      "We offer hassle-free appliance installation services, ensuring your new kitchen equipment works efficiently and safely.",
-    icon: "🔌",
   },
 ];
 

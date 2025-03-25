@@ -24,7 +24,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Link from "next/link";
 import { useTheme, useMediaQuery } from "@mui/material";
-import { features ,navbarFeatures } from "../../Data/Navbar";
+import { features, navbarFeatures } from "../../Data/Navbar";
 import "../../../styles/Header.css";
 
 const Header = () => {
@@ -91,11 +91,14 @@ const Header = () => {
                   <Grid container spacing={2} sx={{ width: 500 }}>
                     {navbarFeatures.map((feature, index) => (
                       <Grid item xs={4} key={index}>
-                        <Link href={feature.link} passHref>
-                          <MenuItem onClick={handleFeaturesClose}>
+                        <Link href={feature.link}>
+                          <MenuItem
+                            onClick={handleFeaturesClose}
+                            sx={{ "&:hover": { backgroundColor: "#f0f0f0" } }}
+                          >
                             <Typography
                               variant="body1"
-                              stle={{ textDecoration: "none" }}
+                              sx={{ textDecoration: "none", color: "#000" }}
                             >
                               {feature.title}
                             </Typography>
@@ -142,8 +145,23 @@ const Header = () => {
 
           {/* Desktop "Book a Consultation" Button */}
           {!isMobile && (
-            <Box sx={{ display: "flex", gap: 2 }}>
-              <Button variant="outlined">Book a Free Consultation</Button>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+              <Typography
+                sx={{
+                  color: "#fff",
+                  fontWeight: "bold",
+                  fontSize: "1.1rem",
+                  backgroundColor: "#0d6aa3",
+                  padding: "8px 16px",
+                  borderRadius: "8px",
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    backgroundColor: "#095484",
+                  },
+                }}
+              >
+                +1- 832-312-5501
+              </Typography>
             </Box>
           )}
 
@@ -205,9 +223,22 @@ const Header = () => {
             </ListItem>
 
             <ListItem>
-              <Button variant="outlined" fullWidth>
-                Book a Free Consultation
-              </Button>
+              <Typography
+                sx={{
+                  color: "#fff",
+                  fontWeight: "bold",
+                  fontSize: "1rem",
+                  backgroundColor: "#0d6aa3",
+                  padding: "4px 8px",
+                  borderRadius: "8px",
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    backgroundColor: "#095484",
+                  },
+                }}
+              >
+                +1- 832-312-5501
+              </Typography>
             </ListItem>
           </List>
         </Box>

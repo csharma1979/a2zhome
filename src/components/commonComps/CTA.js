@@ -1,8 +1,12 @@
-import React from "react";
+"use client";
+
+import React , {useState} from "react";
 import { Box, Container, Typography, Button } from "@mui/material";
 import "../../../styles/CommonStyles.css";
+import EnquiryModal  from "./EnquiryModal"
 
 const CTA = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className="comp-space">
       <Container>
@@ -15,13 +19,14 @@ const CTA = () => {
           </Typography>
           <button
             className="custom-button rounded" 
-            size="large"
-            
+          
+            onClick={() => setShowModal(true)}
           >
           Request a Free Quote
           </button>
         </Box>
       </Container>
+      <EnquiryModal show={showModal} handleClose={() => setShowModal(false)} />
     </div>
   );
 };

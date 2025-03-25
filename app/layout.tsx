@@ -7,6 +7,7 @@ import Header from "../src/components/commonComps/Header";
 import Footer from "../src/components/commonComps/Footer"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { usePathname } from "next/navigation";
+import { HelmetProvider } from "react-helmet-async";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({
   const isAdminRoute = pathname.includes("/admin"); 
   
   return (
+    <HelmetProvider>
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -44,5 +46,6 @@ export default function RootLayout({
           {!isAdminRoute && <Footer />}
       </body>
     </html>
+    </HelmetProvider>
   );
 }

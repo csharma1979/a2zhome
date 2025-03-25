@@ -1,17 +1,16 @@
-import React from 'react'
-import { Box, Typography, Button } from "@mui/material";
+"use client";
 
+import React, { useState } from "react";
+import { Box, Typography, Button } from "@mui/material";
+import EnquiryModal from "../commonComps/EnquiryModal";
 const ServiceBanner = ({ title, subtitle }) => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <Box className="hero-section kitchen-hero">
         <Box className="container">
           <Box
-            sx={{
-              maxWidth: { xs: "100%", md: "40%" },
-              ml: { md: "6rem" },
-              textAlign: { xs: "center", md: "left" },
-            }}
+          
           >
             <div className="service-banner">
               <Typography
@@ -22,16 +21,26 @@ const ServiceBanner = ({ title, subtitle }) => {
               </Typography>
               <Typography
                 variant="h6"
-                sx={{ pt: 2, fontSize: { xs: "1rem", md: "1.25rem" } }}
+                sx={{ pt: 2, pb:2, fontSize: { xs: "1rem", md: "1.25rem" } }}
               >
                 {subtitle}
               </Typography>
             </div>
+            <button
+              className="custom-button rounded"
+              onClick={() => setShowModal(true)}
+            >
+              Request a Free Quote
+            </button>
           </Box>
         </Box>
+        <EnquiryModal
+          show={showModal}
+          handleClose={() => setShowModal(false)}
+        />
       </Box>
     </>
-  )
-}
+  );
+};
 
-export default ServiceBanner
+export default ServiceBanner;

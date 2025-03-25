@@ -32,6 +32,12 @@ export const showerWhyChooseUs = [
     description: "Committed to delivering top-tier service and results.",
     icon: <FaSmile />,
   },
+  {
+    id: 6,
+    title: "Payment Plans",
+    description: "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
+    icon: <FaDollarSign />,
+  },
 ];
 
 export const showerServices = [
