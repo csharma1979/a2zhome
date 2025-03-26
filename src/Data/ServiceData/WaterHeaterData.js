@@ -130,7 +130,6 @@ export const waterHeaterGalleryImages = [
   "/assets/Water-Heater/Water-Heater-7.jpg",
   "/assets/Water-Heater/Water-Heater-8.jpg",
   "/assets/Water-Heater/Water-Heater-9.jpg",
-  "/assets/Water-Heater/Water-Heater-10.jpg",
   "/assets/Water-Heater/Water-Heater-11.jpg",
   "/assets/Water-Heater/Water-Heater-12.jpg",
   "/assets/Water-Heater/Water-Heater-13.jpg",

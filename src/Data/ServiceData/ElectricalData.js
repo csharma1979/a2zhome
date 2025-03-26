@@ -114,5 +114,5 @@ export const electricalFaqData = [
     '/assets/Electrical-Services/Electrical-Services-10.jpg',
     '/assets/Electrical-Services/Electrical-Services-11.jpg',
     '/assets/Electrical-Services/Electrical-Services-12.jpg',
-    '/assets/Electrical-Services/Electrical-Services-13.jpg',
+ 
   ]

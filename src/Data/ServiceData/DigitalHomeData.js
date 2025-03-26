@@ -117,6 +117,6 @@ export const digitalHomeFaqData = [
     "/assets/Digital-Home-Solutions/Digital-Home-Solutions-10.jpg",
     "/assets/Digital-Home-Solutions/Digital-Home-Solutions-11.jpg",
     "/assets/Digital-Home-Solutions/Digital-Home-Solutions-12.jpg",
-    "/assets/Digital-Home-Solutions/Digital-Home-Solutions-13.jpg",
+
     
   ];

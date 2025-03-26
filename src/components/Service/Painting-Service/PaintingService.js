@@ -21,7 +21,7 @@ const PaintingService = () => {
     <Box className="home-page">
       <ServiceBanner
         title="High-Quality Painting Services for Homes & Businesses"
-        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+        subtitle="Professional painting services for interiors, exteriors, and custom projects. Get flawless, durable results with premium materials and expert craftsmanship."
       />
       <ServiceCard
         title="Our Painting Services"

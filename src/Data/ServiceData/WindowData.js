@@ -121,7 +121,6 @@ export const windowGallaryImages = [
   "/assets/Window-Installation/Window-Installation-1.jpg",
   "/assets/Window-Installation/Window-Installation-2.jpg",
   "/assets/Window-Installation/Window-Installation-3.jpg",
-  "/assets/Window-Installation/Window-Installation-4.jpg",
   "/assets/Window-Installation/Window-Installation-5.jpg",
   "/assets/Window-Installation/Window-Installation-6.jpg",
   "/assets/Window-Installation/Window-Installation-7.jpg",

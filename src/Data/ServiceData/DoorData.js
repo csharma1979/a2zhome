@@ -124,5 +124,5 @@ export const doorGallaryImages = [
   "/assets/Premium-Door-Installation/Premium-Door-Installation-10.jpg",
   "/assets/Premium-Door-Installation/Premium-Door-Installation-11.jpg",
   "/assets/Premium-Door-Installation/Premium-Door-Installation-12.jpg",
-  "/assets/Premium-Door-Installation/Premium-Door-Installation-13.jpg",
+  
 ]

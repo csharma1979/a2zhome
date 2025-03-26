@@ -20,7 +20,7 @@ const ElectricalService = () => {
     <Box className="home-page">
       <ServiceBanner
         title="Reliable Electrical Services for Residential & Commercial Needs"
-        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+        subtitle="Expert electrical services for installations and repairs. Our licensed electricians ensure safe, efficient solutions for residential and commercial properties."
       />
       <ServiceCard
         title="Our Electrical Services"

@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState , useEffect } from "react";
 import Image from "next/image";
 import ServiceBanner from "../Service/ServiceBanner";
 import { Box, Typography, Container } from "@mui/material";
@@ -40,7 +42,7 @@ const services = [
   { name: "Irrigation", images: irrigationGallaryImages },
 ];
 
-const GallerySection = ({ title, images }) => (
+const GallerySection = ({ title, images, onImageClick }) => (
   <Container maxWidth="lg" className="comp-space row g-3">
     <Typography variant="h4" className="">
       {title}
@@ -48,38 +50,52 @@ const GallerySection = ({ title, images }) => (
     {images.map((img, index) => (
       <div
         key={index}
-        className="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center px-2"
+        className="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center px-2 image-container"
+        onClick={() => onImageClick(img)}
       >
-        <div className="image-container w-100">
-          <Image
-            src={img}
-            alt={`${title} ${index + 1}`}
-            layout="responsive"
-            width={200}
-            height={70}
-            className="img-fluid shadow-sm rounded"
-          />
-        </div>
+        {/* <div className="image-container w-100"> */}
+        <Image
+          src={img}
+          alt={`${title} ${index + 1}`}
+          layout="responsive"
+          width={200}
+          height={70}
+          className="img-fluid shadow-sm rounded"
+        />
+        {/* </div> */}
       </div>
     ))}
   </Container>
 );
 const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+  useEffect(() => {
+    if (selectedImage) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [selectedImage]);
+
+  const closeModal = () => setSelectedImage(null);
   return (
     <Box className="home-page">
       <ServiceBanner title="Gallary" subtitle="" />
-
-      {/* <Typography variant="h4" className="mt-4">
-        GALLERY
-      </Typography> */}
 
       {services.map((service, index) => (
         <GallerySection
           key={index}
           title={service.name}
           images={service.images}
+          onImageClick={setSelectedImage}
         />
       ))}
+      {/* Modal for Enlarged Image */}
+      {selectedImage && (
+        <div className="image-modal " onClick={closeModal}>
+          <img src={selectedImage} alt="Enlarged View" />
+        </div>
+      )}
     </Box>
   );
 };

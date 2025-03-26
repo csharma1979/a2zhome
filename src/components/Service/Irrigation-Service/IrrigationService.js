@@ -20,7 +20,7 @@ const IrrigationService = () => {
     <Box className="home-page">
       <ServiceBanner
         title=" Reliable Irrigation System Installation & Maintenance Services"
-        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+        subtitle="Expert irrigation services for design, installation, and maintenance. Ensure optimal water efficiency with customized solutions for residential and commercial properties."
       />
       <ServiceCard
         title="Our Irrigation Services"

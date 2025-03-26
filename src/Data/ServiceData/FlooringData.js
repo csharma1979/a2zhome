@@ -126,5 +126,5 @@ export const flooringGalleryImages = [
   "/assets/Flooring-Services/Flooring-Services-10.jpg",
   "/assets/Flooring-Services/Flooring-Services-11.jpg",
   "/assets/Flooring-Services/Flooring-Services-12.jpg",
-  "/assets/Flooring-Services/Flooring-Services-13.jpg",
+
 ];

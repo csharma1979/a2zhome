@@ -21,7 +21,7 @@ const DoorService = () => {
     <Box className="home-page">
       <ServiceBanner
         title="Quality Door Installation & Repair Services"
-        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+        subtitle="Expert door services for installation, repair, and replacement. Enhance security, functionality, and style with high-quality craftsmanship for homes and businesses."
       />
       <ServiceCard
         title="Our Door Services"

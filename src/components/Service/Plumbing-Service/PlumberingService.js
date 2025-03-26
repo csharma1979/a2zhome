@@ -21,7 +21,7 @@ const PlumberingService = () => {
     <Box className="home-page">
       <ServiceBanner
         title="Professional Plumbing Services You Can Trust"
-        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+        subtitle="Expert plumbing services for leak repairs, installations, and overhauls. Get reliable, efficient, and high-quality solutions tailored to your needs."
       />
       <ServiceCard
         title="Our Plumbering Services"

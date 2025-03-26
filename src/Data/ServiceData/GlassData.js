@@ -130,5 +130,5 @@ export const glassGallaryImages = [
   "/assets/Glass-Installation/Glass-Installation-10.jpg",
   "/assets/Glass-Installation/Glass-Installation-11.jpg",
   "/assets/Glass-Installation/Glass-Installation-12.jpg",
-  "/assets/Glass-Installation/Glass-Installation-13.jpg",
+  
 ];

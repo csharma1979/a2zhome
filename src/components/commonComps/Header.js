@@ -88,7 +88,7 @@ const Header = () => {
               >
                 <Paper sx={{ p: 2 }}>
                   <Typography variant="h5">Interior</Typography>
-                  <Grid container spacing={2} sx={{ width: 500 }}>
+                  <Grid container spacing={1} sx={{ width: 850 }}>
                     {navbarFeatures.map((feature, index) => (
                       <Grid item xs={3} key={index}>
                         <Link href={feature.link}>
@@ -97,15 +97,11 @@ const Header = () => {
                             sx={{
                               "&:hover": { backgroundColor: "#f0f0f0" },
                               textDecoration: "none",
-                              color: "inherit",
+                             // color: "inherit",
+                              gap:'5px'
                             }}
                           >
-                            <Typography
-                              variant="body1"
-                              sx={{ textDecoration: "none", color: "#000" }}
-                            >
-                              {feature.title}
-                            </Typography>
+                            {feature.icon} <Typography>{feature.title}</Typography>
                           </MenuItem>
                         </Link>
                       </Grid>

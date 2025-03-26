@@ -20,7 +20,7 @@ const RoofService = () => {
     <Box className="home-page">
       <ServiceBanner
         title="Reliable Roof Installation, Repair & Maintenance Services"
-        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+        subtitle="Expert roofing services for installation, repair, and maintenance. Get durable, high-quality solutions for residential and commercial properties with superior craftsmanship."
       />
       <ServiceCard
         title="Our Roof Services"

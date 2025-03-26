@@ -20,7 +20,7 @@ const StructureService = () => {
     <Box className="home-page">
       <ServiceBanner
         title="Expert Structural Services for Strong & Lasting Buildings"
-        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+        subtitle="Expert structural services for residential, commercial, and industrial projects. We ensure safety, durability, and compliance through design, analysis, repairs, and reinforcement."
       />
       <ServiceCard
         title="Our Structural Services"

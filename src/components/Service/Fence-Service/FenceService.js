@@ -20,7 +20,7 @@ const FenceService = () => {
     <Box className="home-page">
       <ServiceBanner
         title="Secure & Beautify Your Property with Our Fence Services"
-        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+        subtitle="Expert fence services for installation, repair, and maintenance. Get durable, attractive fencing solutions for residential, commercial, and industrial properties."
       />
       <ServiceCard
         title="Our Fence Services"

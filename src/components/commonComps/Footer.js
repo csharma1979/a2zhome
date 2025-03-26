@@ -13,8 +13,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import { features } from "../../Data/Navbar";
-
+import { navbarFeatures } from "../../Data/Navbar";
 
 const Footer = () => {
   return (
@@ -33,8 +32,11 @@ const Footer = () => {
               A2Zhome-Solutions
             </Typography>
             <Typography variant="body2" className="footer-font-color">
-              Empowering businesses with intelligent customer support solutions.
-              Transform your customer experience with AI-powered automation.
+              We provide expert Kitchen, Plumbing, and HVAC services with fast,
+              reliable, and affordable solutions. From repairs to installations,
+              our skilled technicians ensure quality workmanship and customer
+              satisfaction. Contact us today for prompt service and a free
+              estimate!
             </Typography>
             <Box sx={{ mt: 2 }}>
               <IconButton aria-label="Twitter" className="footer-icon">
@@ -54,10 +56,25 @@ const Footer = () => {
 
           <Grid item xs={12} sm={6} md={2}>
             <Typography variant="h6" gutterBottom>
-              Solutions
+              Services
             </Typography>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
-              {features.map((feature, index) => (
+              {navbarFeatures.slice(0, 6).map((feature, index) => (
+                <Link
+                  href={feature.link}
+                  key={index}
+                  className="footer-font-color"
+                  sx={{ mb: 1 }}
+                >
+                  {feature.title}
+                </Link>
+              ))}
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={6} md={2}>
+           
+            <Box sx={{ display: "flex", flexDirection: "column", paddingTop:"2.5rem" }}>
+              {navbarFeatures.slice(6, 12).map((feature, index) => (
                 <Link
                   href={feature.link}
                   key={index}
@@ -71,37 +88,31 @@ const Footer = () => {
           </Grid>
 
           <Grid item xs={12} sm={6} md={2}>
-            <Typography variant="h6" gutterBottom>
-              Resources
-            </Typography>
-            <Box
-              sx={{ display: "flex", flexDirection: "column" }}
-              className="footer-font-color"
-            >
-              <Link href="/blog" sx={{ mb: 1 }} className="footer-font-color">
-                Blog
-              </Link>
-              <Link
-                href="/help-center"
-                sx={{ mb: 1 }}
-                className="footer-font-color"
-              >
-                Help Center
-              </Link>
-
-              <Link href="/guides" sx={{ mb: 1 }} className="footer-font-color">
-                Guides
-              </Link>
-            </Box>
-          </Grid>
+           
+           <Box sx={{ display: "flex", flexDirection: "column", paddingTop:"2.5rem" }}>
+             {navbarFeatures.slice(12, 18).map((feature, index) => (
+               <Link
+                 href={feature.link}
+                 key={index}
+                 className="footer-font-color"
+                 sx={{ mb: 1 }}
+               >
+                 {feature.title}
+               </Link>
+             ))}
+           </Box>
+         </Grid>
 
           <Grid item xs={12} sm={6} md={2}>
             <Typography variant="h6" gutterBottom>
-              Company
+              Others
             </Typography>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
               <Link href="/about" sx={{ mb: 1 }} className="footer-font-color">
                 About
+              </Link>
+              <Link href="/blog" sx={{ mb: 1 }} className="footer-font-color">
+                Blog
               </Link>
 
               <Link
@@ -111,13 +122,32 @@ const Footer = () => {
               >
                 Contact
               </Link>
+              <Link
+                href="/terms-conditions"
+                sx={{ mb: 1 }}
+                className="footer-font-color"
+              >
+                Terms & Condition
+              </Link>
+              <Link
+                href="/privacy-policy"
+                sx={{ mb: 1 }}
+                className="footer-font-color"
+              >
+                Privacy Policy
+              </Link>
             </Box>
           </Grid>
         </Grid>
 
         <Box sx={{ mt: 5, pt: 2, borderTop: "1px solid #eee" }}>
           <Typography variant="body2" align="center">
-            © {new Date().getFullYear()} A2Z Home Solutions. All rights reserved |Technology Partner - <Link href="https://fritado.com/" style={{color:'white'}}> Fritado AI </Link>
+            © {new Date().getFullYear()} A2Z Home Solutions. All rights reserved
+            |Technology Partner -{" "}
+            <Link href="https://fritado.com/" style={{ color: "white" }}>
+              {" "}
+              Fritado AI{" "}
+            </Link>
           </Typography>
         </Box>
       </Container>

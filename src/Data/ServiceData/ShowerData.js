@@ -115,5 +115,5 @@ export const showerGallaryImages = [
   "/assets/Shower-Installation/Shower-Installation-10.jpg",
   "/assets/Shower-Installation/Shower-Installation-11.jpg",
   "/assets/Shower-Installation/Shower-Installation-12.jpg",
-  "/assets/Shower-Installation/Shower-Installation-13.jpg",
+ 
 ];

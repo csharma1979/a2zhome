@@ -130,6 +130,6 @@ export const hvacGalleryImages = [
   "/assets/HVAC-Services/HVAC-Services-10.jpg",
   "/assets/HVAC-Services/HVAC-Services-11.jpg",
   "/assets/HVAC-Services/HVAC-Services-12.jpg",
-  "/assets/HVAC-Services/HVAC-Services-13.jpg",
+
   
 ];

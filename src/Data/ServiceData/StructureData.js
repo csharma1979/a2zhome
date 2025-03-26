@@ -138,6 +138,6 @@ export const structureGallaryImages = [
   "/assets/Structural-Services/Structural-Services-10.jpg",
   '/assets/Structural-Services/Structural-Services-11.jpg',
   "/assets/Structural-Services/Structural-Services-12.jpg",
-  "/assets/Structural-Services/Structural-Services-13.jpg",
+  
   
 ];

@@ -120,7 +120,6 @@ export const fenceGallaryImages = [
   '/assets/Fence-Services/Fence-Services-8.jpg',
   '/assets/Fence-Services/Fence-Services-9.jpg',
   '/assets/Fence-Services/Fence-Services-10.jpg',
-  '/assets/Fence-Services/Fence-Services-11.jpg',
   '/assets/Fence-Services/Fence-Services-12.jpg',
   '/assets/Fence-Services/Fence-Services-13.jpg',
 ]

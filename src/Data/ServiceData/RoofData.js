@@ -129,7 +129,7 @@ export const roofGallaryImages = [
   '/assets/Roof-Installation/Roof-Installation-4.jpg',
   '/assets/Roof-Installation/Roof-Installation-5.jpg',
   '/assets/Roof-Installation/Roof-Installation-6.jpg',
-  '/assets/Roof-Installation/Roof-Installation-7.jpg',
+
   '/assets/Roof-Installation/Roof-Installation-8.jpg',
   '/assets/Roof-Installation/Roof-Installation-9.jpg',
   '/assets/Roof-Installation/Roof-Installation-10.jpg',

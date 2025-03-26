@@ -121,11 +121,10 @@ export const paintingGallaryImages = [
   "/assets/Painting-Services/Painting-Services-4.jpg",
   "/assets/Painting-Services/Painting-Services-5.jpg",
   "/assets/Painting-Services/Painting-Services-6.jpg",
-  "/assets/Painting-Services/Painting-Services-7.jpg",
   "/assets/Painting-Services/Painting-Services-8.jpg",
   "/assets/Painting-Services/Painting-Services-9.jpg",
   "/assets/Painting-Services/Painting-Services-10.jpg",
-  "/assets/Painting-Services/Painting-Services-10.jpg",
+  "/assets/Painting-Services/Painting-Services-11.jpg",
   "/assets/Painting-Services/Painting-Services-12.jpg",
   "/assets/Painting-Services/Painting-Services-13.jpg",
 ];

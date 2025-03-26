@@ -20,7 +20,7 @@ const WaterHeaterService = () => {
     <Box className="home-page">
       <ServiceBanner
         title="Reliable Water Heater Installation & Repair Services"
-        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+        subtitle="Reliable water heater services for installation, repair, and maintenance. Ensure energy efficiency and lasting performance with our expert solutions."
       />
       <ServiceCard
         title="Our Water Heater Services"

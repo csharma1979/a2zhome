@@ -7,7 +7,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Link from 'next/link'
+import Link from "next/link";
 import { features } from "../../Data/Navbar";
 import ServiceFaq from "../Service/ServiceFaq";
 import Testimonials from "./Testimonials";
@@ -47,11 +47,27 @@ const Home = () => {
   };
   return (
     <Box className="home-page">
-      <Box className="hero-section" sx={{ minHeight: "600px", overflow: "hidden" }}>
-      <Slider {...heroSettings}>
+      <Box
+        className="hero-section"
+        sx={{ minHeight: "600px", overflow: "hidden" }}
+      >
+        <Slider {...heroSettings}>
           {heroSlides.map((slide, index) => (
             <Box key={index}>
               <Grid container sx={{ minHeight: "600px" }}>
+                {/* Right Side - Image (50%) */}
+                <Grid
+                  item
+                  xs={12}
+                  md={6}
+                  sx={{
+                    backgroundImage: `url(${slide.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    minHeight: "600px",
+                  }}
+                />
+
                 {/* Left Side - Text with Blue Background */}
                 <Grid
                   item
@@ -84,19 +100,6 @@ const Home = () => {
                     </Button>
                   </Container>
                 </Grid>
-
-                {/* Right Side - Image (50%) */}
-                <Grid
-                  item
-                  xs={12}
-                  md={6}
-                  sx={{
-                    backgroundImage: `url(${slide.image})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    minHeight: "600px",
-                  }}
-                />
               </Grid>
             </Box>
           ))}
@@ -155,7 +158,7 @@ const Home = () => {
         </Typography>
 
         <Grid container spacing={4} sx={{ mt: 4 }}>
-          {features.map((feature, index) => (
+          {features.slice(0, 6).map((feature, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
               <Paper className="feature-card">
                 <Box className="feature-icon color-blue">{feature.icon}</Box>
@@ -165,13 +168,21 @@ const Home = () => {
                 <Typography color="text.secondary">
                   {feature.description}
                 </Typography>
-                <Link href={feature.link}> <Button className="color-blue" sx={{ mt: 2 }}>
-                  Read more →
-                </Button></Link>
+                <Link href={feature.link}>
+                  {" "}
+                  <Button className="color-blue" sx={{ mt: 2 }}>
+                    Read more →
+                  </Button>
+                </Link>
               </Paper>
             </Grid>
           ))}
         </Grid>
+        <Link href="/services" className="d-flex justify-content-center mt-5">
+          <button className=" custom-button rounded ">
+            View more →
+          </button>
+        </Link>
       </Container>
 
       {/* Analytics Section */}

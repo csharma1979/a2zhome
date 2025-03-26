@@ -20,7 +20,7 @@ const CabinetService = () => {
     <Box className="home-page">
       <ServiceBanner
         title="High-Quality Cabinet Installation & Repair Services"
-        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+        subtitle="Expert cabinet services for installation, repairs, and makeovers. Get durable, stylish solutions with high-quality craftsmanship for kitchens, bathrooms, and more."
       />
       <ServiceCard
         title="Our Cabinet Services"

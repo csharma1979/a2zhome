@@ -21,7 +21,7 @@ const GlassService = () => {
     <Box className="home-page">
       <ServiceBanner
         title="Premium Glass Installation & Repair Services"
-        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+        subtitle="Expert glass services for installation, repair, and replacement. Enhance your space with custom designs and energy-efficient solutions for homes and businesses."
       />
       <ServiceCard
         title="Our Glass Services"

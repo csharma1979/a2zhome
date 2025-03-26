@@ -21,7 +21,7 @@ const ShowerService = () => {
     <Box className="home-page">
       <ServiceBanner
         title="Premium Shower Installation & Repair Services"
-        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+        subtitle="Expert shower installation and repair services. Upgrade, fix leaks, or design a custom shower with durable, high-quality craftsmanship tailored to your needs."
       />
       <ServiceCard
         title="Our Shower Services"

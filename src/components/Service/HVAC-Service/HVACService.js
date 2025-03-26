@@ -21,7 +21,7 @@ const HVACService = () => {
     <Box className="home-page">
     <ServiceBanner
       title=" Expert HVAC Installation, Repair & Maintenance Services"
-      subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+      subtitle="Expert HVAC services for installation, repair, and maintenance. Ensure year-round comfort, energy efficiency, and optimal performance for homes and businesses."
     />
     <ServiceCard
       title="Our HVAC Services"

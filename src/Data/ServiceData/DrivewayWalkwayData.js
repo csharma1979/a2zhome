@@ -127,5 +127,5 @@ export const drivewayWalkwayGallaryImages = [
   "/assets/Driveway-Walkway/Driveway-Walkway-10.jpg",
   "/assets/Driveway-Walkway/Driveway-Walkway-11.jpg",
   "/assets/Driveway-Walkway/Driveway-Walkway-12.jpg",
-  "/assets/Driveway-Walkway/Driveway-Walkway-13.jpg",
+ 
 ];

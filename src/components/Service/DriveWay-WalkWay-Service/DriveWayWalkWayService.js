@@ -21,7 +21,7 @@ const DriveWayWalkWayService = () => {
     <Box className="home-page">
       <ServiceBanner
         title="Transform Your Property with Expert Driveway & Walkway Services"
-        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+        subtitle="Expert driveway and walkway services for installation, repair, and maintenance. Enhance durability, safety, and curb appeal with customized solutions."
       />
       <ServiceCard
         title="Our Driveway & Walkway Services"

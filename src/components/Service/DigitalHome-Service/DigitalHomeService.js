@@ -21,7 +21,7 @@ const DigitalHomeService = () => {
     <Box className="home-page">
       <ServiceBanner
         title="Transform Your Space with Smart Digital Home Solutions"
-        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+        subtitle="Upgrade to a smart home with automation, security, energy management, and entertainment solutions. Enhance convenience, safety, and efficiency with our expert services."
       />
       <ServiceCard
         title="Our Digital Home Services"

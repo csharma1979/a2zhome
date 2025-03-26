@@ -20,7 +20,7 @@ const FlooringService = () => {
     <Box className="home-page">
       <ServiceBanner
         title="Transform Your Space with Our Expert Flooring Services"
-        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+        subtitle="Professional flooring services for installation, repairs, and maintenance. Get flawless hardwood, tile, laminate, or vinyl flooring for homes and businesses."
       />
       <ServiceCard
         title="Our Flooring Services"
