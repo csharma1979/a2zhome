@@ -7,7 +7,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Link from "next/link";
 import { features } from "../../Data/Navbar";
 import ServiceFaq from "../Service/ServiceFaq";
 import Testimonials from "./Testimonials";
@@ -24,22 +24,27 @@ const Home = () => {
   const [showModal, setShowModal] = useState(false);
   const heroSettings = {
     dots: true,
-    //infinite: true,
-    //speed: 1000,
+    infinite: true,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    //autoplaySpeed: 3000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     arrows: false,
     customPaging: (i) => (
-      <div className="custom-dot">
-        <span></span>
-      </div>
+      <div
+        style={{
+          width: "12px",
+          height: "12px",
+          borderRadius: "50%",
+          background: "#fff",
+          opacity: 0.6,
+        }}
+      />
     ),
-    dotsClass: "slick-dots custom-dots",
+    dotsClass: "slick-dots",
   };
-
   return (
     <Box className="home-page">
       <Box className="hero-section">
@@ -151,9 +156,9 @@ const Home = () => {
                 <Typography color="text.secondary">
                   {feature.description}
                 </Typography>
-                <Button className="color-blue" sx={{ mt: 2 }}>
+                <Link href={feature.link}> <Button className="color-blue" sx={{ mt: 2 }}>
                   Read more →
-                </Button>
+                </Button></Link>
               </Paper>
             </Grid>
           ))}

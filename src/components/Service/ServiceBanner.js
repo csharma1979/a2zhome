@@ -9,9 +9,7 @@ const ServiceBanner = ({ title, subtitle }) => {
     <>
       <Box className="hero-section kitchen-hero">
         <Box className="container">
-          <Box
-          
-          >
+          <Box>
             <div className="service-banner">
               <Typography
                 variant="h3"
@@ -21,7 +19,7 @@ const ServiceBanner = ({ title, subtitle }) => {
               </Typography>
               <Typography
                 variant="h6"
-                sx={{ pt: 2, pb:2, fontSize: { xs: "1rem", md: "1.25rem" } }}
+                sx={{ pt: 2, pb: 2, fontSize: { xs: "1rem", md: "1.25rem" } }}
               >
                 {subtitle}
               </Typography>

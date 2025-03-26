@@ -1,11 +1,12 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import {
-  plumbingFaqData,
-  plumbingService,
-  plumbingWhyChooseUs,
-} from "../../../Data/ServiceData/PlumbingData";
-import { kitchenService } from "../../../Data/ServiceData/KitchenData";
+  drivewayWalkwayServices,
+  drivewayWalkwayWhyChooseUs,
+  drivewayFaqData,
+  drivewayWalkwayGallaryImages,
+} from "../../../Data/ServiceData/DrivewayWalkwayData";
+
 import ServiceBanner from "../ServiceBanner";
 import ServiceProcess from "../ServiceProcess";
 import ServiceGallary from "../ServiceGallary";
@@ -18,33 +19,31 @@ import CTA from "../../commonComps/CTA";
 const DriveWayWalkWayService = () => {
   return (
     <Box className="home-page">
-    <ServiceBanner
-      title="Professional Plumbing Services You Can Trust"
-      subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
-    />
-    <ServiceCard
-      title="Our Plumbering Services"
-      subtitle="Expert solutions for your kitchen upgrades"
-      data={kitchenService}
-    />
-    <ServiceProcess />
-    <ServiceGallary />
+      <ServiceBanner
+        title="Transform Your Property with Expert Driveway & Walkway Services"
+        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+      />
+      <ServiceCard
+        title="Our Driveway & Walkway Services"
+        subtitle="Expert solutions for your kitchen upgrades"
+        data={drivewayWalkwayServices}
+      />
+      <ServiceProcess />
+      <ServiceGallary data={drivewayWalkwayGallaryImages} />
 
+      <WhyChooseUs
+        title="Why Choose Our Driveway & Walkway Service"
+        subtitle="Quality Kitchen Cabinet Refacing in Texas"
+        data={drivewayWalkwayWhyChooseUs}
+      />
 
+      <ServiceFaq data={drivewayFaqData} />
 
-    <WhyChooseUs
-      title="Why Choose Us"
-      subtitle="Quality Kitchen Cabinet Refacing in Texas"
-      data={plumbingWhyChooseUs}
-    />
+      <ServiceArea />
 
-<ServiceFaq data={plumbingFaqData} />
+      <CTA />
+    </Box>
+  );
+};
 
-    <ServiceArea />
-
-    <CTA />
-  </Box>
-  )
-}
-
-export default DriveWayWalkWayService
+export default DriveWayWalkWayService;

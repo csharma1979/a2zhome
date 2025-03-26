@@ -1,9 +1,10 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import {
-  doorServices ,
+  doorServices,
   doorWhyChooseUs,
-  doorFaqData 
+  doorFaqData,
+  doorGallaryImages,
 } from "../../../Data/ServiceData/DoorData";
 
 import ServiceBanner from "../ServiceBanner";
@@ -28,9 +29,7 @@ const DoorService = () => {
         data={doorServices}
       />
       <ServiceProcess />
-      <ServiceGallary />
-
-     
+      <ServiceGallary data={doorGallaryImages} />
 
       <WhyChooseUs
         title="Why Choose Our Door Service"
@@ -38,7 +37,7 @@ const DoorService = () => {
         data={doorWhyChooseUs}
       />
 
-<ServiceFaq data={doorFaqData } />
+      <ServiceFaq data={doorFaqData} />
 
       <ServiceArea />
 

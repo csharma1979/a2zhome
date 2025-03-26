@@ -4,8 +4,9 @@ import {
   showerWhyChooseUs,
   showerServices,
   showerFaqData,
+  showerGallaryImages,
 } from "../../../Data/ServiceData/ShowerData";
-import { kitchenService } from "../../../Data/ServiceData/KitchenData";
+
 import ServiceBanner from "../ServiceBanner";
 import ServiceProcess from "../ServiceProcess";
 import ServiceGallary from "../ServiceGallary";
@@ -28,16 +29,14 @@ const ShowerService = () => {
         data={showerServices}
       />
       <ServiceProcess />
-      <ServiceGallary />
-
-     
+      <ServiceGallary data={showerGallaryImages} />
 
       <WhyChooseUs
         title="Why Choose Our Shower Services"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
         data={showerWhyChooseUs}
       />
- <ServiceFaq data={showerFaqData} />
+      <ServiceFaq data={showerFaqData} />
       <ServiceArea />
 
       <CTA />

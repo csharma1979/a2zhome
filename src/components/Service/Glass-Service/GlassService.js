@@ -1,9 +1,10 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import {
-  glassServices ,
+  glassServices,
   glassWhyChooseUs,
-  glassFaqData ,
+  glassFaqData,
+  glassGallaryImages
 } from "../../../Data/ServiceData/GlassData";
 
 import ServiceBanner from "../ServiceBanner";
@@ -25,12 +26,10 @@ const GlassService = () => {
       <ServiceCard
         title="Our Glass Services"
         subtitle="Expert solutions for your kitchen upgrades"
-        data={glassServices }
+        data={glassServices}
       />
       <ServiceProcess />
-      <ServiceGallary />
-
-      
+      <ServiceGallary data={glassGallaryImages}/>
 
       <WhyChooseUs
         title="Why Choose Our Glass Service"
@@ -38,7 +37,7 @@ const GlassService = () => {
         data={glassWhyChooseUs}
       />
 
-<ServiceFaq data={glassFaqData } />
+      <ServiceFaq data={glassFaqData} />
 
       <ServiceArea />
 

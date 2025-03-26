@@ -101,3 +101,18 @@ export const electricalFaqData = [
     },
   ];
   
+  export const electricalGallaryImages = [
+    '/assets/Electrical-Services/Electrical-Services-1.jpg',
+    '/assets/Electrical-Services/Electrical-Services-2.jpg',
+    '/assets/Electrical-Services/Electrical-Services-3.jpg',
+    '/assets/Electrical-Services/Electrical-Services-4.jpg',
+    '/assets/Electrical-Services/Electrical-Services-5.jpg',
+    '/assets/Electrical-Services/Electrical-Services-6.jpg',
+    '/assets/Electrical-Services/Electrical-Services-7.jpg',
+    '/assets/Electrical-Services/Electrical-Services-8.jpg',
+    '/assets/Electrical-Services/Electrical-Services-9.jpg',
+    '/assets/Electrical-Services/Electrical-Services-10.jpg',
+    '/assets/Electrical-Services/Electrical-Services-11.jpg',
+    '/assets/Electrical-Services/Electrical-Services-12.jpg',
+    '/assets/Electrical-Services/Electrical-Services-13.jpg',
+  ]

@@ -5,13 +5,7 @@ import {
   FaDollarSign,
   FaSmile,
 } from "react-icons/fa";
-import {
-  FaRoad,
-  FaWalking,
-  FaTools,
-  FaDraftingCompass,
-  FaSyncAlt,
-} from "react-icons/fa";
+import { FaRoad, FaWalking, FaSyncAlt } from "react-icons/fa";
 
 export const drivewayWalkwayServices = [
   {
@@ -86,7 +80,8 @@ export const drivewayWalkwayWhyChooseUs = [
   {
     id: 6,
     title: "Payment Plans",
-    description: "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
+    description:
+      "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
     icon: <FaDollarSign />,
   },
 ];
@@ -117,4 +112,20 @@ export const drivewayFaqData = [
     answer:
       "Click [Request a Free Quote] or contact us directly for a personalized estimate.",
   },
+];
+
+export const drivewayWalkwayGallaryImages = [
+  "/assets/Driveway-Walkway/Driveway-Walkway-1.jpg",
+  "/assets/Driveway-Walkway/Driveway-Walkway-2.jpg",
+  "/assets/Driveway-Walkway/Driveway-Walkway-3.jpg",
+  "/assets/Driveway-Walkway/Driveway-Walkway-4.jpg",
+  "/assets/Driveway-Walkway/Driveway-Walkway-5.jpg",
+  "/assets/Driveway-Walkway/Driveway-Walkway-6.jpg",
+  "/assets/Driveway-Walkway/Driveway-Walkway-7.jpg",
+  "/assets/Driveway-Walkway/Driveway-Walkway-8.jpg",
+  "/assets/Driveway-Walkway/Driveway-Walkway-9.jpg",
+  "/assets/Driveway-Walkway/Driveway-Walkway-10.jpg",
+  "/assets/Driveway-Walkway/Driveway-Walkway-11.jpg",
+  "/assets/Driveway-Walkway/Driveway-Walkway-12.jpg",
+  "/assets/Driveway-Walkway/Driveway-Walkway-13.jpg",
 ];

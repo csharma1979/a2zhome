@@ -3,13 +3,11 @@
 import React, { useState, useEffect } from "react";
 import { Box, Container, Typography, Grid } from "@mui/material";
 import axios from "axios";
-
 const BASE_IMAGE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 const BlogDetail = ({ slug }) => {
   const [blog, setBlog] = useState(null);
-  const [recentBlog, setRecentBlog] = useState([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
+ 
 
   const getExcerpt = (text, wordCount) => {
     const words = text.split(" ");
@@ -35,7 +33,7 @@ const BlogDetail = ({ slug }) => {
   }, [slug]);
 
   return (
-    <Box className="blog-detail-page container">
+    <Box className="blog-detail-page">
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           {/* Main Content */}

@@ -2,8 +2,9 @@ import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import {
   paintingServices,
-  paintingFaqData ,
+  paintingFaqData,
   paintingWhyChooseUs,
+  paintingGallaryImages,
 } from "../../../Data/ServiceData/PaintingData";
 import { kitchenService } from "../../../Data/ServiceData/KitchenData";
 import ServiceBanner from "../ServiceBanner";
@@ -28,16 +29,14 @@ const PaintingService = () => {
         data={paintingServices}
       />
       <ServiceProcess />
-      <ServiceGallary />
-
-      
+      <ServiceGallary data={paintingGallaryImages} />
 
       <WhyChooseUs
         title="Why Choose Our Painting Service"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
         data={paintingWhyChooseUs}
       />
-<ServiceFaq data={paintingFaqData } />
+      <ServiceFaq data={paintingFaqData} />
       <ServiceArea />
 
       <CTA />

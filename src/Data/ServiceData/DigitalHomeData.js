@@ -103,3 +103,20 @@ export const digitalHomeFaqData = [
     },
   ];
   
+
+  export const digitalHomeGalleryImages = [
+    "/assets/Digital-Home-Solutions/Digital-Home-Solutions-1.jpg",
+    "/assets/Digital-Home-Solutions/Digital-Home-Solutions-2.jpg",
+    "/assets/Digital-Home-Solutions/Digital-Home-Solutions-3.jpg",
+    "/assets/Digital-Home-Solutions/Digital-Home-Solutions-4.jpg",
+    "/assets/Digital-Home-Solutions/Digital-Home-Solutions-5.jpg",
+    "/assets/Digital-Home-Solutions/Digital-Home-Solutions-6.jpg",
+    "/assets/Digital-Home-Solutions/Digital-Home-Solutions-7.jpg",
+    "/assets/Digital-Home-Solutions/Digital-Home-Solutions-8.jpg",
+    "/assets/Digital-Home-Solutions/Digital-Home-Solutions-9.jpg",
+    "/assets/Digital-Home-Solutions/Digital-Home-Solutions-10.jpg",
+    "/assets/Digital-Home-Solutions/Digital-Home-Solutions-11.jpg",
+    "/assets/Digital-Home-Solutions/Digital-Home-Solutions-12.jpg",
+    "/assets/Digital-Home-Solutions/Digital-Home-Solutions-13.jpg",
+    
+  ];

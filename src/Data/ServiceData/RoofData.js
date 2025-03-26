@@ -120,3 +120,20 @@ export const roofingFaqData = [
       "Click [Request a Free Quote] or contact us directly for a personalized estimate.",
   },
 ];
+
+
+export const roofGallaryImages = [
+  '/assets/Roof-Installation/Roof-Installation-1.jpg',
+  '/assets/Roof-Installation/Roof-Installation-2.jpg',
+  '/assets/Roof-Installation/Roof-Installation-3.jpg',
+  '/assets/Roof-Installation/Roof-Installation-4.jpg',
+  '/assets/Roof-Installation/Roof-Installation-5.jpg',
+  '/assets/Roof-Installation/Roof-Installation-6.jpg',
+  '/assets/Roof-Installation/Roof-Installation-7.jpg',
+  '/assets/Roof-Installation/Roof-Installation-8.jpg',
+  '/assets/Roof-Installation/Roof-Installation-9.jpg',
+  '/assets/Roof-Installation/Roof-Installation-10.jpg',
+  '/assets/Roof-Installation/Roof-Installation-11.jpg',
+  '/assets/Roof-Installation/Roof-Installation-12.jpg',
+  '/assets/Roof-Installation/Roof-Installation-13.jpg',
+]

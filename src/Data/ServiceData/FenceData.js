@@ -108,3 +108,19 @@ export const fenceFaqData = [
       "Simply click [Request a Free Quote] or contact us directly for a personalized estimate.",
   },
 ];
+
+export const fenceGallaryImages = [
+  '/assets/Fence-Services/Fence-Services-1.jpg',
+  '/assets/Fence-Services/Fence-Services-2.jpg',
+  '/assets/Fence-Services/Fence-Services-3.jpg',
+  '/assets/Fence-Services/Fence-Services-4.jpg',
+  '/assets/Fence-Services/Fence-Services-5.jpg',
+  '/assets/Fence-Services/Fence-Services-6.jpg',
+  '/assets/Fence-Services/Fence-Services-7.jpg',
+  '/assets/Fence-Services/Fence-Services-8.jpg',
+  '/assets/Fence-Services/Fence-Services-9.jpg',
+  '/assets/Fence-Services/Fence-Services-10.jpg',
+  '/assets/Fence-Services/Fence-Services-11.jpg',
+  '/assets/Fence-Services/Fence-Services-12.jpg',
+  '/assets/Fence-Services/Fence-Services-13.jpg',
+]

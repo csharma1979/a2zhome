@@ -4,6 +4,7 @@ import {
   fenceServices,
   fenceWhyChooseUs,
   fenceFaqData,
+  fenceGallaryImages,
 } from "../../../Data/ServiceData/FenceData";
 import ServiceBanner from "../ServiceBanner";
 import ServiceProcess from "../ServiceProcess";
@@ -27,9 +28,7 @@ const FenceService = () => {
         data={fenceServices}
       />
       <ServiceProcess />
-      <ServiceGallary />
-
-
+      <ServiceGallary data={fenceGallaryImages} />
 
       <WhyChooseUs
         title=" Why Choose Our Fence Services"

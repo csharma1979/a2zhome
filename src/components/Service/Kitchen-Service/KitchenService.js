@@ -4,7 +4,7 @@ import {
   kitchenWhyChooseUs,
   kitchenfaqData,
   kitchenService,
-  kitchenGalleryImages 
+  kitchenGalleryImages,
 } from "../../../Data/ServiceData/KitchenData";
 import ServiceFaq from "../ServiceFaq";
 import ServiceGallary from "../ServiceGallary";
@@ -24,22 +24,20 @@ const KitchenService = () => {
       />
 
       <ServiceCard
-       title="Our Kitchen Services"
-       subtitle="Expert solutions for your kitchen upgrades"
-       data={kitchenService}
+        title="Our Kitchen Services"
+        subtitle="Expert solutions for your kitchen upgrades"
+        data={kitchenService}
       />
- <ServiceProcess />
-      <ServiceGallary data={kitchenGalleryImages }/>
+      <ServiceProcess />
+      <ServiceGallary data={kitchenGalleryImages} />
 
       {/* Faq  */}
-     
 
       <WhyChooseUs
         title="Why Choose Us"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
         data={kitchenWhyChooseUs}
       />
-     
 
       <ServiceFaq data={kitchenfaqData} />
       <ServiceArea />

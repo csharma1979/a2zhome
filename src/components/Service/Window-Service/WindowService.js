@@ -4,8 +4,8 @@ import {
   windowWhyChooseUs,
   windowServices,
   windowFaqData,
+  windowGallaryImages,
 } from "../../../Data/ServiceData/WindowData";
-import { kitchenService } from "../../../Data/ServiceData/KitchenData";
 import ServiceBanner from "../ServiceBanner";
 import ServiceProcess from "../ServiceProcess";
 import ServiceGallary from "../ServiceGallary";
@@ -28,7 +28,7 @@ const WindowService = () => {
         data={windowServices}
       />
       <ServiceProcess />
-      <ServiceGallary />
+      <ServiceGallary data={windowGallaryImages} />
 
       <WhyChooseUs
         title="Why Choose Our Window Service"

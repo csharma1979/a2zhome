@@ -90,11 +90,15 @@ const Header = () => {
                   <Typography variant="h5">Interior</Typography>
                   <Grid container spacing={2} sx={{ width: 500 }}>
                     {navbarFeatures.map((feature, index) => (
-                      <Grid item xs={4} key={index}>
+                      <Grid item xs={3} key={index}>
                         <Link href={feature.link}>
                           <MenuItem
                             onClick={handleFeaturesClose}
-                            sx={{ "&:hover": { backgroundColor: "#f0f0f0" } }}
+                            sx={{
+                              "&:hover": { backgroundColor: "#f0f0f0" },
+                              textDecoration: "none",
+                              color: "inherit",
+                            }}
                           >
                             <Typography
                               variant="body1"
@@ -146,10 +150,8 @@ const Header = () => {
           {/* Desktop "Book a Consultation" Button */}
           {!isMobile && (
             <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-              
               <Typography
                 sx={{
-                  
                   color: "#fff",
                   fontWeight: "bold",
                   fontSize: "1.1rem",
@@ -158,11 +160,11 @@ const Header = () => {
                   borderRadius: "8px",
                   transition: "all 0.3s ease",
                   "&:hover": {
-                    backgroundColor:  "#115580",
+                    backgroundColor: "#115580",
                   },
                 }}
               >
-              Call now: +1- 832-312-5501
+                Call now: +1- 832-312-5501
               </Typography>
             </Box>
           )}

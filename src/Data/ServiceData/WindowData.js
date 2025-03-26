@@ -5,7 +5,7 @@ import {
   FaLeaf,
   FaPencilRuler,
   FaClock,
-  FaDollarSign 
+  FaDollarSign,
 } from "react-icons/fa";
 
 export const windowWhyChooseUs = [
@@ -43,11 +43,12 @@ export const windowWhyChooseUs = [
     icon: <FaClock />,
   },
   {
-          id: 6,
-          title: "Payment Plans",
-          description: "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
-          icon: <FaDollarSign />,
-        },
+    id: 6,
+    title: "Payment Plans",
+    description:
+      "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
+    icon: <FaDollarSign />,
+  },
 ];
 
 export const windowServices = [
@@ -114,4 +115,20 @@ export const windowFaqData = [
     answer:
       "Click [Request a Free Quote] or contact us directly for a personalized estimate.",
   },
+];
+
+export const windowGallaryImages = [
+  "/assets/Window-Installation/Window-Installation-1.jpg",
+  "/assets/Window-Installation/Window-Installation-2.jpg",
+  "/assets/Window-Installation/Window-Installation-3.jpg",
+  "/assets/Window-Installation/Window-Installation-4.jpg",
+  "/assets/Window-Installation/Window-Installation-5.jpg",
+  "/assets/Window-Installation/Window-Installation-6.jpg",
+  "/assets/Window-Installation/Window-Installation-7.jpg",
+  "/assets/Window-Installation/Window-Installation-8.jpg",
+  "/assets/Window-Installation/Window-Installation-9.jpg",
+  "/assets/Window-Installation/Window-Installation-10.jpg",
+  "/assets/Window-Installation/Window-Installation-11.jpg",
+  "/assets/Window-Installation/Window-Installation-12.jpg",
+  "/assets/Window-Installation/Window-Installation-13.jpg",
 ];

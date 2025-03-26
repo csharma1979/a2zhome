@@ -109,3 +109,20 @@ export const doorFaqData = [
       "Click [Request a Free Quote] or contact us directly to receive a personalized estimate.",
   },
 ];
+
+
+export const doorGallaryImages = [
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-1.jpg",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-2.jpg",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-3.jpg",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-4.jpg",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-5.jpg",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-6.jpg",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-7.jpg",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-8.jpg",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-9.jpg",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-10.jpg",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-11.jpg",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-12.jpg",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-13.jpg",
+]

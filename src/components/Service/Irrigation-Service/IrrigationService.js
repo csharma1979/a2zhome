@@ -4,6 +4,7 @@ import {
   irrigationWhyChooseUs,
   irrigationServices,
   irrigationFaqData,
+  irrigationGallaryImages,
 } from "../../../Data/ServiceData/IrrigationData";
 import ServiceBanner from "../ServiceBanner";
 import ServiceProcess from "../ServiceProcess";
@@ -27,16 +28,14 @@ const IrrigationService = () => {
         data={irrigationServices}
       />
       <ServiceProcess />
-      <ServiceGallary />
-
-     
+      <ServiceGallary data={irrigationGallaryImages} />
 
       <WhyChooseUs
         title="Why Choose Our Irrigation Service"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
         data={irrigationWhyChooseUs}
       />
- <ServiceFaq data={irrigationFaqData} />
+      <ServiceFaq data={irrigationFaqData} />
       <ServiceArea />
 
       <CTA />

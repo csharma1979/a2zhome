@@ -35,7 +35,8 @@ export const showerWhyChooseUs = [
   {
     id: 6,
     title: "Payment Plans",
-    description: "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
+    description:
+      "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
     icon: <FaDollarSign />,
   },
 ];
@@ -99,4 +100,20 @@ export const showerFaqData = [
     answer:
       "Click [Request a Free Quote] or contact us directly to book an appointment.",
   },
+];
+
+export const showerGallaryImages = [
+  "/assets/Shower-Installation/Shower-Installation-1.jpg",
+  "/assets/Shower-Installation/Shower-Installation-2.jpg",
+  "/assets/Shower-Installation/Shower-Installation-3.jpg",
+  "/assets/Shower-Installation/Shower-Installation-4.jpg",
+  "/assets/Shower-Installation/Shower-Installation-5.jpg",
+  "/assets/Shower-Installation/Shower-Installation-6.jpg",
+  "/assets/Shower-Installation/Shower-Installation-7.jpg",
+  "/assets/Shower-Installation/Shower-Installation-8.jpg",
+  "/assets/Shower-Installation/Shower-Installation-9.jpg",
+  "/assets/Shower-Installation/Shower-Installation-10.jpg",
+  "/assets/Shower-Installation/Shower-Installation-11.jpg",
+  "/assets/Shower-Installation/Shower-Installation-12.jpg",
+  "/assets/Shower-Installation/Shower-Installation-13.jpg",
 ];

@@ -3,7 +3,8 @@ import { Box, Typography, Button } from "@mui/material";
 import {
   roofingServices,
   roofingWhyChooseUs,
-  roofingFaqData
+  roofingFaqData,
+  roofGallaryImages,
 } from "../../../Data/ServiceData/RoofData";
 import ServiceBanner from "../ServiceBanner";
 import ServiceProcess from "../ServiceProcess";
@@ -27,16 +28,14 @@ const RoofService = () => {
         data={roofingServices}
       />
       <ServiceProcess />
-      <ServiceGallary />
-
-     
+      <ServiceGallary data={roofGallaryImages} />
 
       <WhyChooseUs
         title="Why Choose Our Roof Service"
         subtitle="Quality Kitchen Cabinet Refacing in Texas"
         data={roofingWhyChooseUs}
       />
- <ServiceFaq data={roofingFaqData} />
+      <ServiceFaq data={roofingFaqData} />
       <ServiceArea />
 
       <CTA />

@@ -6,13 +6,7 @@ import {
   FaSmile,
 } from "react-icons/fa";
 
-import {
-  FaPaintRoller,
-  FaHome,
- 
-  FaBrush,
-  FaBuilding,
-} from "react-icons/fa";
+import { FaPaintRoller, FaHome, FaBrush, FaBuilding } from "react-icons/fa";
 
 export const paintingServices = [
   {
@@ -86,37 +80,52 @@ export const paintingWhyChooseUs = [
   {
     id: 6,
     title: "Payment Plans",
-    description: "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
+    description:
+      "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
     icon: <FaDollarSign />,
   },
 ];
 
-
 export const paintingFaqData = [
-    {
-      question: "What types of painting services do you offer?",
-      answer:
-        "We provide interior and exterior painting, custom finishes, cabinet painting, and commercial painting.",
-    },
-    {
-      question: "How long does a painting project take?",
-      answer:
-        "The timeline depends on the project's size, but most residential jobs are completed within 2-5 days.",
-    },
-    {
-      question: "Do you offer color consultations?",
-      answer:
-        "Yes! We help you choose the perfect colors to match your style and preferences.",
-    },
-    {
-      question: "Is your paint eco-friendly?",
-      answer:
-        "We offer low-VOC and eco-friendly paint options for a healthier environment.",
-    },
-    {
-      question: "How do I get a quote for your services?",
-      answer:
-        "Click [Request a Free Quote] or contact us directly for a personalized estimate.",
-    },
-  ];
-  
+  {
+    question: "What types of painting services do you offer?",
+    answer:
+      "We provide interior and exterior painting, custom finishes, cabinet painting, and commercial painting.",
+  },
+  {
+    question: "How long does a painting project take?",
+    answer:
+      "The timeline depends on the project's size, but most residential jobs are completed within 2-5 days.",
+  },
+  {
+    question: "Do you offer color consultations?",
+    answer:
+      "Yes! We help you choose the perfect colors to match your style and preferences.",
+  },
+  {
+    question: "Is your paint eco-friendly?",
+    answer:
+      "We offer low-VOC and eco-friendly paint options for a healthier environment.",
+  },
+  {
+    question: "How do I get a quote for your services?",
+    answer:
+      "Click [Request a Free Quote] or contact us directly for a personalized estimate.",
+  },
+];
+
+export const paintingGallaryImages = [
+  "/assets/Painting-Services/Painting-Services-1.jpg",
+  "/assets/Painting-Services/Painting-Services-2.jpg",
+  "/assets/Painting-Services/Painting-Services-3.jpg",
+  "/assets/Painting-Services/Painting-Services-4.jpg",
+  "/assets/Painting-Services/Painting-Services-5.jpg",
+  "/assets/Painting-Services/Painting-Services-6.jpg",
+  "/assets/Painting-Services/Painting-Services-7.jpg",
+  "/assets/Painting-Services/Painting-Services-8.jpg",
+  "/assets/Painting-Services/Painting-Services-9.jpg",
+  "/assets/Painting-Services/Painting-Services-10.jpg",
+  "/assets/Painting-Services/Painting-Services-10.jpg",
+  "/assets/Painting-Services/Painting-Services-12.jpg",
+  "/assets/Painting-Services/Painting-Services-13.jpg",
+];

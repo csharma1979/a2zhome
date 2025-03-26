@@ -4,6 +4,7 @@ import {
   electricalServices,
   electricalWhyChooseUs,
   electricalFaqData,
+  electricalGallaryImages,
 } from "../../../Data/ServiceData/ElectricalData";
 import ServiceBanner from "../ServiceBanner";
 import ServiceProcess from "../ServiceProcess";
@@ -27,9 +28,7 @@ const ElectricalService = () => {
         data={electricalServices}
       />
       <ServiceProcess />
-      <ServiceGallary />
-
-     
+      <ServiceGallary data={electricalGallaryImages} />
 
       <WhyChooseUs
         title="Why Choose Our Electrical Service"
@@ -37,7 +36,7 @@ const ElectricalService = () => {
         data={electricalWhyChooseUs}
       />
 
-<ServiceFaq data={electricalFaqData} />
+      <ServiceFaq data={electricalFaqData} />
 
       <ServiceArea />
 

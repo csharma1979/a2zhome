@@ -12,7 +12,7 @@ import {
   FaShieldAlt,
   FaMicrochip,
   FaClock,
-  FaDollarSign 
+  FaDollarSign,
 } from "react-icons/fa";
 
 export const structuralWhyChooseUs = [
@@ -50,12 +50,13 @@ export const structuralWhyChooseUs = [
       "We adhere to strict timelines without compromising on quality.",
     icon: <FaClock />,
   },
-   {
-        id: 6,
-        title: "Payment Plans",
-        description: "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
-        icon: <FaDollarSign />,
-      },
+  {
+    id: 6,
+    title: "Payment Plans",
+    description:
+      "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
+    icon: <FaDollarSign />,
+  },
 ];
 
 export const structuralServices = [
@@ -96,32 +97,47 @@ export const structuralServices = [
   },
 ];
 
-
 export const structuralFaqData = [
-    {
-      question: "What types of structural services do you provide?",
-      answer:
-        "We offer structural design, foundation work, reinforcement, wall modifications, and structural inspections for residential and commercial projects.",
-    },
-    {
-      question: "How do you ensure structural safety and compliance?",
-      answer:
-        "Our engineers follow industry standards, perform detailed analyses, and use advanced technology to ensure structural safety and compliance.",
-    },
-    {
-      question: "Can you reinforce aging buildings?",
-      answer:
-        "Yes, we specialize in reinforcing and upgrading old structures to meet current safety regulations and enhance durability.",
-    },
-    {
-      question: "Do you offer structural inspections?",
-      answer:
-        "Absolutely! We conduct comprehensive inspections to assess structural integrity and recommend necessary repairs.",
-    },
-    {
-      question: "How do I request a structural service?",
-      answer:
-        "You can request a consultation by clicking [Request a Free Consultation] or contacting us directly.",
-    },
-  ];
+  {
+    question: "What types of structural services do you provide?",
+    answer:
+      "We offer structural design, foundation work, reinforcement, wall modifications, and structural inspections for residential and commercial projects.",
+  },
+  {
+    question: "How do you ensure structural safety and compliance?",
+    answer:
+      "Our engineers follow industry standards, perform detailed analyses, and use advanced technology to ensure structural safety and compliance.",
+  },
+  {
+    question: "Can you reinforce aging buildings?",
+    answer:
+      "Yes, we specialize in reinforcing and upgrading old structures to meet current safety regulations and enhance durability.",
+  },
+  {
+    question: "Do you offer structural inspections?",
+    answer:
+      "Absolutely! We conduct comprehensive inspections to assess structural integrity and recommend necessary repairs.",
+  },
+  {
+    question: "How do I request a structural service?",
+    answer:
+      "You can request a consultation by clicking [Request a Free Consultation] or contacting us directly.",
+  },
+];
+
+export const structureGallaryImages = [
+  "/assets/Structural-Services/Structural-Services-1.jpg",
+  "/assets/Structural-Services/Structural-Services-2.jpg",
+  "/assets/Structural-Services/Structural-Services-3.jpg",
+  "/assets/Structural-Services/Structural-Services-4.jpg",
+  "/assets/Structural-Services/Structural-Services-5.jpg",
+  "/assets/Structural-Services/Structural-Services-6.jpg",
+  '/assets/Structural-Services/Structural-Services-7.jpg',
+  "/assets/Structural-Services/Structural-Services-8.jpg",
+  "/assets/Structural-Services/Structural-Services-9.jpg",
+  "/assets/Structural-Services/Structural-Services-10.jpg",
+  '/assets/Structural-Services/Structural-Services-11.jpg',
+  "/assets/Structural-Services/Structural-Services-12.jpg",
+  "/assets/Structural-Services/Structural-Services-13.jpg",
   
+];

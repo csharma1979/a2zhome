@@ -1,11 +1,11 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import {
-  plumbingFaqData,
-  plumbingService,
-  plumbingWhyChooseUs,
-} from "../../../Data/ServiceData/PlumbingData";
-import {kitchenService} from "../../../Data/ServiceData/KitchenData"
+  structuralWhyChooseUs,
+  structuralServices,
+  structuralFaqData,
+  structureGallaryImages,
+} from "../../../Data/ServiceData/StructureData";
 import ServiceBanner from "../ServiceBanner";
 import ServiceProcess from "../ServiceProcess";
 import ServiceGallary from "../ServiceGallary";
@@ -18,31 +18,29 @@ import CTA from "../../commonComps/CTA";
 const StructureService = () => {
   return (
     <Box className="home-page">
-    <ServiceBanner
-      title="Professional Plumbing Services You Can Trust"
-      subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
-    />
-    <ServiceCard
-      title="Our Plumbering Services"
-      subtitle="Expert solutions for your kitchen upgrades"
-      data={kitchenService}
-    />
-    <ServiceProcess />
-    <ServiceGallary />
+      <ServiceBanner
+        title="Expert Structural Services for Strong & Lasting Buildings"
+        subtitle="Get more out of your kitchen updates with quick, affordable cabinet refacing with stunning results."
+      />
+      <ServiceCard
+        title="Our Structural Services"
+        subtitle="Expert solutions for your kitchen upgrades"
+        data={structuralServices}
+      />
+      <ServiceProcess />
+      <ServiceGallary data={structureGallaryImages} />
 
-  
+      <WhyChooseUs
+        title="Why Choose Our Structural Service"
+        subtitle="Quality Kitchen Cabinet Refacing in Texas"
+        data={structuralWhyChooseUs}
+      />
+      <ServiceFaq data={structuralFaqData} />
+      <ServiceArea />
 
-    <WhyChooseUs
-      title="Why Choose Us"
-      subtitle="Quality Kitchen Cabinet Refacing in Texas"
-      data={plumbingWhyChooseUs}
-    />
-  <ServiceFaq data={plumbingFaqData} />
-    <ServiceArea />
+      <CTA />
+    </Box>
+  );
+};
 
-    <CTA />
-  </Box>
-  )
-}
-
-export default StructureService
+export default StructureService;

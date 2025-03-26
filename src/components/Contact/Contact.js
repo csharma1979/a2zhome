@@ -12,6 +12,7 @@ import {
   CardContent,
   Typography,
 } from "@mui/material";
+import ServiceBanner from "../Service/ServiceBanner";
 
 const Contact = () => {
   // State to store form data
@@ -65,18 +66,9 @@ const Contact = () => {
 
   return (
     <Box className="home-page">
-      <Box className="hero-section">
-        <Container maxWidth="lg" className="comp-space">
-          <Typography variant="h2" gutterBottom>
-            Contact
-          </Typography>
-          <Typography variant="h5" gutterBottom color="text.secondary">
-            One Call Does It All!
-          </Typography>
-        </Container>
-      </Box>
+      <ServiceBanner title=" Contact" subtitle=" One Call Does It All!" />
 
-      <Container className="mt-5 comp-space">
+      <Container maxWidth="lg" className="comp-space">
         <Grid container spacing={4}>
           {/* Contact Form */}
           <Grid item xs={12} md={6}>
@@ -147,16 +139,13 @@ const Contact = () => {
                     rows={4}
                     required
                   />
-                  <Button
+                  <button
                     type="submit"
-                    variant="contained"
-                    color="primary"
-                    className="mt-3"
-                    fullWidth
+                    className="custom-button rounded"
                     disabled={loading}
                   >
                     {loading ? "Sending..." : "Send Message"}
-                  </Button>
+                  </button>
                 </form>
                 {responseMessage && (
                   <Typography color="success.main" sx={{ mt: 2 }}>
@@ -177,12 +166,14 @@ const Contact = () => {
                 <Typography className="py-1">
                   7106 Marble Springs Dr Katy, Tx 77494
                 </Typography>
-                <Typography  className="py-1">+1- 832-312-5501</Typography>
-                <Typography  className="py-1">Email: remodel@andersonremodeling.com</Typography>
+                <Typography className="py-1">+1- 832-312-5501</Typography>
+                <Typography className="py-1">
+                  Email: remodel@andersonremodeling.com
+                </Typography>
                 <Typography variant="h6" className="mt-3">
                   Office Hours
                 </Typography>
-                <Typography className="py-1" >
+                <Typography className="py-1">
                   Mon – Thur: 9am – 5pm
                   <br />
                   Fri: 9am – 3pm

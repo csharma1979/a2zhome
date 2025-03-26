@@ -103,31 +103,28 @@
     font-weight: 500;
     text-transform: none;
   }
-  .custom-dots {
+  .slick-dots {
     position: absolute;
-    bottom:6rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex !important;
-    gap: 8px;
-    justify-content: center;
-    align-items: center;
+    bottom: 20px;
+    display: block !important;
+    width: 100%;
+    text-align: center;
   }
   
-  .custom-dot span {
-    display: block;
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    border-radius: 50%;
-    opacity: 0.5;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
   }
   
-  .slick-active .custom-dot span {
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: white !important;
+    opacity: 0.75;
+  }
+  
+  .slick-dots li.slick-active button:before {
     opacity: 1;
-    transform: scale(1.2);
-    background-color: #007bff;
+    color: #fff !important;
   }
   
   

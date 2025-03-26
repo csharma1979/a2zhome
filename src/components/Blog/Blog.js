@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { FaCalendarAlt } from "react-icons/fa";
 import Link from "next/link";
+import ServiceBanner from "../Service/ServiceBanner";
 import { Container, Box, Typography } from "@mui/material";
 import {
   fetchBlogs,
@@ -35,33 +36,13 @@ const Blog = () => {
 
   return (
     <Box className="home-page">
-      <Box className="hero-section kitchen-hero">
-        <div className="container">
-          <div className="">
-            <div className="service-banner">
-              <Typography variant="h3">
-                Get the Best Kitchen Cabinets Refinishing
-              </Typography>
-              <Typography variant="h6" className="pt-2">
-                Get more out of your kitchen updates with quick, affordable
-                cabinet refacing with stunning results.
-              </Typography>
-            </div>
-          </div>
-        </div>
-      </Box>
-      <div className="container">
-        {/* <div className="row justify-content-center">
-          <div className="col-lg-8">
-            <div className="section-title">
-              <h2 className="heading text-center">
-                Discover a World of Sustainable Alternatives
-              </h2>
-            </div>
-          </div>
-        </div> */}
-
-        <div className="row py-4 ">
+      <ServiceBanner
+        title=" Get the Best Kitchen Cabinets Refinishing"
+        subtitle=" Get more out of your kitchen updates with quick, affordable
+                cabinet refacing with stunning results."
+      />
+      <Container maxWidth="lg" className="comp-space">
+        <div className="row ">
           {blogs.length > 0 ? (
             blogs.map((blog) => (
               <div key={blog._id} className="col-lg-4 col-md-6">
@@ -119,7 +100,7 @@ const Blog = () => {
             </div>
           )}
         </div>
-      </div>
+      </Container>
     </Box>
   );
 };

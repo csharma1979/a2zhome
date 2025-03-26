@@ -89,17 +89,21 @@ export const benefits = [
 export const heroSlides = [
   {
     title: "Transform Your Kitchen – Expert Repairs & Installations!",
-    subtitle: "From Faucets to Fixtures – Fast, Reliable, and Affordable Kitchen Services You Can Trust.",
-    image: "/assets/homebanner1.jpeg",
-  },
-  {
-    title: "Stay Comfortable Year-Round with Our HVAC Services!",
-    subtitle: "Professional Heating, Cooling, and Ventilation Solutions – Fast, Reliable, and Affordable.",
+    subtitle:
+      "From Faucets to Fixtures – Fast, Reliable, and Affordable Kitchen Services You Can Trust.",
     image: "/assets/homebanner2.jpeg",
   },
   {
+    title: "Stay Comfortable Year-Round with Our HVAC Services!",
+    subtitle:
+      "Professional Heating, Cooling, and Ventilation Solutions – Fast, Reliable, and Affordable.",
+
+    image: "/assets/homebanner1.jpeg",
+  },
+  {
     title: "Plumbing Problems? We’ve Got the Solution!",
-    subtitle: "Expert Repairs, Installations, and Maintenance – Fast, Affordable, and Always Reliable.",
+    subtitle:
+      "Expert Repairs, Installations, and Maintenance – Fast, Affordable, and Always Reliable.",
     image: "/assets/kitchen/A2z-home-kitchen-service-3.jpg",
   },
 ];
