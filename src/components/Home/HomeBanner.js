@@ -7,7 +7,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Link from "next/link";
+import Link from 'next/link'
 import { features } from "../../Data/Navbar";
 import ServiceFaq from "../Service/ServiceFaq";
 import Testimonials from "./Testimonials";
@@ -25,12 +25,12 @@ const Home = () => {
   const heroSettings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
+    autoplaySpeed: 2500,
+    cssEase: "ease-in-out",
     arrows: false,
     customPaging: (i) => (
       <div
@@ -43,52 +43,61 @@ const Home = () => {
         }}
       />
     ),
-    dotsClass: "slick-dots",
+    dotsClass: "slick-dots slick-dots-custom",
   };
   return (
     <Box className="home-page">
-      <Box className="hero-section">
-        <Slider {...heroSettings}>
+      <Box className="hero-section" sx={{ minHeight: "600px", overflow: "hidden" }}>
+      <Slider {...heroSettings}>
           {heroSlides.map((slide, index) => (
-            <Box
-              key={index}
-              className="hero-slide"
-              sx={{
-                backgroundImage: `url(${slide.image})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                minHeight: "600px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "white",
-                textAlign: "center",
-                position: "relative",
-              }}
-            >
-              <Container
-                maxWidth="lg"
-                sx={{
-                  textAlign: "center",
-                  py: 8,
-                  backgroundColor: "#0b72aa99",
-                  borderRadius: 2,
-                }}
-              >
-                <Typography variant="h4" gutterBottom>
-                  {slide.title}
-                </Typography>
-                <Typography variant="h5" gutterBottom>
-                  {slide.subtitle}
-                </Typography>
-                <button
-                  className="custom-button mt-4"
-                  onClick={() => setShowModal(true)}
+            <Box key={index}>
+              <Grid container sx={{ minHeight: "600px" }}>
+                {/* Left Side - Text with Blue Background */}
+                <Grid
+                  item
+                  xs={12}
+                  md={6}
+                  sx={{
+                    backgroundColor: "#0d6aa3",
+                    color: "white",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    padding: "3rem",
+                    textAlign: "left",
+                  }}
                 >
-                  {" "}
-                  Request a Free Quote
-                </button>
-              </Container>
+                  <Container maxWidth="sm">
+                    <Typography variant="h4" gutterBottom>
+                      {slide.title}
+                    </Typography>
+                    <Typography variant="h6" gutterBottom>
+                      {slide.subtitle}
+                    </Typography>
+                    <Button
+                      variant="outlined"
+                      color="white"
+                      sx={{ mt: 3 }}
+                      onClick={() => setShowModal(true)}
+                    >
+                      Request a Free Quote
+                    </Button>
+                  </Container>
+                </Grid>
+
+                {/* Right Side - Image (50%) */}
+                <Grid
+                  item
+                  xs={12}
+                  md={6}
+                  sx={{
+                    backgroundImage: `url(${slide.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    minHeight: "600px",
+                  }}
+                />
+              </Grid>
             </Box>
           ))}
         </Slider>
