@@ -37,9 +37,8 @@ const Blog = () => {
   return (
     <Box className="home-page">
       <ServiceBanner
-        title=" Get the Best Kitchen Cabinets Refinishing"
-        subtitle=" Get more out of your kitchen updates with quick, affordable
-                cabinet refacing with stunning results."
+        title="nspiring Ideas & Expert Tips for Your Home Projects"
+        subtitle="Explore the latest trends, guides, and insights to enhance your living space"
       />
       <Container maxWidth="lg" className="comp-space">
         <div className="row ">

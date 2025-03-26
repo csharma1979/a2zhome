@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "../../../styles/About.css"
+import React from 'react'
 
 const About = () => {
   return (
