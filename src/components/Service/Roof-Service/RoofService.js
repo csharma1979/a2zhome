@@ -26,6 +26,7 @@ const RoofService = () => {
         title="Our Roof Services"
         subtitle="Expert solutions for your kitchen upgrades"
         data={roofingServices}
+        showReadMore={false}
       />
       <ServiceProcess />
       <ServiceGallary data={roofGallaryImages} />

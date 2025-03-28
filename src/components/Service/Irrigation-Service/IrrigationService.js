@@ -26,6 +26,7 @@ const IrrigationService = () => {
         title="Our Irrigation Services"
         subtitle="Expert solutions for your kitchen upgrades"
         data={irrigationServices}
+        showReadMore={false}
       />
       <ServiceProcess />
       <ServiceGallary data={irrigationGallaryImages} />

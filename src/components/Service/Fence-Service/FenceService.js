@@ -26,6 +26,7 @@ const FenceService = () => {
         title="Our Fence Services"
         subtitle="Expert solutions for your kitchen upgrades"
         data={fenceServices}
+        showReadMore={false}
       />
       <ServiceProcess />
       <ServiceGallary data={fenceGallaryImages} />

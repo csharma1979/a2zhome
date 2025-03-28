@@ -27,6 +27,7 @@ const DriveWayWalkWayService = () => {
         title="Our Driveway & Walkway Services"
         subtitle="Expert solutions for your kitchen upgrades"
         data={drivewayWalkwayServices}
+        showReadMore={false}
       />
       <ServiceProcess />
       <ServiceGallary data={drivewayWalkwayGallaryImages} />

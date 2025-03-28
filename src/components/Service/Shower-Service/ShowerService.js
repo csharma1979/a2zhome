@@ -21,12 +21,13 @@ const ShowerService = () => {
     <Box className="home-page">
       <ServiceBanner
         title="Premium Shower Installation & Repair Services"
-        subtitle="Expert shower installation and repair services. Upgrade, fix leaks, or design a custom shower with durable, high-quality craftsmanship tailored to your needs."
+        subtitle=" Expert shower solutions offering professional installation, repairs, and upgrades for a luxurious bathing experience."
       />
       <ServiceCard
         title="Our Shower Services"
         subtitle="Expert solutions for your kitchen upgrades"
         data={showerServices}
+        showReadMore={false}
       />
       <ServiceProcess />
       <ServiceGallary data={showerGallaryImages} />

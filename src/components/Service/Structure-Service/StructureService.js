@@ -26,6 +26,7 @@ const StructureService = () => {
         title="Our Structural Services"
         subtitle="Expert solutions for your kitchen upgrades"
         data={structuralServices}
+        showReadMore={false}
       />
       <ServiceProcess />
       <ServiceGallary data={structureGallaryImages} />

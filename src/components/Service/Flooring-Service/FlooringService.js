@@ -26,6 +26,7 @@ const FlooringService = () => {
         title="Our Flooring Services"
         subtitle="Expert solutions for your kitchen upgrades"
         data={flooringServices}
+        showReadMore={false}
       />
       <ServiceProcess />
       <ServiceGallary data={flooringGalleryImages}/>

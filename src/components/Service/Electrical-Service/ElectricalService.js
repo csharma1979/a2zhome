@@ -26,6 +26,7 @@ const ElectricalService = () => {
         title="Our Electrical Services"
         subtitle="Expert solutions for your kitchen upgrades"
         data={electricalServices}
+        showReadMore={false}
       />
       <ServiceProcess />
       <ServiceGallary data={electricalGallaryImages} />

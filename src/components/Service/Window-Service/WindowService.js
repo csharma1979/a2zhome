@@ -20,12 +20,13 @@ const WindowService = () => {
     <Box className="home-page">
       <ServiceBanner
         title=" Superior Window Installation & Repair Services"
-        subtitle="Expert window services for installation, repair, and replacement. Improve energy efficiency, security, and aesthetics with precision craftsmanship for homes and businesses."
+        subtitle=" Professional window solutions offering precise installation, repairs, and replacements for enhanced beauty and efficiency."
       />
       <ServiceCard
         title="Our Window Services"
         subtitle="Expert solutions for your kitchen upgrades"
         data={windowServices}
+        showReadMore={false}
       />
       <ServiceProcess />
       <ServiceGallary data={windowGallaryImages} />

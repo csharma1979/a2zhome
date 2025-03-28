@@ -18,18 +18,21 @@ import {
   List,
   ListItem,
   ListItemText,
+  Collapse,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Link from "next/link";
 import { useTheme, useMediaQuery } from "@mui/material";
 import { navbarFeatures } from "../../Data/Navbar";
-import { MdAddIcCall } from "react-icons/md";
+
 
 const Header = () => {
   const [featuresAnchor, setFeaturesAnchor] = useState(null);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const pathname = usePathname();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
@@ -44,6 +47,9 @@ const Header = () => {
 
   const toggleDrawer = () => {
     setMobileOpen(!mobileOpen);
+  };
+  const toggleMobileServices = () => {
+    setMobileServicesOpen(!mobileServicesOpen);
   };
 
   return (
@@ -90,20 +96,19 @@ const Header = () => {
                   <Grid container spacing={0.3} sx={{ width: 670 }}>
                     {navbarFeatures.map((feature, index) => (
                       <Grid item xs={3} key={index}>
-                        <Link href={feature.link}>
-                          <MenuItem
-                            onClick={handleFeaturesClose}
-                            sx={{
-                              "&:hover": { backgroundColor: "#f0f0f0" },
-                              textDecoration: "none",
-                              padding: "8px 6px",
-                              gap: "5px",
-                            }}
-                          >
-                            {feature.icon}{" "}
-                            <Typography>{feature.title}</Typography>
-                          </MenuItem>
-                        </Link>
+                       <MenuItem
+                          component={Link}
+                          href={feature.link}
+                          onClick={handleFeaturesClose}
+                          sx={{
+                            "&:hover": { backgroundColor: "#f0f0f0" },
+                            textDecoration: "none",
+                            padding: "8px 6px",
+                            gap: "5px",
+                          }}
+                        >
+                          {feature.icon} <Typography>{feature.title}</Typography>
+                        </MenuItem>
                       </Grid>
                     ))}
                   </Grid>
@@ -191,9 +196,27 @@ const Header = () => {
               <ListItemText primary="Home" />
             </ListItem>
 
-            <ListItem button onClick={handleFeaturesClick}>
+            <ListItem button onClick={toggleMobileServices}>
               <ListItemText primary="Services" />
+              {mobileServicesOpen ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
             </ListItem>
+            <Collapse in={mobileServicesOpen} timeout="auto" unmountOnExit>
+              <List component="div" disablePadding>
+                {navbarFeatures.map((feature, index) => (
+                  <ListItem
+                    button
+                    component={Link}
+                    href={feature.link}
+                    key={index}
+                    onClick={toggleDrawer}
+                    sx={{ pl: 4 }}
+                  >
+                    <ListItemText primary={feature.title} />
+                  </ListItem>
+                ))}
+              </List>
+            </Collapse>
+
 
             <ListItem
               button

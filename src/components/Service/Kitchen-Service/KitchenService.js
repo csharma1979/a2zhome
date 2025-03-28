@@ -27,6 +27,7 @@ const KitchenService = () => {
         title="Our Kitchen Services"
         subtitle="Expert solutions for your kitchen upgrades"
         data={kitchenService}
+        showReadMore={false}
       />
       <ServiceProcess />
       <ServiceGallary data={kitchenGalleryImages} />

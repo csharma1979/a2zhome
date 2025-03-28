@@ -27,6 +27,7 @@ const PlumberingService = () => {
         title="Our Plumbering Services"
         subtitle="Expert solutions for your plumbering upgrades"
         data={kitchenService}
+        showReadMore={false}
       />
       <ServiceProcess />
       <ServiceGallary data={plumberingGalleryImages} />

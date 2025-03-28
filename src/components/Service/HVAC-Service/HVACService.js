@@ -27,6 +27,7 @@ const HVACService = () => {
       title="Our HVAC Services"
       subtitle="Expert solutions for your kitchen upgrades"
       data={hvacServices}
+      showReadMore={false}
     />
     <ServiceProcess />
     <ServiceGallary data={hvacGalleryImages}/>

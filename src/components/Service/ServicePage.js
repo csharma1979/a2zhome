@@ -16,6 +16,7 @@ const ServicePage = () => {
         title="Our Services"
         subtitle="Expert solutions for your kitchen upgrades"
         data={features}
+        showReadMore={true}
       />
       <CTA />
     </Box>

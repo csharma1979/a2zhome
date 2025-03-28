@@ -27,6 +27,7 @@ const DigitalHomeService = () => {
         title="Our Digital Home Services"
         subtitle="Expert solutions for your kitchen upgrades"
         data={digitalHomeServices}
+        showReadMore={false}
       />
       <ServiceProcess />
       <ServiceGallary data={digitalHomeGalleryImages}/>
