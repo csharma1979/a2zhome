@@ -125,16 +125,16 @@ export const irrigationFaqData = [
 ];
 
 export const irrigationGallaryImages = [
-  "/assets/Irrigation-System/Irrigation-System-1.jpg",
-  "/assets/Irrigation-System/Irrigation-System-2.jpg",
-  "/assets/Irrigation-System/Irrigation-System-3.jpg",
-  "/assets/Irrigation-System/Irrigation-System-4.jpg",
-  "/assets/Irrigation-System/Irrigation-System-5.jpg",
-  "/assets/Irrigation-System/Irrigation-System-6.jpg",
-  "/assets/Irrigation-System/Irrigation-System-7.jpg",
-  "/assets/Irrigation-System/Irrigation-System-8.jpg",
-  "/assets/Irrigation-System/Irrigation-System-9.jpg",
-  "/assets/Irrigation-System/Irrigation-System-10.jpg",
-  "/assets/Irrigation-System/Irrigation-System-11.jpg",
-  "/assets/Irrigation-System/Irrigation-System-12.jpg",
+  "/assets/Irrigation-System/Irrigation-System-1.webp",
+  "/assets/Irrigation-System/Irrigation-System-2.webp",
+  "/assets/Irrigation-System/Irrigation-System-3.webp",
+  "/assets/Irrigation-System/Irrigation-System-4.webp",
+  "/assets/Irrigation-System/Irrigation-System-5.webp",
+  "/assets/Irrigation-System/Irrigation-System-6.webp",
+  "/assets/Irrigation-System/Irrigation-System-7.webp",
+  "/assets/Irrigation-System/Irrigation-System-8.webp",
+  "/assets/Irrigation-System/Irrigation-System-9.webp",
+  "/assets/Irrigation-System/Irrigation-System-10.webp",
+  "/assets/Irrigation-System/Irrigation-System-11.webp",
+  "/assets/Irrigation-System/Irrigation-System-12.webp",
 ];

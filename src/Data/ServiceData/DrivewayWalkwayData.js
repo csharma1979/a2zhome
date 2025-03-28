@@ -115,17 +115,17 @@ export const drivewayFaqData = [
 ];
 
 export const drivewayWalkwayGallaryImages = [
-  "/assets/Driveway-Walkway/Driveway-Walkway-1.jpg",
-  "/assets/Driveway-Walkway/Driveway-Walkway-2.jpg",
-  "/assets/Driveway-Walkway/Driveway-Walkway-3.jpg",
-  "/assets/Driveway-Walkway/Driveway-Walkway-4.jpg",
-  "/assets/Driveway-Walkway/Driveway-Walkway-5.jpg",
-  "/assets/Driveway-Walkway/Driveway-Walkway-6.jpg",
-  "/assets/Driveway-Walkway/Driveway-Walkway-7.jpg",
-  "/assets/Driveway-Walkway/Driveway-Walkway-8.jpg",
-  "/assets/Driveway-Walkway/Driveway-Walkway-9.jpg",
-  "/assets/Driveway-Walkway/Driveway-Walkway-10.jpg",
-  "/assets/Driveway-Walkway/Driveway-Walkway-11.jpg",
-  "/assets/Driveway-Walkway/Driveway-Walkway-12.jpg",
+  "/assets/Driveway-Walkway/Driveway-Walkway-1.webp",
+  "/assets/Driveway-Walkway/Driveway-Walkway-2.webp",
+  "/assets/Driveway-Walkway/Driveway-Walkway-3.webp",
+  "/assets/Driveway-Walkway/Driveway-Walkway-4.webp",
+  "/assets/Driveway-Walkway/Driveway-Walkway-5.webp",
+  "/assets/Driveway-Walkway/Driveway-Walkway-6.webp",
+  "/assets/Driveway-Walkway/Driveway-Walkway-7.webp",
+  "/assets/Driveway-Walkway/Driveway-Walkway-8.webp",
+  "/assets/Driveway-Walkway/Driveway-Walkway-9.webp",
+  "/assets/Driveway-Walkway/Driveway-Walkway-10.webp",
+  "/assets/Driveway-Walkway/Driveway-Walkway-11.webp",
+  "/assets/Driveway-Walkway/Driveway-Walkway-12.webp",
  
 ];

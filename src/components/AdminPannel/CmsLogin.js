@@ -43,7 +43,7 @@ const CmsLogin = () => {
       <div className="login-container">
         <div className="brand-logo">
           <Image
-            src="/assets/white-logo.png"
+            src="/assets/white-logo.webp"
             alt="a2zhome-solutions"
             className="d-flex mx-auto"
             width={150}

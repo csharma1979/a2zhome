@@ -118,16 +118,16 @@ export const windowFaqData = [
 ];
 
 export const windowGallaryImages = [
-  "/assets/Window-Installation/Window-Installation-1.jpg",
-  "/assets/Window-Installation/Window-Installation-2.jpg",
-  "/assets/Window-Installation/Window-Installation-3.jpg",
-  "/assets/Window-Installation/Window-Installation-5.jpg",
-  "/assets/Window-Installation/Window-Installation-6.jpg",
-  "/assets/Window-Installation/Window-Installation-7.jpg",
-  "/assets/Window-Installation/Window-Installation-8.jpg",
-  "/assets/Window-Installation/Window-Installation-9.jpg",
-  "/assets/Window-Installation/Window-Installation-10.jpg",
-  "/assets/Window-Installation/Window-Installation-11.jpg",
-  "/assets/Window-Installation/Window-Installation-12.jpg",
-  "/assets/Window-Installation/Window-Installation-13.jpg",
+  "/assets/Window-Installation/Window-Installation-1.webp",
+  "/assets/Window-Installation/Window-Installation-2.webp",
+  "/assets/Window-Installation/Window-Installation-3.webp",
+  "/assets/Window-Installation/Window-Installation-5.webp",
+  "/assets/Window-Installation/Window-Installation-6.webp",
+  "/assets/Window-Installation/Window-Installation-7.webp",
+  "/assets/Window-Installation/Window-Installation-8.webp",
+  "/assets/Window-Installation/Window-Installation-9.webp",
+  "/assets/Window-Installation/Window-Installation-10.webp",
+  "/assets/Window-Installation/Window-Installation-11.webp",
+  "/assets/Window-Installation/Window-Installation-12.webp",
+  "/assets/Window-Installation/Window-Installation-13.webp",
 ];

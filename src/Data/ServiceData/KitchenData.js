@@ -1,7 +1,18 @@
-import { FaUserTie, FaPalette, FaDollarSign, FaHourglassHalf, FaHandshake } from "react-icons/fa";
+import {
+  FaUserTie,
+  FaPalette,
+  FaDollarSign,
+  FaHourglassHalf,
+  FaHandshake,
+} from "react-icons/fa";
 
-
-import { FaHome, FaTools, FaThLarge, FaLightbulb, FaPlug } from "react-icons/fa";
+import {
+  FaHome,
+  FaTools,
+  FaThLarge,
+  FaLightbulb,
+  FaPlug,
+} from "react-icons/fa";
 
 export const kitchenService = [
   {
@@ -70,7 +81,8 @@ export const kitchenWhyChooseUs = [
   {
     id: 6,
     title: "Payment Plans",
-    description: "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
+    description:
+      "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
     icon: <FaDollarSign />,
   },
 ];
@@ -125,18 +137,18 @@ export const kitchenfaqData = [
 ];
 
 export const kitchenGalleryImages = [
-  "/assets/kitchen/A2z-home-kitchen-service-1.jpg",
-  "/assets/kitchen/A2z-home-kitchen-service-2.jpg",
-  "/assets/kitchen/A2z-home-kitchen-service-3.jpg",
-  "/assets/kitchen/A2z-home-kitchen-service-4.jpg",
-  "/assets/kitchen/A2z-home-kitchen-service-5.jpg",
-  "/assets/kitchen/A2z-home-kitchen-service-6.jpg",
-  "/assets/kitchen/A2z-home-kitchen-service-7.jpg",
-  "/assets/kitchen/A2z-home-kitchen-service-8.jpg",
-  "/assets/kitchen/A2z-home-kitchen-service-9.jpg",
-  "/assets/kitchen/A2z-home-kitchen-service-10.jpg",
-  "/assets/kitchen/A2z-home-kitchen-service-11.jpg",
-  "/assets/kitchen/A2z-home-kitchen-service-12.jpg",
+  "/assets/kitchen/A2z-home-kitchen-service-1.webp",
+  "/assets/kitchen/A2z-home-kitchen-service-2.webp",
+  "/assets/kitchen/A2z-home-kitchen-service-3.webp",
+  "/assets/kitchen/A2z-home-kitchen-service-4.webp",
+  "/assets/kitchen/A2z-home-kitchen-service-5.webp",
+  "/assets/kitchen/A2z-home-kitchen-service-6.webp",
+  "/assets/kitchen/A2z-home-kitchen-service-7.webp",
+  "/assets/kitchen/A2z-home-kitchen-service-8.webp",
+  "/assets/kitchen/A2z-home-kitchen-service-9.webp",
+  "/assets/kitchen/A2z-home-kitchen-service-10.webp",
+  "/assets/kitchen/A2z-home-kitchen-service-11.webp",
+  "/assets/kitchen/A2z-home-kitchen-service-12.webp",
 ];
 
 export const kitchenLimitedOffer = [
@@ -158,4 +170,3 @@ export const kitchenLimitedOffer = [
     description: "Enter to Win a $20,000 Makeover",
   },
 ];
-

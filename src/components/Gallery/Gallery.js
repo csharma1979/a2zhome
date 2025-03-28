@@ -60,6 +60,7 @@ const GallerySection = ({ title, images, onImageClick }) => (
           layout="responsive"
           width={200}
           height={70}
+          loading="lazy"
           className="img-fluid shadow-sm rounded"
         />
         {/* </div> */}

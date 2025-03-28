@@ -117,18 +117,16 @@ export const plumbingFaqData = [
 ];
 
 export const plumberingGalleryImages = [
-  "/assets/Plumbing-services/Plumbing-services-1.jpg",
-  "/assets/Plumbing-services/Plumbing-services-2.jpg",
-  "/assets/Plumbing-services/Plumbing-services-3.jpg",
-  "/assets/Plumbing-services/Plumbing-services-4.jpg",
-  "/assets/Plumbing-services/Plumbing-services-5.jpg",
-  "/assets/Plumbing-services/Plumbing-services-6.jpg",
-  "/assets/Plumbing-services/Plumbing-services-7.jpg",
-  "/assets/Plumbing-services/Plumbing-services-8.jpg",
-  "/assets/Plumbing-services/Plumbing-services-9.jpg",
-  "/assets/Plumbing-services/Plumbing-services-10.jpg",
-  "/assets/Plumbing-services/Plumbing-services-11.jpg", 
-  "/assets/Plumbing-services/Plumbing-services-12.jpg",
-  "/assets/Plumbing-services/Plumbing-services-13.jpg",
-
+  "/assets/Plumbing-services/Plumbing-services-1.webp",
+  "/assets/Plumbing-services/Plumbing-services-2.webp",
+  "/assets/Plumbing-services/Plumbing-services-3.webp",
+  "/assets/Plumbing-services/Plumbing-services-4.webp",
+  "/assets/Plumbing-services/Plumbing-services-5.webp",
+  "/assets/Plumbing-services/Plumbing-services-6.webp",
+  "/assets/Plumbing-services/Plumbing-services-7.webp",
+  "/assets/Plumbing-services/Plumbing-services-8.webp",
+  "/assets/Plumbing-services/Plumbing-services-9.webp",
+  "/assets/Plumbing-services/Plumbing-services-10.webp",
+  "/assets/Plumbing-services/Plumbing-services-11.webp",
+  "/assets/Plumbing-services/Plumbing-services-12.webp",
 ];

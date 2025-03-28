@@ -118,18 +118,18 @@ export const hvacFaqData = [
 ];
 
 export const hvacGalleryImages = [
-  "/assets/HVAC-Services/HVAC-Services-1.jpg",
-  "/assets/HVAC-Services/HVAC-Services-2.jpg",
-  "/assets/HVAC-Services/HVAC-Services-3.jpg",
-  "/assets/HVAC-Services/HVAC-Services-4.jpg",
-  "/assets/HVAC-Services/HVAC-Services-5.jpg",
-  "/assets/HVAC-Services/HVAC-Services-6.jpg",
-  "/assets/HVAC-Services/HVAC-Services-7.jpg",
-  "/assets/HVAC-Services/HVAC-Services-8.jpg",
-  "/assets/HVAC-Services/HVAC-Services-9.jpg",
-  "/assets/HVAC-Services/HVAC-Services-10.jpg",
-  "/assets/HVAC-Services/HVAC-Services-11.jpg",
-  "/assets/HVAC-Services/HVAC-Services-12.jpg",
+  "/assets/HVAC-Services/HVAC-Services-1.webp",
+  "/assets/HVAC-Services/HVAC-Services-2.webp",
+  "/assets/HVAC-Services/HVAC-Services-3.webp",
+  "/assets/HVAC-Services/HVAC-Services-4.webp",
+  "/assets/HVAC-Services/HVAC-Services-5.webp",
+  "/assets/HVAC-Services/HVAC-Services-6.webp",
+  "/assets/HVAC-Services/HVAC-Services-7.webp",
+  "/assets/HVAC-Services/HVAC-Services-8.webp",
+  "/assets/HVAC-Services/HVAC-Services-9.webp",
+  "/assets/HVAC-Services/HVAC-Services-10.webp",
+  "/assets/HVAC-Services/HVAC-Services-11.webp",
+  "/assets/HVAC-Services/HVAC-Services-12.webp",
 
   
 ];

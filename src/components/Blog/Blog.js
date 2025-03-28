@@ -37,7 +37,7 @@ const Blog = () => {
   return (
     <Box className="home-page">
       <ServiceBanner
-        title="nspiring Ideas & Expert Tips for Your Home Projects"
+        title="Inspiring Ideas & Expert Tips for Your Home Projects"
         subtitle="Explore the latest trends, guides, and insights to enhance your living space"
       />
       <Container maxWidth="lg" className="comp-space">

@@ -121,17 +121,17 @@ export const waterHeaterFaqData = [
 ];
 
 export const waterHeaterGalleryImages = [
-  "/assets/Water-Heater/Water-Heater-1.jpg",
-  "/assets/Water-Heater/Water-Heater-2.jpg",
-  "/assets/Water-Heater/Water-Heater-3.jpg",
-  "/assets/Water-Heater/Water-Heater-4.jpg",
-  "/assets/Water-Heater/Water-Heater-5.jpg",
-  "/assets/Water-Heater/Water-Heater-6.jpg",
-  "/assets/Water-Heater/Water-Heater-7.jpg",
-  "/assets/Water-Heater/Water-Heater-8.jpg",
-  "/assets/Water-Heater/Water-Heater-9.jpg",
-  "/assets/Water-Heater/Water-Heater-11.jpg",
-  "/assets/Water-Heater/Water-Heater-12.jpg",
-  "/assets/Water-Heater/Water-Heater-13.jpg",
+  "/assets/Water-Heater/Water-Heater-1.webp",
+  "/assets/Water-Heater/Water-Heater-2.webp",
+  "/assets/Water-Heater/Water-Heater-3.webp",
+  "/assets/Water-Heater/Water-Heater-4.webp",
+  "/assets/Water-Heater/Water-Heater-5.webp",
+  "/assets/Water-Heater/Water-Heater-6.webp",
+  "/assets/Water-Heater/Water-Heater-7.webp",
+  "/assets/Water-Heater/Water-Heater-8.webp",
+  "/assets/Water-Heater/Water-Heater-9.webp",
+  "/assets/Water-Heater/Water-Heater-11.webp",
+  "/assets/Water-Heater/Water-Heater-12.webp",
+  "/assets/Water-Heater/Water-Heater-13.webp",
 
 ];

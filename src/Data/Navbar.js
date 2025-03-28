@@ -24,7 +24,7 @@ import { ImSpoonKnife } from "react-icons/im";
 export const features = [
   {
     title: "Plumbing Service",
-    link: "/plumbering",
+    link: "/plumbing",
     icon: <FaBath fontSize="large" />,
     description:
       "Leak repairs, pipe installations, and general plumbing maintenance.",

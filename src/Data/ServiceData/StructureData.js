@@ -126,18 +126,18 @@ export const structuralFaqData = [
 ];
 
 export const structureGallaryImages = [
-  "/assets/Structural-Services/Structural-Services-1.jpg",
-  "/assets/Structural-Services/Structural-Services-2.jpg",
-  "/assets/Structural-Services/Structural-Services-3.jpg",
-  "/assets/Structural-Services/Structural-Services-4.jpg",
-  "/assets/Structural-Services/Structural-Services-5.jpg",
-  "/assets/Structural-Services/Structural-Services-6.jpg",
-  '/assets/Structural-Services/Structural-Services-7.jpg',
-  "/assets/Structural-Services/Structural-Services-8.jpg",
-  "/assets/Structural-Services/Structural-Services-9.jpg",
-  "/assets/Structural-Services/Structural-Services-10.jpg",
-  '/assets/Structural-Services/Structural-Services-11.jpg',
-  "/assets/Structural-Services/Structural-Services-12.jpg",
+  "/assets/Structural-Services/Structural-Services-1.webp",
+  "/assets/Structural-Services/Structural-Services-2.webp",
+  "/assets/Structural-Services/Structural-Services-3.webp",
+  "/assets/Structural-Services/Structural-Services-4.webp",
+  "/assets/Structural-Services/Structural-Services-5.webp",
+  "/assets/Structural-Services/Structural-Services-6.webp",
+  '/assets/Structural-Services/Structural-Services-7.webp',
+  "/assets/Structural-Services/Structural-Services-8.webp",
+  "/assets/Structural-Services/Structural-Services-9.webp",
+  "/assets/Structural-Services/Structural-Services-10.webp",
+  '/assets/Structural-Services/Structural-Services-11.webp',
+  "/assets/Structural-Services/Structural-Services-12.webp",
   
   
 ];

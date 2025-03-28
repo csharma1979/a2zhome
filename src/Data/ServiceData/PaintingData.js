@@ -115,16 +115,16 @@ export const paintingFaqData = [
 ];
 
 export const paintingGallaryImages = [
-  "/assets/Painting-Services/Painting-Services-1.jpg",
-  "/assets/Painting-Services/Painting-Services-2.jpg",
-  "/assets/Painting-Services/Painting-Services-3.jpg",
-  "/assets/Painting-Services/Painting-Services-4.jpg",
-  "/assets/Painting-Services/Painting-Services-5.jpg",
-  "/assets/Painting-Services/Painting-Services-6.jpg",
-  "/assets/Painting-Services/Painting-Services-8.jpg",
-  "/assets/Painting-Services/Painting-Services-9.jpg",
-  "/assets/Painting-Services/Painting-Services-10.jpg",
-  "/assets/Painting-Services/Painting-Services-11.jpg",
-  "/assets/Painting-Services/Painting-Services-12.jpg",
-  "/assets/Painting-Services/Painting-Services-13.jpg",
+  "/assets/Painting-Services/Painting-Services-1.webp",
+  "/assets/Painting-Services/Painting-Services-2.webp",
+  "/assets/Painting-Services/Painting-Services-3.webp",
+  "/assets/Painting-Services/Painting-Services-4.webp",
+  "/assets/Painting-Services/Painting-Services-5.webp",
+  "/assets/Painting-Services/Painting-Services-6.webp",
+  "/assets/Painting-Services/Painting-Services-8.webp",
+  "/assets/Painting-Services/Painting-Services-9.webp",
+  "/assets/Painting-Services/Painting-Services-10.webp",
+  "/assets/Painting-Services/Painting-Services-11.webp",
+  "/assets/Painting-Services/Painting-Services-12.webp",
+  "/assets/Painting-Services/Painting-Services-13.webp",
 ];

@@ -1,5 +1,5 @@
 import {
-  FaDollarSign ,
+  FaDollarSign,
   FaUsers,
   FaCogs,
   FaClock,
@@ -86,11 +86,12 @@ export const roofingWhyChooseUs = [
     icon: <FaCheckCircle />,
   },
   {
-      id: 6,
-      title: "Payment Plans",
-      description: "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
-      icon: <FaDollarSign />,
-    },
+    id: 6,
+    title: "Payment Plans",
+    description:
+      "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
+    icon: <FaDollarSign />,
+  },
 ];
 
 export const roofingFaqData = [
@@ -121,19 +122,18 @@ export const roofingFaqData = [
   },
 ];
 
-
 export const roofGallaryImages = [
-  '/assets/Roof-Installation/Roof-Installation-1.jpg',
-  '/assets/Roof-Installation/Roof-Installation-2.jpg',
-  '/assets/Roof-Installation/Roof-Installation-3.jpg',
-  '/assets/Roof-Installation/Roof-Installation-4.jpg',
-  '/assets/Roof-Installation/Roof-Installation-5.jpg',
-  '/assets/Roof-Installation/Roof-Installation-6.jpg',
+  "/assets/Roof-Installation/Roof-Installation-1.webp",
+  "/assets/Roof-Installation/Roof-Installation-2.webp",
+  "/assets/Roof-Installation/Roof-Installation-3.webp",
+  "/assets/Roof-Installation/Roof-Installation-4.webp",
+  "/assets/Roof-Installation/Roof-Installation-5.webp",
+  "/assets/Roof-Installation/Roof-Installation-6.webp",
 
-  '/assets/Roof-Installation/Roof-Installation-8.jpg',
-  '/assets/Roof-Installation/Roof-Installation-9.jpg',
-  '/assets/Roof-Installation/Roof-Installation-10.jpg',
-  '/assets/Roof-Installation/Roof-Installation-11.jpg',
-  '/assets/Roof-Installation/Roof-Installation-12.jpg',
-  '/assets/Roof-Installation/Roof-Installation-13.jpg',
-]
+  "/assets/Roof-Installation/Roof-Installation-8.webp",
+  "/assets/Roof-Installation/Roof-Installation-9.webp",
+  "/assets/Roof-Installation/Roof-Installation-10.webp",
+  "/assets/Roof-Installation/Roof-Installation-11.webp",
+  "/assets/Roof-Installation/Roof-Installation-12.webp",
+  "/assets/Roof-Installation/Roof-Installation-13.webp",
+];

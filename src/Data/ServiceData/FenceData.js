@@ -6,7 +6,7 @@ import {
   FaTools,
   FaPaintBrush,
   FaDollarSign,
-  FaSmile
+  FaSmile,
 } from "react-icons/fa";
 
 export const fenceServices = [
@@ -76,7 +76,8 @@ export const fenceWhyChooseUs = [
   {
     id: 6,
     title: "Payment Plans",
-    description: "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
+    description:
+      "We offer flexible financing options to make your Texas kitchen remodel affordable for any budget.",
     icon: <FaDollarSign />,
   },
 ];
@@ -110,16 +111,16 @@ export const fenceFaqData = [
 ];
 
 export const fenceGallaryImages = [
-  '/assets/Fence-Services/Fence-Services-1.jpg',
-  '/assets/Fence-Services/Fence-Services-2.jpg',
-  '/assets/Fence-Services/Fence-Services-3.jpg',
-  '/assets/Fence-Services/Fence-Services-4.jpg',
-  '/assets/Fence-Services/Fence-Services-5.jpg',
-  '/assets/Fence-Services/Fence-Services-6.jpg',
-  '/assets/Fence-Services/Fence-Services-7.jpg',
-  '/assets/Fence-Services/Fence-Services-8.jpg',
-  '/assets/Fence-Services/Fence-Services-9.jpg',
-  '/assets/Fence-Services/Fence-Services-10.jpg',
-  '/assets/Fence-Services/Fence-Services-12.jpg',
-  '/assets/Fence-Services/Fence-Services-13.jpg',
-]
+  "/assets/Fence-Services/Fence-Services-1.webp",
+  "/assets/Fence-Services/Fence-Services-2.webp",
+  "/assets/Fence-Services/Fence-Services-3.webp",
+  "/assets/Fence-Services/Fence-Services-4.webp",
+  "/assets/Fence-Services/Fence-Services-5.webp",
+  "/assets/Fence-Services/Fence-Services-6.webp",
+  "/assets/Fence-Services/Fence-Services-7.webp",
+  "/assets/Fence-Services/Fence-Services-8.webp",
+  "/assets/Fence-Services/Fence-Services-9.webp",
+  "/assets/Fence-Services/Fence-Services-10.webp",
+  "/assets/Fence-Services/Fence-Services-12.webp",
+  "/assets/Fence-Services/Fence-Services-13.webp",
+];

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container ,Button } from "@mui/material";
-import ServiceAreImage from "../../../public/assets/service-area.png";
+import ServiceAreImage from "../../../public/assets/service-area.webp";
 import Image from "next/image";
 
 const ServiceArea = () => {

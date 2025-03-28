@@ -118,17 +118,17 @@ export const glassFaqData = [
 ];
 
 export const glassGallaryImages = [
-  "/assets/Glass-Installation/Glass-Installation-1.jpg",
-  "/assets/Glass-Installation/Glass-Installation-2.jpg",
-  "/assets/Glass-Installation/Glass-Installation-3.jpg",
-  "/assets/Glass-Installation/Glass-Installation-4.jpg",
-  "/assets/Glass-Installation/Glass-Installation-5.jpg",
-  "/assets/Glass-Installation/Glass-Installation-6.jpg",
-  "/assets/Glass-Installation/Glass-Installation-7.jpg",
-  "/assets/Glass-Installation/Glass-Installation-8.jpg",
-  "/assets/Glass-Installation/Glass-Installation-9.jpg",
-  "/assets/Glass-Installation/Glass-Installation-10.jpg",
-  "/assets/Glass-Installation/Glass-Installation-11.jpg",
-  "/assets/Glass-Installation/Glass-Installation-12.jpg",
+  "/assets/Glass-Installation/Glass-Installation-1.webp",
+  "/assets/Glass-Installation/Glass-Installation-2.webp",
+  "/assets/Glass-Installation/Glass-Installation-3.webp",
+  "/assets/Glass-Installation/Glass-Installation-4.webp",
+  "/assets/Glass-Installation/Glass-Installation-5.webp",
+  "/assets/Glass-Installation/Glass-Installation-6.webp",
+  "/assets/Glass-Installation/Glass-Installation-7.webp",
+  "/assets/Glass-Installation/Glass-Installation-8.webp",
+  "/assets/Glass-Installation/Glass-Installation-9.webp",
+  "/assets/Glass-Installation/Glass-Installation-10.webp",
+  "/assets/Glass-Installation/Glass-Installation-11.webp",
+  "/assets/Glass-Installation/Glass-Installation-12.webp",
   
 ];

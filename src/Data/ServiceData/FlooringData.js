@@ -114,17 +114,17 @@ export const flooringFaqData = [
 ];
 
 export const flooringGalleryImages = [
-  "/assets/Flooring-Services/Flooring-Services-1.jpg",
-  "/assets/Flooring-Services/Flooring-Services-2.jpg",
-  "/assets/Flooring-Services/Flooring-Services-3.jpg",
-  "/assets/Flooring-Services/Flooring-Services-4.jpg",
-  "/assets/Flooring-Services/Flooring-Services-5.jpg",
-  "/assets/Flooring-Services/Flooring-Services-6.jpg",
-  "/assets/Flooring-Services/Flooring-Services-7.jpg",
-  "/assets/Flooring-Services/Flooring-Services-8.jpg",
-  "/assets/Flooring-Services/Flooring-Services-9.jpg",
-  "/assets/Flooring-Services/Flooring-Services-10.jpg",
-  "/assets/Flooring-Services/Flooring-Services-11.jpg",
-  "/assets/Flooring-Services/Flooring-Services-12.jpg",
+  "/assets/Flooring-Services/Flooring-Services-1.webp",
+  "/assets/Flooring-Services/Flooring-Services-2.webp",
+  "/assets/Flooring-Services/Flooring-Services-3.webp",
+  "/assets/Flooring-Services/Flooring-Services-4.webp",
+  "/assets/Flooring-Services/Flooring-Services-5.webp",
+  "/assets/Flooring-Services/Flooring-Services-6.webp",
+  "/assets/Flooring-Services/Flooring-Services-7.webp",
+  "/assets/Flooring-Services/Flooring-Services-8.webp",
+  "/assets/Flooring-Services/Flooring-Services-9.webp",
+  "/assets/Flooring-Services/Flooring-Services-10.webp",
+  "/assets/Flooring-Services/Flooring-Services-11.webp",
+  "/assets/Flooring-Services/Flooring-Services-12.webp",
 
 ];
