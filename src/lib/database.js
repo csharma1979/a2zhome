@@ -1,51 +1,25 @@
-const mongoose = require("mongoose");
-import dotenv from "dotenv";
-dotenv.config();
+import mongoose from 'mongoose';
 
-const Identity = require("../Models/Identity");
-const bcrypt = require("bcrypt");
+const MONGODB_URL = process.env.MONGODB_URL;
 
-console.log(process.env.MONGODB_URL, "process.env.MONGODB_URL");
+if (!mongoose.connections[0].readyState) {
+  mongoose.connect(MONGODB_URL);
+}
+
 const dbConnect = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-    console.log("A2Zhome-solutions DB Connected successfully");
-    await createHardcodedUsers();
-  } catch (error) {
-    console.log("A2Zhome-solutions DB  Connection Failed");
-    console.error(error);
-    process.exit(1);
-  }
-};
-
-const createHardcodedUsers = async () => {
-  try {
-    // Check if the user already exists
-    const existingUser = await Identity.findOne({
-      email: "anishakumari200023@gmail.com",
-    });
-    if (existingUser) {
-      console.log("User already exists. Skipping hardcoded user creation.");
+    if (mongoose.connections[0].readyState) {
       return;
     }
 
-    const users = [
-      {
-        firstname: "Anisha",
-        lastname: "Singh",
-        email: "anishakumari200023@gmail.com",
-        password: "password123", // Store the hashed password
-      },
-    ];
-
-    // Insert the hardcoded user into the collection
-    await Identity.insertMany(users);
-    console.log("Hardcoded users inserted!");
+    await mongoose.connect(MONGODB_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log('Connected to MongoDB');
   } catch (error) {
-    console.error("Error inserting users: ", error);
+    console.error('MongoDB connection error:', error);
+    throw error;
   }
 };
 

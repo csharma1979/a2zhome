@@ -1,4 +1,4 @@
-import dbConnect from "../../../src/lib/database";
+import dbConnect from "@/src/lib/database";
 import Blog from "../../../src/Models/Blog/BlogModal";
 import { NextResponse } from "next/server";
 import multer from "multer";
@@ -12,7 +12,6 @@ export const config = {
   },
 };
 
-
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "uploads/");
@@ -23,15 +22,11 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage });
-const uploadMiddleware = upload.single("uploadImage");
 
 export async function POST(req) {
   try {
     await dbConnect();
-
-    // Get form data
     const formData = await req.formData();
-    //console.log("Received FormData:", formData);
 
     const blogTopic = formData.get("blogTopic");
     const blogCategory = formData.get("blogCategory");
@@ -39,7 +34,7 @@ export async function POST(req) {
     const videoUrl = formData.get("videoUrl") || "";
     const blogDescription = formData.get("blogDescription");
     const status = formData.get("status") || "Draft";
-    const file = formData.get("uploadImage"); // Get uploaded file
+    const file = formData.get("uploadImage");
 
     if (!blogTopic || typeof blogTopic !== "string" || blogTopic.trim() === "") {
       return NextResponse.json(
@@ -51,11 +46,11 @@ export async function POST(req) {
     let uploadImage = "";
     if (file && file.name) {
       const uploadDir = "public/uploads";
-      await fs.mkdir(uploadDir, { recursive: true }); // Ensure directory exists
+      await fs.mkdir(uploadDir, { recursive: true });
       const filePath = `${uploadDir}/${Date.now()}${path.extname(file.name)}`;
-      const bytes = await file.arrayBuffer(); // Convert to Buffer
+      const bytes = await file.arrayBuffer();
       await fs.writeFile(filePath, Buffer.from(bytes));
-      uploadImage = filePath.replace("public/", ""); // Store relative path
+      uploadImage = filePath.replace("public/", "");
     }
 
     const slug = slugify(blogTopic.trim(), { lower: true, strict: true });
@@ -85,8 +80,7 @@ export async function POST(req) {
   }
 }
 
-
-export const GET = async () => {
+export async function GET() {
   try {
     await dbConnect();
     const blogs = await Blog.find();
@@ -94,23 +88,20 @@ export const GET = async () => {
       message: "Blogs fetched successfully",
       data: blogs,
     });
-    
   } catch (error) {
     return NextResponse.json({
       message: "Error fetching blogs",
       error: error.message,
     });
   }
-};
-
+}
 
 export async function PUT(req) {
   try {
     await dbConnect();
     const formData = await req.formData();
-    console.log("Received FormData:", formData);
 
-    const id = formData.get("id"); // Get the Blog ID
+    const id = formData.get("id");
     if (!id) {
       return NextResponse.json({ message: "Blog ID is required" }, { status: 400 });
     }
@@ -121,22 +112,21 @@ export async function PUT(req) {
     const videoUrl = formData.get("videoUrl") || "";
     const blogDescription = formData.get("blogDescription");
     const status = formData.get("status") || "Draft";
-    const file = formData.get("uploadImage"); // Uploaded file
+    const file = formData.get("uploadImage");
 
-    // Ensure the blog exists
     const existingBlog = await Blog.findById(id);
     if (!existingBlog) {
       return NextResponse.json({ message: "Blog not found" }, { status: 404 });
     }
 
-    let uploadImage = existingBlog.uploadImage; // Keep existing image if no new file is uploaded
+    let uploadImage = existingBlog.uploadImage;
     if (file && file.name) {
       const uploadDir = "public/uploads";
-      await fs.mkdir(uploadDir, { recursive: true }); // Ensure directory exists
+      await fs.mkdir(uploadDir, { recursive: true });
       const filePath = `${uploadDir}/${Date.now()}${path.extname(file.name)}`;
-      const bytes = await file.arrayBuffer(); // Convert file to Buffer
+      const bytes = await file.arrayBuffer();
       await fs.writeFile(filePath, Buffer.from(bytes));
-      uploadImage = filePath.replace("public/", ""); // Store relative path
+      uploadImage = filePath.replace("public/", "");
     }
 
     const updatedData = {
@@ -164,10 +154,8 @@ export async function PUT(req) {
   }
 }
 
-
-// DELETE - Delete a blog by ID
-export const DELETE = async (req) => {
-  const { searchParams } = new URL(req.url); // Extract query parameters
+export async function DELETE(req) {
+  const { searchParams } = new URL(req.url);
   const id = searchParams.get("id");
 
   if (!id) {
@@ -190,4 +178,4 @@ export const DELETE = async (req) => {
       { status: 500 }
     );
   }
-};
+}

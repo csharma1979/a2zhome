@@ -1,8 +1,7 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
-
-@import "./Header.scss";
-@import "./About.scss";
-@import "./AdminDashbaord.scss";
+// Replace @import with @use
+@use "./Header";
+@use "./About";
+@use "./AdminDashbaord";
 @import "./Blog.scss";
 @import "./CmsLogin.scss";
 @import "./CMSStyles/CmsBlog.scss";

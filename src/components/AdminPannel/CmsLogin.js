@@ -1,12 +1,4 @@
-"use client";
-
-import React, { useState } from "react";
-import axios from "axios";
-import { useRouter } from "next/navigation";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
-import Image from "next/image";
-import { Button } from "@mui/material";
-import "../../../styles/CmsLogin.css"
+import '@/src/styles/CmsLogin.css'
 
 const CmsLogin = () => {
   const [email, setEmail] = useState("");

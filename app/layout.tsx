@@ -1,77 +1,57 @@
 "use client";
 
-
-import { Geist, Geist_Mono } from "next/font/google";
+import dynamic from 'next/dynamic';
+import { Inter } from "next/font/google";
 import "./globals.css";
 import "../styles/style.scss"
-import Header from "../src/components/commonComps/Header";
-import Footer from "../src/components/commonComps/Footer"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { usePathname } from "next/navigation";
 import { HelmetProvider } from "react-helmet-async";
-import Script from "next/script";
+import { Suspense } from 'react';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+// Dynamic imports for better code splitting
+const Header = dynamic(() => import("../src/components/commonComps/Header"), {
+  loading: () => <div>Loading...</div>,
+  ssr: true
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const Footer = dynamic(() => import("../src/components/commonComps/Footer"), {
+  loading: () => <div>Loading...</div>,
+  ssr: true
 });
 
-
+const inter = Inter({ 
+  subsets: ["latin"],
+  display: 'swap'
+});
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
-
+}) {
   const pathname = usePathname();
-  const isHomepage = pathname === "/" ;
-  const isAdminRoute = pathname.includes("/admin"); 
-
-  const GA_TRACKING_ID = "G-PJZEHYJGZ3";
+  const isAdminRoute = pathname?.includes('admin');
 
   return (
-    <HelmetProvider>
     <html lang="en">
-    <head>
-          {/* Google Analytics Script */}
-          <Script
-            strategy="afterInteractive"
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-          />
-          <Script
-            id="google-analytics"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_TRACKING_ID}', {
-                  page_path: window.location.pathname,
-                });
-              `,
-            }}
-          />
-        </head>
-        
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {!isAdminRoute &&  <Header />}
-        {/* <Header /> */}
-        <main className="">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>A2Z Home Solutions</title>
+        <meta name="description" content="Your trusted partner for home solutions" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
+      <body className={inter.className}>
+        <HelmetProvider>
+          <Suspense fallback={<div>Loading...</div>}>
+            {!isAdminRoute && <Header />}
             {children}
-          
-          </main>
-          {!isAdminRoute && <Footer />}
+            {!isAdminRoute && <Footer />}
+          </Suspense>
+        </HelmetProvider>
       </body>
     </html>
-    </HelmetProvider>
   );
 }

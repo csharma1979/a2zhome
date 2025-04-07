@@ -112,17 +112,17 @@ export const doorFaqData = [
 
 
 export const doorGallaryImages = [
-  "/assets/Premium-Door-Installation/Premium-Door-Installation-1.jpg",
-  "/assets/Premium-Door-Installation/Premium-Door-Installation-2.jpg",
-  "/assets/Premium-Door-Installation/Premium-Door-Installation-3.jpg",
-  "/assets/Premium-Door-Installation/Premium-Door-Installation-4.jpg",
-  "/assets/Premium-Door-Installation/Premium-Door-Installation-5.jpg",
-  "/assets/Premium-Door-Installation/Premium-Door-Installation-6.jpg",
-  "/assets/Premium-Door-Installation/Premium-Door-Installation-7.jpg",
-  "/assets/Premium-Door-Installation/Premium-Door-Installation-8.jpg",
-  "/assets/Premium-Door-Installation/Premium-Door-Installation-9.jpg",
-  "/assets/Premium-Door-Installation/Premium-Door-Installation-10.jpg",
-  "/assets/Premium-Door-Installation/Premium-Door-Installation-11.jpg",
-  "/assets/Premium-Door-Installation/Premium-Door-Installation-12.jpg",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-1.webp",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-2.webp",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-3.webp",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-4.webp",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-5.webp",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-6.webp",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-7.webp",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-8.webp",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-9.webp",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-10.webp",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-11.webp",
+  "/assets/Premium-Door-Installation/Premium-Door-Installation-12.webp",
   
 ]
