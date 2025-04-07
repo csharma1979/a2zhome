@@ -18,7 +18,10 @@ const nextConfig = {
   },
   sassOptions: {
     includePaths: ['./styles'],
-  }
+  },
+  server: {
+    port: 30000
+  },
 }
 
 module.exports = nextConfig
