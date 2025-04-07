@@ -10,17 +10,20 @@ const nextConfig = {
     MONGODB_URL: process.env.MONGODB_URL,
   },
   experimental: {
-    turbo: true
+    appDir: true,
+    routeCache: true,
+    scrollRestoration: true,
+    optimizeCss: true,
+    serverActions: true,
   },
-  webpack: (config) => {
-    config.resolve.fallback = { fs: false };
-    return config;
-  },
-  sassOptions: {
-    includePaths: ['./styles'],
-  },
-  server: {
-    port: 30000
+  staticPageGenerationTimeout: 120,
+  compress: true,
+  poweredByHeader: false,
+  reactStrictMode: true,
+  swcMinify: true,
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
   },
 }
 

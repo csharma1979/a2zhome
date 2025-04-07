@@ -8,6 +8,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { usePathname } from "next/navigation";
 import { HelmetProvider } from "react-helmet-async";
 import { Suspense } from 'react';
+import Loading from './loading';
+
+// Dynamic imports with loading fallback
+const Navigation = dynamic(() => import('../components/Navigation/Navigation'), {
+  loading: () => <Loading />,
+  ssr: true
+});
 
 // Dynamic imports for better code splitting
 const Header = dynamic(() => import("../src/components/commonComps/Header"), {
