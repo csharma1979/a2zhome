@@ -1,4 +1,4 @@
-import '@/src/styles/CmsLogin.css'
+import '@/styles/CmsLogin.css';
 
 const CmsLogin = () => {
   const [email, setEmail] = useState("");

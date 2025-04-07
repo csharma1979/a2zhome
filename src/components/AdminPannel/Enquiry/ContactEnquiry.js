@@ -1,1 +1,1 @@
-import '@/src/styles/CMSStyles/CmsBlog.css'
+import '@/styles/CMSStyles/CmsBlog.css';

@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 30000",
-    "start": "next start -p 30000",
     "build": "next build",
-    "start": " cross-env PORT=30000  next dev --turbopack",
+    "start": "next start -p 30000",
     "lint": "next lint"
   },
   "dependencies": {

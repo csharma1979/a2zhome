@@ -11,17 +11,12 @@ const nextConfig = {
   },
   experimental: {
     appDir: true,
-    routeCache: true,
-    scrollRestoration: true,
-    optimizeCss: true,
-    serverActions: true,
   },
-  staticPageGenerationTimeout: 120,
-  compress: true,
-  poweredByHeader: false,
-  reactStrictMode: true,
-  swcMinify: true,
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
+  port: 30000,
+  onDemandEntries: {
+    maxInactiveAge: 25 * 1000,
+    pagesBufferLength: 2,
+  },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },

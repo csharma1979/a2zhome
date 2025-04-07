@@ -1,1 +1,1 @@
-import '@/src/styles/Sidebar.css'
+import '@/styles/Sidebar.css';

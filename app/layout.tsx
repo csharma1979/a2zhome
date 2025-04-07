@@ -10,8 +10,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { Suspense } from 'react';
 import Loading from './loading';
 
-// Dynamic imports with loading fallback
-const Navigation = dynamic(() => import('../components/Navigation/Navigation'), {
+const Navigation = dynamic(() => import('@/components/Navigation'), {
   loading: () => <Loading />,
   ssr: true
 });

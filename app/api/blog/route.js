@@ -1,4 +1,4 @@
-import dbConnect from "@/src/lib/database";
+import { connectToDatabase } from '@/lib/database';
 import Blog from "../../../src/Models/Blog/BlogModal";
 import { NextResponse } from "next/server";
 import multer from "multer";
