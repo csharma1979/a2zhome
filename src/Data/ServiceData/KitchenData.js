@@ -137,18 +137,18 @@ export const kitchenfaqData = [
 ];
 
 export const kitchenGalleryImages = [
-  "/assets/kitchen/A2z-home-kitchen-service-1.webp",
-  "/assets/kitchen/A2z-home-kitchen-service-2.webp",
-  "/assets/kitchen/A2z-home-kitchen-service-3.webp",
-  "/assets/kitchen/A2z-home-kitchen-service-4.webp",
-  "/assets/kitchen/A2z-home-kitchen-service-5.webp",
-  "/assets/kitchen/A2z-home-kitchen-service-6.webp",
-  "/assets/kitchen/A2z-home-kitchen-service-7.webp",
-  "/assets/kitchen/A2z-home-kitchen-service-8.webp",
-  "/assets/kitchen/A2z-home-kitchen-service-9.webp",
-  "/assets/kitchen/A2z-home-kitchen-service-10.webp",
-  "/assets/kitchen/A2z-home-kitchen-service-11.webp",
-  "/assets/kitchen/A2z-home-kitchen-service-12.webp",
+  "/assets/kitchen/home-kitchen-service-1.webp",
+  "/assets/kitchen/home-kitchen-service-2.webp",
+  "/assets/kitchen/home-kitchen-service-3.webp",
+  "/assets/kitchen/home-kitchen-service-4.webp",
+  "/assets/kitchen/home-kitchen-service-5.webp",
+  "/assets/kitchen/home-kitchen-service-6.webp",
+  "/assets/kitchen/home-kitchen-service-7.webp",
+  "/assets/kitchen/home-kitchen-service-8.webp",
+  "/assets/kitchen/home-kitchen-service-9.webp",
+  "/assets/kitchen/home-kitchen-service-10.webp",
+  "/assets/kitchen/home-kitchen-service-11.webp",
+  "/assets/kitchen/home-kitchen-service-12.webp",
 ];
 
 export const kitchenLimitedOffer = [
