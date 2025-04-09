@@ -145,11 +145,11 @@ const Footer = () => {
             </Typography>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
               {[
-                { title: 'About', link: '/about' },
-                { title: 'Blog', link: '/blog' },
+                // { title: 'About', link: '/about' },
+                // { title: 'Blog', link: '/blog' },
                 { title: 'Contact', link: '/contact' },
-                { title: 'Terms & Conditions', link: '/terms-conditions' },
-                { title: 'Privacy Policy', link: '/privacy-policy' }
+                // { title: 'Terms & Conditions', link: '/terms-conditions' },
+                // { title: 'Privacy Policy', link: '/privacy-policy' }
               ].map((item, index) => (
                 <Link
                   key={index}

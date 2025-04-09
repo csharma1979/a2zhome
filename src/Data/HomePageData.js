@@ -64,11 +64,11 @@ export const analytics = [
     label: "Project Completed",
   },
   {
-    number: "99.9%",
+    number: "98%",
     label: "Happy Clients",
   },
   {
-    number: "5M+",
+    number: "4.9+",
     label: "Average Rating",
   },
   {

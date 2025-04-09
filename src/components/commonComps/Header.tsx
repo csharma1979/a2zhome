@@ -130,12 +130,13 @@ export default function Header() {
               )}
             </div>
 
-            <Link
+            {/* <Link
               href="/blog"
               className="text-md font-medium text-[#210237] hover:text-[#582f64] transition-colors"
             >
               Blog
-            </Link>
+            </Link> */}
+
             <Link
               href="/gallery"
               className="text-md font-medium text-[#210237] hover:text-[#582f64] transition-colors"
