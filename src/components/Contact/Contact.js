@@ -166,9 +166,9 @@ const Contact = () => {
                 <Typography className="py-1">
                   7106 Marble Springs Dr Katy, Tx 77494
                 </Typography>
-                <Typography className="py-1">+1- 832-312-5501</Typography>
+                <Typography className="py-1">Phone: +1- 832-312-5501</Typography>
                 <Typography className="py-1">
-                  Email: remodel@andersonremodeling.com
+                  Email: support@a2zhome-solutions.com
                 </Typography>
                 <Typography variant="h6" className="mt-3">
                   Office Hours

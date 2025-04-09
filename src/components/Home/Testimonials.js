@@ -9,7 +9,7 @@ const testimonials = [
   {
     id: 1,
     name: "John Smith",
-    location: "Dallas, TX",
+    location: "Perarland",
     comment: "Exceptional service! The team was professional and completed our renovation project ahead of schedule.",
     rating: 5
   },
@@ -21,25 +21,25 @@ const testimonials = [
   },
   {
     name: "Michael Brown",
-    location: "Austin, TX",
+    location: "Kety, TX",
     comment: "The attention to detail and quality of work exceeded our expectations. Highly recommended!",
     rating: 5
   },
   {
     name: "Emily Davis",
-    location: "San Antonio, TX",
+    location: "Suger land, TX",
     comment: "Outstanding craftsmanship and customer service. They transformed our commercial space beautifully.",
     rating: 5
   },
   {
     name: "Robert Wilson",
-    location: "Fort Worth, TX",
+    location: "Houston, TX",
     comment: "Very impressed with their professionalism and attention to detail. The kitchen remodel turned out perfect.",
     rating: 5
   },
   {
     name: "Lisa Anderson",
-    location: "El Paso, TX",
+    location: "Houston, TX",
     comment: "A reliable team that delivers quality work consistently. My clients are always satisfied with their services.",
     rating: 5
   }
