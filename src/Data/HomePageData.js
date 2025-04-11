@@ -87,26 +87,36 @@ export const benefits = [
 ];
 
 export const heroSlides = [
+
+  {
+    title: "Plumbing Problems? We’ve Got the Solution!",
+    subtitle:
+      "Expert Repairs, Installations, and Maintenance – Fast, Affordable, and Always Reliable.",
+    image: "/assets/Plumbing-services/Plumber-in-kety.webp",
+  },
+
   {
     title: "Stay Comfortable Year-Round with Our HVAC Services!",
     subtitle:
     "Professional Heating, Cooling, and Ventilation Solutions – Fast, Reliable, and Affordable.",
     
-    image: "/assets/HVAC-Services/HVAC-Services-1.webp",
+    image: "/assets/HVAC-Services/hvac-repairing-services-in-kety.webp",
   },
   // {
   //   title: "Transform Your Kitchen – Expert Repairs & Installations!",
   //   subtitle:
   //     "From Faucets to Fixtures – Fast, Reliable, and Affordable Kitchen Services You Can Trust.",
-  //   image: "/assets/banner/A2z-home-kitchen-service-7.webp",
+  //   image: "/assets/banner/home-kitchen-service-3.webp",
   // },
   {
-    title: "Plumbing Problems? We’ve Got the Solution!",
+    title: "Transform Your Kitchen – Expert Repairs & Installations!",
     subtitle:
-      "Expert Repairs, Installations, and Maintenance – Fast, Affordable, and Always Reliable.",
-    image: "/assets/Plumbing-services/Plumbing-services-11.webp",
+      "From Faucets to Fixtures – Fast, Reliable, and Affordable Kitchen Services You Can Trust.",
+    image: "/assets/kitchen/top-kitchen-design-ideas.webp",
   },
+
 ];
+
 
 export const homeWhyChooseUs = [
   {
